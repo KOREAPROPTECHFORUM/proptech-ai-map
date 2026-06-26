@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proptech AI Map</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div>
+        <strong>Korea Proptech Forum</strong>
+        <span>Interactive AI Map</span>
+      </div>
+    </div>
+    <nav class="view-tabs" aria-label="보기 전환">
+      <button class="tab is-active" type="button" data-view="map">맵 보기</button>
+      <button class="tab" type="button" data-view="directory">목록 보기</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="space-field" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Last updated · June 2026</p>
+        <h1 id="page-title">Proptech AI Map</h1>
+        <p class="lead">
+          부동산 라이프사이클 안에서 AI 기반 프롭테크 기업을 탐색하는 인터랙티브 맵입니다.
+          로고는 각 카테고리 안에서 천천히 떠다니고, 커서를 올리면 확대됩니다.
+        </p>
+      </div>
+      <div class="stats" aria-label="맵 통계">
+        <div><strong id="company-count">0</strong><span>Companies</span></div>
+        <div><strong>5</strong><span>Lifecycle stages</span></div>
+        <div><strong id="category-count">0</strong><span>Categories</span></div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="검색 및 필터">
+      <label class="search-box">
+        <span>검색</span>
+        <input id="search-input" type="search" placeholder="회사명, 카테고리, 단계 검색" autocomplete="off" />
+      </label>
+      <div class="filter-row" id="stage-filters" aria-label="단계 필터"></div>
+    </section>
+
+    <section id="map-view" class="view is-active" aria-label="프롭테크 AI 맵"></section>
+
+    <section id="directory-view" class="view" aria-label="회사 목록">
+      <div class="directory-layout">
+        <aside class="side-panel">
+          <h2>분류</h2>
+          <div id="category-filters" class="category-filter-list"></div>
+        </aside>
+        <div>
+          <div class="result-bar">
+            <strong id="result-count">0개 기업</strong>
+            <span>회사명을 클릭하면 새 탭에서 열립니다.</span>
+          </div>
+          <div id="directory-grid" class="directory-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="company-template">
+    <a class="company-chip" target="_blank" rel="noreferrer">
+      <span class="orbit-motion">
+        <span class="logo-text"></span>
+      </span>
+      <small></small>
+    </a>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>
