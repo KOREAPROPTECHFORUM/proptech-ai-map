@@ -323,7 +323,7 @@ h1 {
 
 .map-content {
   display: grid;
-  grid-template-columns: 116px minmax(0, 1fr);
+  grid-template-columns: 74px minmax(0, 1fr);
   gap: 12px;
   padding: 10px;
 }
@@ -347,8 +347,8 @@ h1 {
 .rail-stage {
   position: relative;
   display: grid;
-  grid-template-columns: 42px 1fr;
-  gap: 22px;
+  grid-template-columns: 42px;
+  gap: 0;
   align-items: center;
   min-height: var(--rail-row-height, 91px);
 }
@@ -374,6 +374,7 @@ h1 {
 }
 
 .rail-stage span {
+  display: none;
   font-size: 12px;
   font-weight: 950;
   line-height: 1.35;
@@ -658,7 +659,7 @@ h1 {
 
 @media (max-width: 1120px) {
   main {
-    width: min(100% - 32px, 980px);
+    width: min(100% - 28px, 1180px);
   }
 
   .hero,
@@ -672,24 +673,24 @@ h1 {
   }
 
   .map-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 82px minmax(0, 1fr);
   }
 
-  .stage-rail {
+  .stage-rail::before {
+    left: 40px;
+  }
+
+  .rail-stage {
+    grid-template-columns: 34px 1fr;
+    gap: 18px;
+  }
+
+  .rail-stage::after {
+    left: 32px;
+  }
+
+  .rail-stage span {
     display: none;
-  }
-
-  .stage-card {
-    grid-template-columns: 1fr;
-  }
-
-  .category-column {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .category-column:first-child {
-    border-top: 0;
   }
 
   .side-panel {
@@ -863,10 +864,31 @@ h1 {
   }
 
   .map-content {
+    grid-template-columns: 1fr;
     padding: 14px;
+  }
+
+  .stage-rail {
+    display: none;
+  }
+
+  .stage-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .category-column {
+    min-height: 120px;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .category-column:first-child {
+    border-top: 0;
   }
 
   .company-chip {
     width: 120px;
+    height: 48px;
   }
 }
