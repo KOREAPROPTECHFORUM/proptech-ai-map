@@ -1,5 +1,7 @@
 # Proptech AI Map
 
+![Proptech AI Map thumbnail](assets/thumbnail-proptech-ai-map.png)
+
 Interactive Proptech AI Map for Korea Proptech Forum.
 
 ## Run locally
