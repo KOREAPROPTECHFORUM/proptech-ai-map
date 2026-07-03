@@ -144,8 +144,18 @@ const companies = [
   stage,
   category,
   logo: `assets/logos/logo-${String(index + 1).padStart(3, "0")}.png`,
-  url: homepageUrl(name)
+  url: homepageUrl(name),
+  featured: name === "WeX"
 }));
+
+companies.splice(9, 0, {
+  name: "WeX",
+  stage: "development",
+  category: "finance",
+  logo: "assets/logos/logo-061.png",
+  url: homepageUrl("WeX"),
+  featured: true
+});
 
 const state = {
   view: "map",
@@ -188,6 +198,9 @@ function createCompanyChip(company) {
   const chip = template.content.firstElementChild.cloneNode(true);
   chip.href = company.url;
   chip.title = `${company.name} 홈페이지 열기`;
+  if (company.featured) {
+    chip.classList.add("is-featured");
+  }
   chip.querySelector(".logo-text").innerHTML = `<img src="${company.logo}" alt="${company.name}" />`;
   chip.querySelector("small").textContent = categoryById[company.category].name;
   return chip;
@@ -258,7 +271,7 @@ function renderMap() {
 
   const title = document.createElement("div");
   title.className = "map-title";
-  title.innerHTML = `<strong>Proptech AI Map</strong><span>${visibleCompanies.length} companies · floating ecosystem</span>`;
+  title.innerHTML = `<strong>Proptech AI Map</strong><span>${visibleCompanies.length} logo placements · floating ecosystem</span>`;
 
   const content = document.createElement("div");
   content.className = "map-content";
@@ -329,7 +342,7 @@ function renderDirectory() {
     const stage = stageById[company.stage];
     const category = categoryById[company.category];
     const card = document.createElement("article");
-    card.className = "directory-card";
+    card.className = `directory-card${company.featured ? " is-featured" : ""}`;
     card.innerHTML = `
       <div class="directory-card-header">
         <div class="directory-logo"><img src="${company.logo}" alt="${company.name}" /></div>
