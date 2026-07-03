@@ -214,8 +214,8 @@ function setFloatingPosition(chip, index, total, categoryId) {
   const seed = Array.from(`${categoryId}-${index}`).reduce((sum, char) => sum + char.charCodeAt(0), 0);
   const jitterX = ((seed % 13) - 6) * 0.8;
   const jitterY = (((seed * 7) % 11) - 5) * 0.9;
-  const x = Math.min(86, Math.max(14, ((col + 0.5) / columns) * 100 + jitterX));
-  const y = Math.min(82, Math.max(18, ((row + 0.5) / rows) * 100 + jitterY));
+  const x = Math.min(84, Math.max(16, ((col + 0.5) / columns) * 100 + jitterX));
+  const y = Math.min(78, Math.max(22, ((row + 0.5) / rows) * 100 + jitterY));
   chip.style.setProperty("--x", `${x}%`);
   chip.style.setProperty("--y", `${y}%`);
   chip.style.setProperty("--float-x", `${((seed % 5) - 2) * 3}px`);
@@ -295,7 +295,15 @@ function renderMap() {
     card.className = `stage-card stage-${stage.id}`;
     card.style.setProperty("--category-count", String(Math.max(categories.length, 1)));
 
-    const columns = categories.map(category => {
+    const categoryCounts = categories.map(category => companies.filter(company => (
+      company.stage === stage.id &&
+      company.category === category.id &&
+      matchesCompany(company)
+    )).length);
+    const categoryWeights = categoryCounts.map(count => Math.max(1, Math.ceil(Math.sqrt(Math.max(count, 1)))));
+    card.style.setProperty("--category-template", categoryWeights.map(weight => `${weight}fr`).join(" "));
+
+    const columns = categories.map((category, categoryIndex) => {
       const column = document.createElement("div");
       column.className = "category-column";
       const categoryCompanies = companies.filter(company => (
@@ -311,6 +319,7 @@ function renderMap() {
         return chip;
       });
       list.replaceChildren(...chips);
+      column.style.setProperty("--density", String(categoryCounts[categoryIndex]));
       column.innerHTML = `<h2>${category.name}</h2>`;
       column.append(list);
       return column;
