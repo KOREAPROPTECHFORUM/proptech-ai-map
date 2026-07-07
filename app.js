@@ -251,14 +251,17 @@ function renderDirectory() {
     const category = categoryById[company.category];
     const card = document.createElement("article");
     card.className = `directory-card${company.featured ? " is-featured" : ""}`;
+    const logoHtml = company.logo
+      ? `<img src="assets/logos/${company.logo}" alt="${company.name}" />`
+      : `<span style="font-size:11px;font-weight:900;word-break:break-all;text-align:center;color:#242a35">${company.name}</span>`;
     card.innerHTML = `
       <div class="directory-card-header">
-        <div class="directory-logo"><img src="${company.logo}" alt="${company.name}" /></div>
+        <div class="directory-logo">${logoHtml}</div>
         <span class="stage-badge">${stage.name}</span>
       </div>
       <h3>${company.name}</h3>
       <p>${category.name} 영역의 AI·프롭테크 기업입니다.</p>
-      <a class="link-button" href="${company.url}" target="_blank" rel="noreferrer">홈페이지 열기</a>
+      <a class="link-button" href="${company.url || `https://www.google.com/search?q=${encodeURIComponent(company.name + ' 홈페이지')}`}" target="_blank" rel="noreferrer">홈페이지 열기</a>
     `;
     return card;
   }));
