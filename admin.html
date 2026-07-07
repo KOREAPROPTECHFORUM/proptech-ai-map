@@ -189,6 +189,26 @@
 
     .help-text { font-size: 11px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
 
+    .service-section { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .service-section-label {
+      font-size: 12px; font-weight: 900; color: var(--muted);
+      margin-bottom: 14px; text-transform: uppercase; letter-spacing: .05em;
+    }
+    .service-block {
+      padding: 14px; border-radius: 8px; margin-bottom: 12px;
+      border: 1px solid var(--line); background: rgba(255,255,255,0.03);
+    }
+    .service-block-title {
+      font-size: 12px; font-weight: 900; color: #7aadff; margin-bottom: 10px;
+    }
+    .field textarea {
+      width: 100%; min-height: 58px; resize: vertical;
+      border: 1px solid rgba(255,255,255,0.16); border-radius: 7px;
+      padding: 8px 12px; background: rgba(255,255,255,0.06);
+      color: var(--ink); font: inherit; font-size: 13px; outline: none; line-height: 1.5;
+    }
+    .field textarea:focus { border-color: var(--blue); }
+
     /* ── Settings notes ── */
     .pat-note {
       font-size: 12px; color: var(--muted); line-height: 1.6;
@@ -308,6 +328,42 @@
     <div class="check-row">
       <input type="checkbox" id="f-featured" />
       <label for="f-featured">주요 기업 (Featured) — 금색 테두리 강조</label>
+    </div>
+
+    <div class="service-section">
+      <div class="service-section-label">AI 서비스 정보 (최대 2개)</div>
+
+      <div class="service-block">
+        <div class="service-block-title">서비스 1</div>
+        <div class="field">
+          <label>서비스명</label>
+          <input type="text" id="s1-name" placeholder="예: AI 입지분석" />
+        </div>
+        <div class="field">
+          <label>서비스 설명</label>
+          <textarea id="s1-desc" placeholder="예: 상권 데이터 기반 입지 리포트 자동 생성"></textarea>
+        </div>
+        <div class="field">
+          <label>활용 기술</label>
+          <input type="text" id="s1-tech" placeholder="예: GIS, ML, GPT-4" />
+        </div>
+      </div>
+
+      <div class="service-block">
+        <div class="service-block-title">서비스 2 <span style="font-weight:400;color:var(--muted)">(선택)</span></div>
+        <div class="field">
+          <label>서비스명</label>
+          <input type="text" id="s2-name" placeholder="예: 자동 보고서 생성" />
+        </div>
+        <div class="field">
+          <label>서비스 설명</label>
+          <textarea id="s2-desc" placeholder="예: 분석 결과를 PDF 보고서로 자동 변환"></textarea>
+        </div>
+        <div class="field">
+          <label>활용 기술</label>
+          <input type="text" id="s2-tech" placeholder="예: Python, LLM" />
+        </div>
+      </div>
     </div>
 
     <div class="modal-footer">
@@ -537,6 +593,41 @@ document.getElementById('f-logo').onchange = function () {
 };
 
 // ── Add / Edit ────────────────────────────────────────────────────────────────
+function clearServiceFields() {
+  ['s1-name','s1-desc','s1-tech','s2-name','s2-desc','s2-tech'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+}
+
+function loadServiceFields(services = []) {
+  clearServiceFields();
+  const s1 = services[0] || {};
+  const s2 = services[1] || {};
+  document.getElementById('s1-name').value = s1.name || '';
+  document.getElementById('s1-desc').value = s1.desc || '';
+  document.getElementById('s1-tech').value = s1.tech || '';
+  document.getElementById('s2-name').value = s2.name || '';
+  document.getElementById('s2-desc').value = s2.desc || '';
+  document.getElementById('s2-tech').value = s2.tech || '';
+}
+
+function collectServices() {
+  const services = [];
+  const s1name = document.getElementById('s1-name').value.trim();
+  if (s1name) services.push({
+    name: s1name,
+    desc: document.getElementById('s1-desc').value.trim(),
+    tech: document.getElementById('s1-tech').value.trim()
+  });
+  const s2name = document.getElementById('s2-name').value.trim();
+  if (s2name) services.push({
+    name: s2name,
+    desc: document.getElementById('s2-desc').value.trim(),
+    tech: document.getElementById('s2-tech').value.trim()
+  });
+  return services;
+}
+
 document.getElementById('btn-add').onclick = () => {
   editIdx = -1;
   document.getElementById('modal-title').textContent = '기업 추가';
@@ -546,6 +637,7 @@ document.getElementById('btn-add').onclick = () => {
   document.getElementById('f-url').value = '';
   document.getElementById('f-featured').checked = false;
   currentLogo = '';
+  clearServiceFields();
   openModal('edit');
 };
 
@@ -559,6 +651,7 @@ function openEdit(i) {
   document.getElementById('f-category').value = c.category;
   document.getElementById('f-url').value = c.url || '';
   document.getElementById('f-featured').checked = !!c.featured;
+  loadServiceFields(c.services);
   currentLogo = c.logo || '';
   if (c.logo) {
     document.getElementById('logo-preview').src = rawUrl(c.logo);
@@ -591,7 +684,8 @@ async function saveCompany() {
       logo = pendingFile.name;
     }
 
-    const entry = { name, stage, category, logo, url, featured };
+    const services = collectServices();
+    const entry = { name, stage, category, logo, url, featured, services };
     if (editIdx === -1) companies.push(entry);
     else companies[editIdx] = entry;
 
