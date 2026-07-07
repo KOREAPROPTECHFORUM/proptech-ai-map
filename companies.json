@@ -1,12 +1,19 @@
 {
   "companies": [
     {
-      "name": "LanDup",
+      "name": "엘엔디씨",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "엘엔디씨.jpg",
+      "url": "https://www.lan-dup.com/",
+      "featured": false,
+      "services": [
+        {
+          "name": "랜드업(LanDup)",
+          "desc": "부동산 개발의 전 주기 사업성을 검토하는 AI 의사결정 지원 솔루션",
+          "tech": "머신러닝 사업성 변수 예측 · 빅데이터 분석"
+        }
+      ]
     },
     {
       "name": "Richgo",
