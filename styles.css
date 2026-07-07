@@ -688,6 +688,7 @@ h1 {
 
 .directory-card {
   display: grid;
+  align-content: start;
   gap: 12px;
   padding: 16px;
 }
