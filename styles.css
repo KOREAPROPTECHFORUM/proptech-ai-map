@@ -766,6 +766,7 @@ h1 {
 
 .stage-badge {
   flex: 0 0 auto;
+  width: fit-content;
   border-radius: 999px;
   padding: 6px 8px;
   background: rgba(36, 91, 255, 0.2);
