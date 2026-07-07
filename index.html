@@ -83,6 +83,15 @@
     </section>
   </main>
 
+  <!-- Company detail modal -->
+  <div id="company-modal" class="company-modal hidden" role="dialog" aria-modal="true">
+    <div class="company-modal-backdrop" id="modal-backdrop"></div>
+    <div class="company-modal-box">
+      <button class="company-modal-close" id="modal-close" aria-label="닫기">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
   <template id="company-template">
     <a class="company-chip" target="_blank" rel="noreferrer">
       <span class="orbit-motion">

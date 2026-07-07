@@ -87,11 +87,41 @@ function uniqueCompanies(items) {
   });
 }
 
+function showCompanyModal(company) {
+  const stage = stageById[company.stage];
+  const category = categoryById[company.category];
+  const logoHtml = company.logo
+    ? `<img src="assets/logos/${company.logo}" alt="${company.name}" />`
+    : `<span style="font-size:13px;font-weight:900;color:#242a35;text-align:center;padding:4px 10px;display:flex;align-items:center;justify-content:center;height:100%">${company.name}</span>`;
+  const servicesHtml = (company.services || []).map(s => `
+    <div class="service-item">
+      <strong class="service-name">${s.name}</strong>
+      ${s.desc ? `<span class="service-desc">${s.desc}</span>` : ''}
+      ${s.tech ? `<span class="service-tech">${s.tech}</span>` : ''}
+    </div>`).join('');
+  const href = company.url || `https://www.google.com/search?q=${encodeURIComponent(company.name + " 홈페이지")}`;
+
+  document.getElementById('modal-body').innerHTML = `
+    <div class="modal-card-header">
+      <div class="modal-logo">${logoHtml}</div>
+      <div class="modal-meta">
+        <span class="stage-badge">${stage.name}</span>
+        <h2 class="modal-name">${company.name}</h2>
+        <p class="modal-category">${category.name} 영역의 AI·프롭테크 기업입니다.</p>
+      </div>
+    </div>
+    ${servicesHtml ? `<div class="service-list" style="margin-top:16px">${servicesHtml}</div>` : ''}
+    <a class="link-button modal-link" href="${href}" target="_blank" rel="noreferrer">홈페이지 열기</a>
+  `;
+  document.getElementById('company-modal').classList.remove('hidden');
+}
+
 function createCompanyChip(company) {
   const template = document.querySelector("#company-template");
   const chip = template.content.firstElementChild.cloneNode(true);
   chip.href = company.url || `https://www.google.com/search?q=${encodeURIComponent(company.name + " 홈페이지")}`;
-  chip.title = `${company.name} 홈페이지 열기`;
+  chip.title = `${company.name} 상세 보기`;
+  chip.addEventListener('click', e => { e.preventDefault(); showCompanyModal(company); });
   if (company.featured) chip.classList.add("is-featured");
   const logoEl = chip.querySelector(".logo-text");
   if (company.logo) {
@@ -307,6 +337,13 @@ document.querySelector("#search-input").addEventListener("input", event => {
   render();
 });
 
+function initModal() {
+  const modal = document.getElementById('company-modal');
+  document.getElementById('modal-close').addEventListener('click', () => modal.classList.add('hidden'));
+  document.getElementById('modal-backdrop').addEventListener('click', () => modal.classList.add('hidden'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') modal.classList.add('hidden'); });
+}
+
 async function init() {
   try {
     const res = await fetch("./companies.json");
@@ -317,6 +354,7 @@ async function init() {
   }
   renderStats();
   render();
+  initModal();
 }
 
 init();
