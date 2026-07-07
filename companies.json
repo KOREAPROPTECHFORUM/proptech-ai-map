@@ -506,7 +506,19 @@
       "category": "asset-liquidity",
       "logo": "위엑스코퍼레이션.jpg",
       "url": "https://wexcorporation.com/",
-      "featured": false
+      "featured": false,
+      "services": [
+        {
+          "name": "AI Portfolio Investment Model",
+          "desc": "AI로 글로벌 부동산 포트폴리오 배분",
+          "tech": "Heaton Model 기반 자산배분 · 머신러닝 수익률 예측 · 포트폴리오 최적화"
+        },
+        {
+          "name": "Global Real Estate Investment AI Agent",
+          "desc": "AI Agent 기반 스테이블코인 투자 분석",
+          "tech": "LLM 기반 AI Agent · 투자 시뮬레이션 · RWA·스테이블코인 분석"
+        }
+      ]
     },
     {
       "name": "우리가",
