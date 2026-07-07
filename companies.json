@@ -111,9 +111,16 @@
       "name": "공감랩",
       "stage": "development",
       "category": "finance",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "공감랩.jpg",
+      "url": "https://www.howsmuch.com/",
+      "featured": false,
+      "services": [
+        {
+          "name": "하우스머치 AI시세 서비스",
+          "desc": "공간빅데이터와 실거래가격을 학습하여 부동산 시세 및 시세 정확성 수준(신뢰등급)을 제공",
+          "tech": "머신러닝 시세 예측 · 빅데이터 분석 · NLP"
+        }
+      ]
     },
     {
       "name": "READPOST",
