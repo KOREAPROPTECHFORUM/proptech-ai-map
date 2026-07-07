@@ -1,78 +1,596 @@
 {
   "companies": [
-    {"name": "LanDup", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "Richgo", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "LIVsolution", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "Sweetspot", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "HOMES Flexity", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "인리얼티", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "Meissa", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "부동산의신", "stage": "development", "category": "planning", "logo": "", "url": "", "featured": false},
-    {"name": "LECTUS", "stage": "development", "category": "finance", "logo": "", "url": "", "featured": false},
-    {"name": "WeX", "stage": "development", "category": "finance", "logo": "", "url": "", "featured": true},
-    {"name": "밸류맵", "stage": "development", "category": "finance", "logo": "", "url": "https://www.valueupmap.com/", "featured": false},
-    {"name": "공감랩", "stage": "development", "category": "finance", "logo": "", "url": "", "featured": false},
-    {"name": "READPOST", "stage": "development", "category": "design-permit", "logo": "", "url": "", "featured": false},
-    {"name": "CHANGSOFT I&I", "stage": "development", "category": "design-permit", "logo": "", "url": "", "featured": false},
-    {"name": "TENELEVEN", "stage": "development", "category": "design-permit", "logo": "", "url": "", "featured": false},
-    {"name": "HOWBUILD", "stage": "development", "category": "design-permit", "logo": "", "url": "", "featured": false},
-    {"name": "빌더", "stage": "development", "category": "procurement", "logo": "", "url": "", "featured": false},
-    {"name": "FOBEECON", "stage": "development", "category": "procurement", "logo": "", "url": "", "featured": false},
-    {"name": "unitlab", "stage": "development", "category": "procurement", "logo": "", "url": "", "featured": false},
-    {"name": "zeons", "stage": "development", "category": "procurement", "logo": "", "url": "", "featured": false},
-    {"name": "CUPIX", "stage": "development", "category": "construction", "logo": "", "url": "", "featured": false},
-    {"name": "자취방센터114", "stage": "transaction", "category": "marketing", "logo": "", "url": "", "featured": false},
-    {"name": "eduwill", "stage": "transaction", "category": "marketing", "logo": "", "url": "https://www.eduwill.net/", "featured": false},
-    {"name": "boospatch", "stage": "transaction", "category": "marketing", "logo": "", "url": "", "featured": false},
-    {"name": "HOMES IN KOREA", "stage": "transaction", "category": "marketing", "logo": "", "url": "", "featured": false},
-    {"name": "ANIPEN", "stage": "transaction", "category": "marketing", "logo": "", "url": "", "featured": false},
-    {"name": "GoodPick", "stage": "transaction", "category": "marketing", "logo": "", "url": "", "featured": false},
-    {"name": "boopd", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "zigbang", "stage": "transaction", "category": "brokerage", "logo": "", "url": "https://www.zigbang.com/", "featured": false},
-    {"name": "CORNER", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "BigValue", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "부동산내편", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "호갱노노", "stage": "transaction", "category": "brokerage", "logo": "", "url": "https://hogangnono.com/", "featured": false},
-    {"name": "사랑방", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "SpaceCloud", "stage": "transaction", "category": "brokerage", "logo": "", "url": "https://www.spacecloud.kr/", "featured": false},
-    {"name": "RPAZ", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "픽아이엔", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "BUDICL", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "DiverCity", "stage": "transaction", "category": "brokerage", "logo": "", "url": "", "featured": false},
-    {"name": "ZIPUP", "stage": "operation", "category": "rental", "logo": "", "url": "", "featured": false},
-    {"name": "HOMES", "stage": "operation", "category": "rental", "logo": "", "url": "", "featured": false},
-    {"name": "Dooongji", "stage": "operation", "category": "rental", "logo": "", "url": "", "featured": false},
-    {"name": "케어링", "stage": "operation", "category": "rental", "logo": "", "url": "", "featured": false},
-    {"name": "부동산플래닛", "stage": "operation", "category": "rental", "logo": "", "url": "", "featured": false},
-    {"name": "handus", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "아이엠박스", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "homeflix", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "한국공간데이터", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "JCTechnology", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "REALWORLD", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "Rovoock", "stage": "operation", "category": "space-operation", "logo": "", "url": "", "featured": false},
-    {"name": "BENDS", "stage": "operation", "category": "facility", "logo": "", "url": "", "featured": false},
-    {"name": "salto", "stage": "operation", "category": "facility", "logo": "", "url": "", "featured": false},
-    {"name": "TRUSTAY", "stage": "operation", "category": "facility", "logo": "", "url": "https://trustay.com/", "featured": false},
-    {"name": "Divii Consulting", "stage": "operation", "category": "facility", "logo": "", "url": "", "featured": false},
-    {"name": "soldoc", "stage": "operation", "category": "facility", "logo": "", "url": "", "featured": false},
-    {"name": "오늘의집", "stage": "operation", "category": "interior", "logo": "", "url": "https://ohou.se/", "featured": false},
-    {"name": "LILSQUARE", "stage": "operation", "category": "interior", "logo": "", "url": "", "featured": false},
-    {"name": "TAXAI", "stage": "asset", "category": "asset-sale", "logo": "", "url": "", "featured": false},
-    {"name": "realbuy", "stage": "asset", "category": "asset-sale", "logo": "", "url": "", "featured": false},
-    {"name": "얼마집", "stage": "asset", "category": "asset-sale", "logo": "", "url": "", "featured": false},
-    {"name": "WeX", "stage": "asset", "category": "asset-liquidity", "logo": "", "url": "", "featured": true},
-    {"name": "우리가", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "ValueShopping", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "부동산플래닛", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "R2Square", "stage": "infra", "category": "data-platform", "logo": "", "url": "https://www.rsquare.co.kr/", "featured": false},
-    {"name": "KAP 한국자산매입", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "PEPPER", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "DTW", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "지지옥션", "stage": "infra", "category": "data-platform", "logo": "", "url": "", "featured": false},
-    {"name": "Archisketch", "stage": "infra", "category": "design-tool", "logo": "", "url": "https://www.archisketch.com/", "featured": false},
-    {"name": "MODUSIGN", "stage": "infra", "category": "contract", "logo": "", "url": "https://www.modusign.co.kr/", "featured": false},
-    {"name": "픽아이엔", "stage": "infra", "category": "contract", "logo": "", "url": "", "featured": false},
-    {"name": "READPOST", "stage": "infra", "category": "contract", "logo": "", "url": "", "featured": false}
+    {
+      "name": "LanDup",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "Richgo",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "LIVsolution",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "Sweetspot",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "HOMES Flexity",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "인리얼티",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "Meissa",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "부동산의신",
+      "stage": "development",
+      "category": "planning",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "LECTUS",
+      "stage": "development",
+      "category": "finance",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "위엑스코퍼레이션",
+      "stage": "development",
+      "category": "finance",
+      "logo": "위엑스코퍼레이션.jpg",
+      "url": "https://wexcorporation.com/",
+      "featured": false
+    },
+    {
+      "name": "밸류맵",
+      "stage": "development",
+      "category": "finance",
+      "logo": "",
+      "url": "https://www.valueupmap.com/",
+      "featured": false
+    },
+    {
+      "name": "공감랩",
+      "stage": "development",
+      "category": "finance",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "READPOST",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "CHANGSOFT I&I",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "TENELEVEN",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "HOWBUILD",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "빌더",
+      "stage": "development",
+      "category": "procurement",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "FOBEECON",
+      "stage": "development",
+      "category": "procurement",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "unitlab",
+      "stage": "development",
+      "category": "procurement",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "zeons",
+      "stage": "development",
+      "category": "procurement",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "CUPIX",
+      "stage": "development",
+      "category": "construction",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "자취방센터114",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "eduwill",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "https://www.eduwill.net/",
+      "featured": false
+    },
+    {
+      "name": "boospatch",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "HOMES IN KOREA",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "ANIPEN",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "GoodPick",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "boopd",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "zigbang",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "https://www.zigbang.com/",
+      "featured": false
+    },
+    {
+      "name": "CORNER",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "BigValue",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "부동산내편",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "호갱노노",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "https://hogangnono.com/",
+      "featured": false
+    },
+    {
+      "name": "사랑방",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "SpaceCloud",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "https://www.spacecloud.kr/",
+      "featured": false
+    },
+    {
+      "name": "RPAZ",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "픽아이엔",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "BUDICL",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "DiverCity",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "ZIPUP",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "HOMES",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "Dooongji",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "케어링",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "부동산플래닛",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "handus",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "아이엠박스",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "homeflix",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "한국공간데이터",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "JCTechnology",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "REALWORLD",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "Rovoock",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "BENDS",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "salto",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "TRUSTAY",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "",
+      "url": "https://trustay.com/",
+      "featured": false
+    },
+    {
+      "name": "Divii Consulting",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "soldoc",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "오늘의집",
+      "stage": "operation",
+      "category": "interior",
+      "logo": "",
+      "url": "https://ohou.se/",
+      "featured": false
+    },
+    {
+      "name": "LILSQUARE",
+      "stage": "operation",
+      "category": "interior",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "TAXAI",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "realbuy",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "얼마집",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "WeX",
+      "stage": "asset",
+      "category": "asset-liquidity",
+      "logo": "",
+      "url": "",
+      "featured": true
+    },
+    {
+      "name": "우리가",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "ValueShopping",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "부동산플래닛",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "R2Square",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "https://www.rsquare.co.kr/",
+      "featured": false
+    },
+    {
+      "name": "KAP 한국자산매입",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "PEPPER",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "DTW",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "지지옥션",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "Archisketch",
+      "stage": "infra",
+      "category": "design-tool",
+      "logo": "",
+      "url": "https://www.archisketch.com/",
+      "featured": false
+    },
+    {
+      "name": "MODUSIGN",
+      "stage": "infra",
+      "category": "contract",
+      "logo": "",
+      "url": "https://www.modusign.co.kr/",
+      "featured": false
+    },
+    {
+      "name": "픽아이엔",
+      "stage": "infra",
+      "category": "contract",
+      "logo": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "name": "READPOST",
+      "stage": "infra",
+      "category": "contract",
+      "logo": "",
+      "url": "",
+      "featured": false
+    }
   ]
 }
