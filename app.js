@@ -107,7 +107,7 @@ function showCompanyModal(company) {
       <div class="modal-meta">
         <span class="stage-badge">${stage.name}</span>
         <h2 class="modal-name">${company.name}</h2>
-        <p class="modal-category">${category.name} 영역의 AI·프롭테크 기업입니다.</p>
+        <p class="modal-category">${category.name} 영역의 프롭테크 AI 기업입니다.</p>
       </div>
     </div>
     ${servicesHtml ? `<div class="service-list" style="margin-top:16px">${servicesHtml}</div>` : ''}
@@ -296,7 +296,7 @@ function renderDirectory() {
         <span class="stage-badge">${stage.name}</span>
       </div>
       <h3>${company.name}</h3>
-      <p>${category.name} 영역의 AI·프롭테크 기업입니다.</p>
+      <p>${category.name} 영역의 프롭테크 AI 기업입니다.</p>
       ${servicesHtml ? `<div class="service-list">${servicesHtml}</div>` : ''}
       <a class="link-button" href="${company.url || `https://www.google.com/search?q=${encodeURIComponent(company.name + ' 홈페이지')}`}" target="_blank" rel="noreferrer">홈페이지 열기</a>
     `;
