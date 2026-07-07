@@ -564,10 +564,15 @@ h1 {
 
 @keyframes drift {
   0% {
-    transform: translate(calc(-50% - var(--float-x, 0px)), calc(-50% - var(--float-y, 0px)));
+    transform: perspective(600px) translate(calc(-50% - var(--float-x, 0px)), calc(-50% - var(--float-y, 0px))) translateZ(calc(-1 * var(--float-z, 0px)));
+    z-index: 0;
+  }
+  50% {
+    z-index: 3;
   }
   100% {
-    transform: translate(calc(-50% + var(--float-x, 0px)), calc(-50% + var(--float-y, 0px)));
+    transform: perspective(600px) translate(calc(-50% + var(--float-x, 0px)), calc(-50% + var(--float-y, 0px))) translateZ(var(--float-z, 0px));
+    z-index: 0;
   }
 }
 

@@ -118,6 +118,7 @@ function setFloatingPosition(chip, index, total, categoryId) {
   chip.style.setProperty("--y", `${y}%`);
   chip.style.setProperty("--float-x", `${((seed % 5) - 2) * 3}px`);
   chip.style.setProperty("--float-y", `${(((seed * 3) % 5) - 2) * 3}px`);
+  chip.style.setProperty("--float-z", `${(((seed * 11) % 7) - 3) * 12}px`);
   chip.style.setProperty("--float-duration", `${5.5 + (seed % 7) * 0.45}s`);
   chip.style.setProperty("--float-delay", `${-(seed % 9) * 0.4}s`);
 }
