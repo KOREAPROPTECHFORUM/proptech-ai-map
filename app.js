@@ -266,7 +266,7 @@ function renderDirectory() {
         <span class="stage-badge">${stage.name}</span>
       </div>
       <h3>${company.name}</h3>
-      <p class="category-label">${category.name}</p>
+      <p>${category.name} 영역의 AI·프롭테크 기업입니다.</p>
       ${servicesHtml ? `<div class="service-list">${servicesHtml}</div>` : ''}
       <a class="link-button" href="${company.url || `https://www.google.com/search?q=${encodeURIComponent(company.name + ' 홈페이지')}`}" target="_blank" rel="noreferrer">홈페이지 열기</a>
     `;
