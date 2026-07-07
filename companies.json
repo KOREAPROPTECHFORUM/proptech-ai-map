@@ -489,12 +489,12 @@
       "featured": false
     },
     {
-      "name": "WeX",
+      "name": "위엑스코퍼레이션",
       "stage": "asset",
       "category": "asset-liquidity",
-      "logo": "",
-      "url": "",
-      "featured": true
+      "logo": "위엑스코퍼레이션.jpg",
+      "url": "https://wexcorporation.com/",
+      "featured": false
     },
     {
       "name": "우리가",
