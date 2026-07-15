@@ -522,14 +522,6 @@
       "featured": false
     },
     {
-      "name": "얼마집",
-      "stage": "asset",
-      "category": "asset-sale",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "위엑스코퍼레이션",
       "stage": "asset",
       "category": "asset-liquidity",
