@@ -134,7 +134,9 @@ function createCompanyChip(company) {
   return chip;
 }
 
-function setFloatingPosition(chip, index, total, categoryId) {
+function setFloatingPosition(chip, index, total, categoryId, xRange, yRange) {
+  const [xMin, xMax] = xRange || [16, 84];
+  const [yMin, yMax] = yRange || [22, 78];
   const columns = total >= 10 ? 4 : total >= 6 ? 3 : total >= 3 ? 2 : 1;
   const rows = Math.ceil(total / columns);
   const col = index % columns;
@@ -142,8 +144,8 @@ function setFloatingPosition(chip, index, total, categoryId) {
   const seed = Array.from(`${categoryId}-${index}`).reduce((sum, char) => sum + char.charCodeAt(0), 0);
   const jitterX = ((seed % 13) - 6) * 0.8;
   const jitterY = (((seed * 7) % 11) - 5) * 0.9;
-  const x = Math.min(84, Math.max(16, ((col + 0.5) / columns) * 100 + jitterX));
-  const y = Math.min(78, Math.max(22, ((row + 0.5) / rows) * 100 + jitterY));
+  const x = Math.min(xMax, Math.max(xMin, ((col + 0.5) / columns) * 100 + jitterX));
+  const y = Math.min(yMax, Math.max(yMin, ((row + 0.5) / rows) * 100 + jitterY));
   chip.style.setProperty("--x", `${x}%`);
   chip.style.setProperty("--y", `${y}%`);
   chip.style.setProperty("--float-x", `${((seed % 5) - 2) * 3}px`);
@@ -346,7 +348,7 @@ function renderBusiness() {
     }
     list.forEach((company, index) => {
       const chip = createCompanyChip(company);
-      setFloatingPosition(chip, index, list.length, zoneId);
+      setFloatingPosition(chip, index, list.length, zoneId, [22, 78], [25, 75]);
       zone.appendChild(chip);
     });
   };

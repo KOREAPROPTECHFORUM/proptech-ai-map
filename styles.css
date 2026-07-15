@@ -754,6 +754,7 @@ h1 {
   width: 100%;
   flex: 1;
   min-height: 580px;
+  overflow: hidden;
 }
 
 .venn-chip-area .company-chip {
