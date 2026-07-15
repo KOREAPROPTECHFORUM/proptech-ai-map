@@ -339,11 +339,6 @@
       <span class="help-text">둘 다 체크하면 B2B·B2C 교차 영역에 표시됩니다.</span>
     </div>
 
-    <div class="check-row">
-      <input type="checkbox" id="f-featured" />
-      <label for="f-featured">주요 기업 (Featured) — 금색 테두리 강조</label>
-    </div>
-
     <div class="service-section">
       <div class="service-section-label">AI 서비스 정보 (최대 2개)</div>
 
@@ -652,7 +647,6 @@ document.getElementById('btn-add').onclick = () => {
   document.getElementById('f-url').value = '';
   document.getElementById('f-b2b').checked = false;
   document.getElementById('f-b2c').checked = false;
-  document.getElementById('f-featured').checked = false;
   currentLogo = '';
   clearServiceFields();
   openModal('edit');
@@ -669,7 +663,6 @@ function openEdit(i) {
   document.getElementById('f-url').value = c.url || '';
   document.getElementById('f-b2b').checked = !!c.b2b;
   document.getElementById('f-b2c').checked = !!c.b2c;
-  document.getElementById('f-featured').checked = !!c.featured;
   loadServiceFields(c.services);
   currentLogo = c.logo || '';
   if (c.logo) {
@@ -690,7 +683,6 @@ async function saveCompany() {
   const url = document.getElementById('f-url').value.trim();
   const b2b = document.getElementById('f-b2b').checked;
   const b2c = document.getElementById('f-b2c').checked;
-  const featured = document.getElementById('f-featured').checked;
 
   if (!name || !stage || !category) { alert('기업명, 단계, 카테고리는 필수입니다.'); return; }
 
@@ -706,7 +698,7 @@ async function saveCompany() {
     }
 
     const services = collectServices();
-    const entry = { name, stage, category, logo, url, b2b, b2c, featured, services };
+    const entry = { name, stage, category, logo, url, b2b, b2c, services };
     if (editIdx === -1) companies.push(entry);
     else companies[editIdx] = entry;
 
