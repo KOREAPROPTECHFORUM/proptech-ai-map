@@ -1011,6 +1011,22 @@
           "tech": "스마트 체크인 · 스마트 프라이싱 2.0 · MLOps 자동화"
         }
       ]
+    },
+    {
+      "name": "아이엠박스코리아",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "아이엠박스.jpg",
+      "url": "https://www.iambox.co.kr/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "아이엠박스 AI 상담 챗봇 '아이엠이'",
+          "desc": "250여 개 지점 데이터를 AI로 분석해 24시간 고객 맞춤형 짐 보관 컨설팅 제공",
+          "tech": "LLM 기반 AI 챗봇 · RAG · NLP"
+        }
+      ]
     }
   ]
 }
