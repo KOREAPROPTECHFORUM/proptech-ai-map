@@ -370,14 +370,6 @@
       "featured": false
     },
     {
-      "name": "BigValue",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "부동산내편",
       "stage": "transaction",
       "category": "brokerage",
