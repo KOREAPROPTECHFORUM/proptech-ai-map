@@ -122,12 +122,25 @@
       ]
     },
     {
-      "name": "Meissa",
+      "name": "메이사",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "메이사.jpg",
+      "url": "https://www.meissa.ai/kr",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Meissa Platform (메이사 플랫폼)",
+          "desc": "드론·IoT·AI로 건설 현장의 공정·물량·안전·품질을 실시간 통합 관리",
+          "tech": "Reality Capture 3D 재구성 · 건설 도메인 컴퓨터비전 AI · BIM·GIS 데이터 통합"
+        },
+        {
+          "name": "Meissa Planet (메이사 플래닛)",
+          "desc": "위성영상에 SAR+EO 멀티센서 AI를 적용해 광역 부지·도시 변화 자동 분석",
+          "tech": "위성 SAR+EO 멀티센서 융합 AI · Macro Twin 광역 3D 재구성 · Bird-Eye View Object Detection"
+        }
+      ]
     },
     {
       "name": "부동산의신",
