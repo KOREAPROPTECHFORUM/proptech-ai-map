@@ -16,12 +16,25 @@
       ]
     },
     {
-      "name": "Richgo",
+      "name": "데이터노우즈",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "데이터노우즈.jpg",
+      "url": "https://www.dataknows.ai/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 리치고 부동산",
+          "desc": "실시간 호가 분석과 거주·투자·호재 점수, 2년 후 미래 가격을 담은 AI 부동산 국민비서",
+          "tech": "AI 아파트 시세 · 미래가격예측 · AI LLM"
+        },
+        {
+          "name": "AI MAS(부동산시장분석·분양가산출)",
+          "desc": "분양가 산정 및 사업성·리스크 분석을 위한 기업 대상 구독형 SaaS 솔루션",
+          "tech": "AI 아파트 시세 · 미래가격예측 · 수요공급예측"
+        }
+      ]
     },
     {
       "name": "LIVsolution",
