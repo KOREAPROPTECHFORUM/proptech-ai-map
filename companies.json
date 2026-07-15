@@ -6,7 +6,8 @@
       "category": "planning",
       "logo": "엘엔디씨.jpg",
       "url": "https://www.lan-dup.com/",
-      "featured": false,
+      "b2b": true,
+      "b2c": true,
       "services": [
         {
           "name": "랜드업(LanDup)",
