@@ -1382,6 +1382,22 @@
           "tech": "도메인AI · 머신러닝 · 빅데이터"
         }
       ]
+    },
+    {
+      "name": "엔이피데이터",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "엔이피데이터.jpg",
+      "url": "https://www.boospatch.com/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부스패치 AI 맞춤 레포트",
+          "desc": "시세·입지·상품 데이터를 기반으로 AI가 사용자 조건을 분석해 맞춤 단지를 추천",
+          "tech": "LLM 기반 분석 · 부동산 데이터 정제·구조화 · 맞춤형 리포트 생성"
+        }
+      ]
     }
   ]
 }
