@@ -261,6 +261,14 @@ function renderMap() {
   content.append(rail, stageList);
   board.append(title, content);
   container.replaceChildren(board);
+
+  requestAnimationFrame(() => {
+    const cards = container.querySelectorAll('.stage-card');
+    const railItems = container.querySelectorAll('.rail-stage');
+    cards.forEach((card, i) => {
+      if (railItems[i]) railItems[i].style.height = `${card.offsetHeight}px`;
+    });
+  });
 }
 
 function renderDirectory() {
