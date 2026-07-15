@@ -1414,6 +1414,27 @@
           "tech": "검색증강생성(RAG) · 부동산 빅데이터 분석 · 자산가치 산정모델"
         }
       ]
+    },
+    {
+      "name": "한국프롭테크",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "한국프롭테크.jpg",
+      "url": "https://www.howmuchhome.co/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "도시정비 조합원을 위한 AI 사무장",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "부동산 소유자를 위한 세무 상담 AI 서비스",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
