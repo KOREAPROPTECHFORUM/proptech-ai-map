@@ -143,12 +143,20 @@
       ]
     },
     {
-      "name": "부동산의신",
+      "name": "이도인터랙티브",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "이도인터랙티브.jpg",
+      "url": "https://biz.landmaster.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "부동산의 신 비즈",
+          "desc": "아파트 주거환경에 대한 데이터를 AI를 통해 분석해 일반인들에게 리포트로 제공",
+          "tech": "빅데이터 분석 · 자연어 처리"
+        }
+      ]
     },
     {
       "name": "LECTUS",
