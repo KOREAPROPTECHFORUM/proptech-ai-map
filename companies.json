@@ -932,6 +932,27 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "홈즈컴퍼니",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "홈즈컴퍼니.jpg",
+      "url": "https://www.homes.global/ko",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "홈즈컴퍼니 Mycroft PMS — 코리빙 운영 AI 에이전트",
+          "desc": "코리빙 운영을 위한 고객 리드·재고·계약·거주·시설을 잇는 운영 자동화 AI 에이전트",
+          "tech": "LLM 멀티 에이전트 · RAG·온톨로지 지식기반 · 워크플로 자동화"
+        },
+        {
+          "name": "홈즈컴퍼니 Mycroft IMS — 부동산 투자개발 AI 에이전트 시스템",
+          "desc": "부동산 딜 소싱·검토·조율·구조화를 자동화하는 부동산 투자개발 AI 에이전트",
+          "tech": "LLM 멀티 에이전트 · Valuation·CAPEX 자동화 · 부동산 데이터 크롤링·OCR"
+        }
+      ]
     }
   ]
 }
