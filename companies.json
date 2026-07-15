@@ -396,6 +396,22 @@
           "tech": "컴퓨터비전 객체탐지 · 그래프 신경망(GNN) · OCR·VLM"
         }
       ]
+    },
+    {
+      "name": "포비콘",
+      "stage": "development",
+      "category": "procurement",
+      "logo": "포비콘.jpg",
+      "url": "http://www.fobecon.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "오토적산 엔터프라이즈",
+          "desc": "건설 CAD 도면을 AI로 자동 분석해 대형건설사 대상 맞춤형 적산 및 도면 검토 솔루션 제공",
+          "tech": "Computer Vision · AI · CAD 데이터 파싱"
+        }
+      ]
     }
   ]
 }
