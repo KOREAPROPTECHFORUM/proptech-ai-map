@@ -376,7 +376,7 @@ h1 {
 
 .rail-stage strong {
   color: var(--blue);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1.4;
   letter-spacing: 0.04em;
@@ -432,7 +432,7 @@ h1 {
   gap: 8px;
   margin: 0;
   color: #c8d6ff;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.3;
   letter-spacing: 0;
 }
@@ -1042,7 +1042,7 @@ h1 {
   }
 
   .rail-stage strong {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .rail-stage span {
@@ -1060,7 +1060,7 @@ h1 {
   }
 
   .category-column h2 {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .company-list {
