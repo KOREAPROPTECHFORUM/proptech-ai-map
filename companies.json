@@ -1027,6 +1027,27 @@
           "tech": "LLM 기반 AI 챗봇 · RAG · NLP"
         }
       ]
+    },
+    {
+      "name": "코너",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "코너.jpg",
+      "url": "https://www.corner.co.kr/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 부동산 매입 서비스",
+          "desc": "상가 주소 입력만으로 AI 시세산정 후 7일 내 직매입",
+          "tech": "매물인식(CNN) · 텍스트마이닝(NLP/RNN) · 시세평가(GAN) · 가치평가척도(LLM)"
+        },
+        {
+          "name": "코너 우량자산 선별 및 종합투자리포트",
+          "desc": "AI 기반 우량 자산 선별 및 투자 상세 분석 리포트 제공",
+          "tech": "AI 가격산정 자체 알고리즘 · LLM · CNN"
+        }
+      ]
     }
   ]
 }
