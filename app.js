@@ -200,7 +200,7 @@ function renderMap() {
 
   const title = document.createElement("div");
   title.className = "map-title";
-  title.innerHTML = `<strong>Proptech AI Map</strong><span>Korea Proptech Forum</span>`;
+  title.innerHTML = `<strong>Proptech AI Map</strong><span>로고를 클릭하시면 자세한 AI 서비스 정보를 확인하실 수 있습니다.</span>`;
 
   const content = document.createElement("div");
   content.className = "map-content";
@@ -366,7 +366,7 @@ function renderViews() {
   document.querySelector("#map-view").classList.toggle("is-active", state.view === "map");
   document.querySelector("#directory-view").classList.toggle("is-active", state.view === "directory");
   document.querySelector("#business-view").classList.toggle("is-active", state.view === "business");
-  document.querySelector("#map-only-desc").style.display = state.view === "map" ? "" : "none";
+
   document.querySelector("#page-title").textContent = PAGE_TITLES[state.view] || PAGE_TITLES.map;
   document.querySelector("#lead-main").textContent = state.view === "business"
     ? "AI 기반 서비스를 제공하는 프롭테크 기업을 부동산 라이프사이클과 비즈니스 영역에 따라 분류했습니다."
