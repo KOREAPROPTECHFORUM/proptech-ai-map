@@ -597,6 +597,22 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "굿픽",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "굿픽.jpg",
+      "url": "https://www.goodpick.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "클로징북(Closing Book) 자동 생성 및 콘텐츠 레이어링",
+          "desc": "한눈에 보는 직관적 핵심 요약 · 데이터 기반 다차원 시장 분석 · 맞춤형 금융·법률 클로징 세션",
+          "tech": "인터랙티브 웹 변환 기술 · 3-Layer 보고서 구조화"
+        }
+      ]
     }
   ]
 }
