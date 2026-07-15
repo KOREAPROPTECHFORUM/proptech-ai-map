@@ -639,14 +639,6 @@
       ]
     },
     {
-      "name": "DTW",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "지지옥션",
       "stage": "infra",
       "category": "data-platform",
