@@ -1715,6 +1715,27 @@
           "tech": "검색증강생성(RAG) · 부동산 빅데이터 분석 · 자산가치 산정모델"
         }
       ]
+    },
+    {
+      "name": "아키스케치",
+      "stage": "infra",
+      "category": "design-tool",
+      "logo": "아키스케치.jpg",
+      "url": "https://www.archisketch.com/ko/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Archisketch AI Agent",
+          "desc": "AI가 도면을 분석하고 가구의 추천 및 자동 배치로 설계 효율성을 높임",
+          "tech": "LLM · Spatial Analysis · AI Layout"
+        },
+        {
+          "name": "AI Studio",
+          "desc": "AI가 사진 속 공간과 가구 크기를 분석해 사진만으로 가구 상담을 지원",
+          "tech": "Image Segmentation · AI render · Scene Generation"
+        }
+      ]
     }
   ]
 }
