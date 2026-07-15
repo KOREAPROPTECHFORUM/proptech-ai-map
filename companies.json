@@ -362,14 +362,6 @@
       "services": []
     },
     {
-      "name": "아이엠박스",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "위엑스코퍼레이션",
       "stage": "asset",
       "category": "asset-liquidity",
