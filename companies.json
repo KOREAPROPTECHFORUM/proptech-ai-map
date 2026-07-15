@@ -1191,6 +1191,22 @@
           "tech": "피지털AI 콘텐츠 · 인터랙티브 콘텐츠"
         }
       ]
+    },
+    {
+      "name": "루북",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "루북.jpg",
+      "url": "https://business.roovook.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Roovook EMS - Roovis",
+          "desc": "호텔 영업 통화를 AI로 분석 연회장, B2B 세일즈팀 업무 자동화",
+          "tech": "음성 인식(STT) · LLM 텍스트 요약 · 대화 데이터 분석"
+        }
+      ]
     }
   ]
 }
