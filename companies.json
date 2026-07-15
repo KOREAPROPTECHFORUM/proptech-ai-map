@@ -1170,6 +1170,27 @@
           "tech": "인공지능 · 데이터분석 · 사물인터넷"
         }
       ]
+    },
+    {
+      "name": "유니크굿컴퍼니",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "유니크굿컴퍼니.jpg",
+      "url": "https://business.realworld.to/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "리얼월드 스튜디오 (Realworld Studio)",
+          "desc": "아이디어를 입력하면 AI가 실감형 미션 콘텐츠를 자동 생성",
+          "tech": "생성형 AI(LLM) · 콘텐츠 자동 생성 · 멀티모달(이미지·음성)"
+        },
+        {
+          "name": "리얼월드",
+          "desc": "체류 공간에서 체험형 콘텐츠를 공급하는 운영 SW 플랫폼",
+          "tech": "피지털AI 콘텐츠 · 인터랙티브 콘텐츠"
+        }
+      ]
     }
   ]
 }
