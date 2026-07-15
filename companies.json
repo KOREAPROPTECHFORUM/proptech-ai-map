@@ -1773,6 +1773,27 @@
           "tech": "매물 광고 자동 생성 · STT 통화 분석 · 부동산 서류 OCR"
         }
       ]
+    },
+    {
+      "name": "레디포스트",
+      "stage": "infra",
+      "category": "contract",
+      "logo": "레디포스트.jpg",
+      "url": "https://www.chongone.com/solution/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "재개발/재건축 전용 AI 챗봇",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 속기사",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
