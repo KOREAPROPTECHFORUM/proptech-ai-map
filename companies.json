@@ -874,6 +874,27 @@
           "tech": "프로세스 자동화(AI+RPA) · 전자서명·인증 · 블록체인 거래기록"
         }
       ]
+    },
+    {
+      "name": "다이버시티하우스",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "다이버시티하우스.jpg",
+      "url": "https://www.divercityhouse.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 기반 외국인 전용 맞춤형 매물 추천",
+          "desc": "외국인 유학생 및 근로자의 조건에 맞는 최적의 부동산 매물을 AI로 분석 및 추천",
+          "tech": "빅데이터 분석 · 머신러닝(Machine Learning) · NLP(자연어 처리)"
+        },
+        {
+          "name": "주거·생활·행정 서비스를 아우르는 AI 정착 지원 챗봇",
+          "desc": "외국인의 국내 정착을 돕는 주거, 생활, 행정 정보 통합 제공 AI 챗봇 서비스",
+          "tech": "생성형 AI(LLM) · NLP(자연어 처리) · 다국어 번역 엔진"
+        }
+      ]
     }
   ]
 }
