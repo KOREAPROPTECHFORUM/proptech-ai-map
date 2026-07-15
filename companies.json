@@ -338,6 +338,27 @@
           "tech": "건축설계 · 분석 · 렌더링"
         }
       ]
+    },
+    {
+      "name": "한국프롭테크",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "한국프롭테크.jpg",
+      "url": "https://www.howmuchhome.co/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "도시정비 조합원을 위한 AI 사무장",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "부동산 소유자를 위한 세무 상담 AI 서비스",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
