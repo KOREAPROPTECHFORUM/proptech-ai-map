@@ -380,6 +380,22 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "하우빌드",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "하우빌드.jpg",
+      "url": "https://www.howbuild.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "스마콘",
+          "desc": "CAD 도면을 AI로 분석해 3D BIM으로 자동 변환하여 물량 데이터와 함께 고객에게 제공",
+          "tech": "컴퓨터비전 객체탐지 · 그래프 신경망(GNN) · OCR·VLM"
+        }
+      ]
     }
   ]
 }
