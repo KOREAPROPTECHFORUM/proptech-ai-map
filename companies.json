@@ -784,6 +784,22 @@
           "tech": "빅데이터 분석"
         }
       ]
+    },
+    {
+      "name": "스페이스클라우드",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "앤스페이스.jpg",
+      "url": "https://www.nspace.co/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "스페이스비즈 (SpaceBiz.ai)",
+          "desc": "대형 및 장기 공간 계약 전 견적 기반으로 AI agent를 통해 공간 매칭",
+          "tech": "Space MCP · 데이터 매칭 · 컨시어지 에이전트"
+        }
+      ]
     }
   ]
 }
