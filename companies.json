@@ -59,12 +59,25 @@
       ]
     },
     {
-      "name": "Sweetspot",
+      "name": "스위트스팟",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "스위트스팟.jpg",
+      "url": "https://www.sweetspot.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "인구통계 시뮬레이터",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 팝업스토어 시뮬레이터",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     },
     {
       "name": "HOMES Flexity",
