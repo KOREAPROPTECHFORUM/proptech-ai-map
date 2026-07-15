@@ -736,29 +736,17 @@ h1 {
 }
 
 .venn-chip-area {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 8px;
-  padding: 12px 8px;
+  position: relative;
   width: 100%;
   flex: 1;
-}
-
-.venn-chip-area .company-chip {
-  position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
-  animation: none;
-}
-
-.venn-chip-area .company-chip:hover,
-.venn-chip-area .company-chip:focus-visible {
-  transform: scale(1.06);
+  min-height: 580px;
 }
 
 .venn-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 12px;
   color: var(--muted);
   white-space: nowrap;

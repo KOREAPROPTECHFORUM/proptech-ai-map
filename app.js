@@ -344,8 +344,10 @@ function renderBusiness() {
       zone.appendChild(empty);
       return;
     }
-    list.forEach(company => {
-      zone.appendChild(createCompanyChip(company));
+    list.forEach((company, index) => {
+      const chip = createCompanyChip(company);
+      setFloatingPosition(chip, index, list.length, zoneId);
+      zone.appendChild(chip);
     });
   };
 
