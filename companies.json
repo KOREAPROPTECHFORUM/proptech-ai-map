@@ -1588,6 +1588,22 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "한국자산매입",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "한국자산매입.jpg",
+      "url": "https://kap.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 부동산 보호약정 플랫폼",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
