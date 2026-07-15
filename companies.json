@@ -1662,6 +1662,22 @@
           "tech": "머신러닝·딥러닝 AVM · LLM 기반 대출진단 · 빅데이터 분석"
         }
       ]
+    },
+    {
+      "name": "더존테크윌",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "더존테크윌.jpg",
+      "url": "https://www.dztechwill.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "DEEPTAX AI",
+          "desc": "세법 관련 질의에 대해 법령·판례·해설을 기반으로 AI 답변 제공",
+          "tech": "그래프 기반 다중 AI 에이전트 오케스트레이션 · 세무 질의 구조 분석을 통한 답변 생성"
+        }
+      ]
     }
   ]
 }
