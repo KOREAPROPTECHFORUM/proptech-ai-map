@@ -916,6 +916,22 @@
           "tech": "부동산 도메인 LLM · 매물 추천 알고리즘 · 계약 리스크 분석"
         }
       ]
+    },
+    {
+      "name": "데브디",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "데브디.jpg",
+      "url": "https://www.zipup.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "임대차 계약서 자동승인",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
