@@ -371,6 +371,7 @@ function renderViews() {
   document.querySelector("#business-view").classList.toggle("is-active", state.view === "business");
 
   document.querySelector("#page-title").textContent = PAGE_TITLES[state.view] || PAGE_TITLES.map;
+  document.querySelector("#stat-logo-placements").style.display = state.view === "map" ? "" : "none";
   document.querySelector("#lead-main").textContent = state.view === "business"
     ? "AI 기반 서비스를 제공하는 프롭테크 기업을 부동산 라이프사이클과 비즈니스 영역에 따라 분류했습니다."
     : "AI 기반 서비스를 제공하는 프롭테크 기업을 부동산 라이프사이클에 따라 분류했습니다.";
