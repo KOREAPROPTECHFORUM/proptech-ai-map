@@ -322,6 +322,22 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "텐일레븐",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "",
+      "url": "https://www.1011.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "BUILDIT",
+          "desc": "인공지능 건축설계 서비스",
+          "tech": "건축설계 · 분석 · 렌더링"
+        }
+      ]
     }
   ]
 }
