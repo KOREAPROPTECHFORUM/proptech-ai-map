@@ -726,6 +726,27 @@
           "tech": "LLM(대형언어모델) · 음성-텍스트 변환(STT/TTS)"
         }
       ]
+    },
+    {
+      "name": "홈스인코리아",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "홈스인코리아.jpg",
+      "url": "https://homesinkor.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "고객 상담 및 예약관리 AI 자동화",
+          "desc": "고객 문의 · 예약 요청을 AI가 자동 분류 및 응답하여 CX 운영 효율화",
+          "tech": "LLM 기반 챗봇 · 자연어 처리(NLP) · 업무 자동화(RPA)"
+        },
+        {
+          "name": "부동산 매물 검색 AI 기반 추천",
+          "desc": "외국인 선호 조건을 AI가 분석해 최적 매물을 자동 추천",
+          "tech": "협업 필터링 추천 알고리즘 · 자연어 처리(NLP) · 행동 데이터 분석"
+        }
+      ]
     }
   ]
 }
