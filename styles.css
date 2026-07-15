@@ -672,15 +672,15 @@ h1 {
 
 .venn-diagram {
   position: relative;
-  min-height: 720px;
+  min-height: 860px;
 }
 
 .venn-circle-b2b,
 .venn-circle-b2c {
   position: absolute;
   top: 50%;
-  width: 74%;
-  height: 600px;
+  width: 78%;
+  height: 740px;
   border-radius: 50%;
   transform: translateY(-50%);
   pointer-events: none;
@@ -704,7 +704,7 @@ h1 {
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1.8fr 1fr;
-  min-height: 720px;
+  min-height: 860px;
 }
 
 .venn-zone {
@@ -739,7 +739,7 @@ h1 {
   position: relative;
   width: 100%;
   flex: 1;
-  min-height: 580px;
+  min-height: 700px;
 }
 
 .venn-chip-area .company-chip {
