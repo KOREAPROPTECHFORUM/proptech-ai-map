@@ -201,8 +201,7 @@ h1 {
 }
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(3, 128px);
+  display: flex;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -212,6 +211,7 @@ h1 {
 }
 
 .stats div {
+  flex: 0 0 128px;
   padding: 9px 12px;
   border-left: 1px solid var(--line);
 }
@@ -1049,8 +1049,8 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .stats {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .stats div {
+    flex: 1 1 100px;
   }
 
   .map-content {
@@ -1117,7 +1117,7 @@ h1 {
   }
 
   .stats {
-    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
   }
 
   .stats div {
@@ -1226,12 +1226,16 @@ h1 {
     font-size: 42px;
   }
 
-  .stats,
   .directory-grid {
     grid-template-columns: 1fr;
   }
 
+  .stats {
+    flex-wrap: wrap;
+  }
+
   .stats div {
+    flex: 1 1 120px;
     border-left: 0;
     border-top: 1px solid var(--line);
   }
