@@ -61,11 +61,25 @@ input {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  min-height: 46px;
-  padding: 7px 22px;
+  min-height: 56px;
+  padding: 10px 22px;
   border-bottom: 1px solid rgba(255,255,255,0.12);
   background: rgba(5, 8, 18, 0.78);
   backdrop-filter: blur(16px);
+}
+
+.topbar-slogan {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(200, 215, 255, 0.75);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  pointer-events: none;
+  margin: 0;
 }
 
 
