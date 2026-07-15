@@ -544,6 +544,27 @@
           "tech": "AI 아파트 시세 · 미래가격예측 · 수요공급예측"
         }
       ]
+    },
+    {
+      "name": "에듀윌",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "",
+      "url": "https://www.eduwill.net/sites/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부동산 중개업 AI마케팅 자동화",
+          "desc": "교수진 300명의 실무 노하우를 학습한 AI가 매물소개·시세 리포트·홍보 콘텐츠를 자동 생성",
+          "tech": "노하우 기반 LLM · RPA워크플로 자동화 · 생성형 AI이미지 합성"
+        },
+        {
+          "name": "공인중개사 합격 예측 AI",
+          "desc": "평균 대비 4.5배 합격률을 검증한 34년 학습 데이터로 합격 가능성 진단·맞춤형 문제 자동 추천",
+          "tech": "예측 모델링 · 학습 패턴 분석 · 적응형 추천 알고리즘"
+        }
+      ]
     }
   ]
 }
