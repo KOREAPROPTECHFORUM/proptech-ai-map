@@ -449,6 +449,27 @@
           "tech": "실시설계 내 물량 산출 분석 · 물량 산출 대비 공사비 조정"
         }
       ]
+    },
+    {
+      "name": "지구하다",
+      "stage": "development",
+      "category": "construction",
+      "logo": "지구하다.jpg",
+      "url": "http://chunilenergy.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 폐기물 통합관리 플랫폼",
+          "desc": "폐기물 성상과 처리 이력을 AI로 분석해 자원화 관리",
+          "tech": "AI 성상 분석 · 빅데이터 분석 · GPS·ERP 연동"
+        },
+        {
+          "name": "AI 처리이력 검증·ESG 리포트",
+          "desc": "배차·계근·사진 데이터를 통합해 처리 흐름 자동 검증",
+          "tech": "이미지 분석 · 데이터 정합성 검증 · 리포트 자동화"
+        }
+      ]
     }
   ]
 }
