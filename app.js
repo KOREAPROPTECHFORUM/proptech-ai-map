@@ -219,29 +219,30 @@ function renderMap() {
   const stageList = document.createElement("div");
   stageList.className = "stage-list";
 
-  const renderedStages = stages.filter(stage => state.stage === "all" || state.stage === stage.id);
-  stageList.replaceChildren(...renderedStages.map(stage => {
+  stageList.replaceChildren(...stages.map(stage => {
     const categories = stage.categories.filter(category => state.category === "all" || state.category === category.id);
     const card = document.createElement("article");
-    card.className = `stage-card stage-${stage.id}`;
+    const isFiltered = state.stage !== "all";
+    const isActive  = state.stage === stage.id;
+    card.className = `stage-card stage-${stage.id}${isFiltered ? (isActive ? " is-active" : " is-dimmed") : ""}`;
     card.style.setProperty("--category-count", String(Math.max(categories.length, 1)));
 
-    const categoryCounts = categories.map(category => companies.filter(company => (
-      company.stage === stage.id &&
-      company.category === category.id &&
-      matchesCompany(company)
-    )).length);
+    const matchesWithoutStage = company =>
+      (state.category === "all" || company.category === state.category) &&
+      (!state.query || `${company.name} ${stageById[company.stage]?.name} ${categoryById[company.category]?.name}`.toLowerCase().includes(state.query.toLowerCase()));
+
+    const categoryCounts = categories.map(category => companies.filter(company =>
+      company.stage === stage.id && company.category === category.id && matchesWithoutStage(company)
+    ).length);
     const categoryWeights = categoryCounts.map(count => Math.max(1, Math.ceil(Math.sqrt(Math.max(count, 1)))));
     card.style.setProperty("--category-template", categoryWeights.map(weight => `${weight}fr`).join(" "));
 
     const columns = categories.map((category, categoryIndex) => {
       const column = document.createElement("div");
       column.className = "category-column";
-      const categoryCompanies = companies.filter(company => (
-        company.stage === stage.id &&
-        company.category === category.id &&
-        matchesCompany(company)
-      ));
+      const categoryCompanies = companies.filter(company =>
+        company.stage === stage.id && company.category === category.id && matchesWithoutStage(company)
+      );
       const list = document.createElement("div");
       list.className = "company-list floating-list";
       const chips = categoryCompanies.map((company, index) => {
