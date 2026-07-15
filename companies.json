@@ -800,6 +800,22 @@
           "tech": "Space MCP · 데이터 매칭 · 컨시어지 에이전트"
         }
       ]
+    },
+    {
+      "name": "무촌",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "무촌철거.jpg",
+      "url": "https://muchon.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "무촌철거",
+          "desc": "철거 데이터를 AI로 분석해 정확한 비교 견적을 실시간 산출",
+          "tech": "AI 견적 자동화 · 철거 빅데이터 분석 · 스마트 매칭 알고리즘"
+        }
+      ]
     }
   ]
 }
