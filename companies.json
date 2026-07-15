@@ -1297,6 +1297,22 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "디비스쿨",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "디비스쿨.jpg",
+      "url": "https://divii.com/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "서핑베어 (Surfing Bear)",
+          "desc": "에이전틱 AI 멀티에이전트 기반 글로벌 AI 인재 실무 양성 교육 플랫폼",
+          "tech": "멀티 에이전트 오케스트레이션 · LLM 파인튜닝 · RAG 기반 학습 콘텐츠 생성"
+        }
+      ]
     }
   ]
 }
