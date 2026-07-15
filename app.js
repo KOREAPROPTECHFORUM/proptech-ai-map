@@ -1,4 +1,30 @@
 let companies = [];
+let _rotationTimers = [];
+
+function clearChipRotation() {
+  _rotationTimers.forEach(id => clearTimeout(id));
+  _rotationTimers = [];
+}
+
+function startChipRotation(containerSelector, interval = 2500) {
+  clearChipRotation();
+  const containers = document.querySelectorAll(containerSelector);
+  containers.forEach((container, ci) => {
+    const chips = [...container.querySelectorAll('.company-chip')];
+    if (chips.length <= 1) return;
+    let current = 0;
+    chips[current].style.zIndex = '10';
+    const tick = () => {
+      chips[current].style.zIndex = '';
+      current = (current + 1) % chips.length;
+      chips[current].style.zIndex = '10';
+      const id = setTimeout(tick, interval);
+      _rotationTimers.push(id);
+    };
+    const id = setTimeout(tick, interval + ci * 300);
+    _rotationTimers.push(id);
+  });
+}
 
 const stages = [
   {
@@ -273,6 +299,7 @@ function renderMap() {
     cards.forEach((card, i) => {
       if (railItems[i]) railItems[i].style.height = `${card.offsetHeight}px`;
     });
+    startChipRotation('#map-view .company-list.floating-list');
   });
 }
 
@@ -356,6 +383,7 @@ function renderBusiness() {
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
+  startChipRotation('#business-view .venn-chip-area');
 }
 
 const PAGE_TITLES = {
