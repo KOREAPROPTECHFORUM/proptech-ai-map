@@ -1122,6 +1122,22 @@
           "tech": "Physical AI 및 시뮬레이션"
         }
       ]
+    },
+    {
+      "name": "제이씨에프테크놀러지",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "제이씨에프테크놀러지.jpg",
+      "url": "https://www.jcft-global.com/ko",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "McKare AI (맥케어 AI)",
+          "desc": "비접촉 레이더로 생체 신호를 감지 및 분석하는 구독형 실시간 돌봄 관제 플랫폼",
+          "tech": "머신러닝 생체 예측 · 듀얼모달 센서 퓨전 · 실시간 시계열 빅데이터 분석"
+        }
+      ]
     }
   ]
 }
