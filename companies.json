@@ -1546,6 +1546,27 @@
           "tech": "도메인AI · 머신러닝 · 빅데이터"
         }
       ]
+    },
+    {
+      "name": "트러스테이",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "트러스테이.jpg",
+      "url": "https://www.trustay.me/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "노키 AI(nocki AI) - 화재감지",
+          "desc": "AI 기반 화재 감지·대응·실시간 신고 및 사후 분석 통합 AI 화재감지 서비스",
+          "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
+        },
+        {
+          "name": "노키 AI(nocki AI) - 주차관제",
+          "desc": "실시간 영상 감지 기반 전기차 충전·빈자리 알림 AI 주차 영상관제 서비스",
+          "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
+        }
+      ]
     }
   ]
 }
