@@ -663,6 +663,27 @@
           "tech": "AI 가격산정 자체 알고리즘 · LLM · CNN"
         }
       ]
+    },
+    {
+      "name": "빅밸류",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "빅밸류.jpg",
+      "url": "https://bigvalue.ai/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 부동산 비서 ‘복덕방 가재’",
+          "desc": "대출·청약·세금 등 24시간 개인 맞춤형 주거 상담 AI 에이전트",
+          "tech": "AI 에이전트 · 다층 데이터 분석 · 데이터 마트"
+        },
+        {
+          "name": "공간 기반 AI 운영 인프라 '지오체인(GeoChain)'",
+          "desc": "AI 도입의 병목을 해소하는 데이터·LLM·시각화 통합 운영 솔루션",
+          "tech": "LLM Ops · 멀티 LLM 추론 · 공간 데이터 연계"
+        }
+      ]
     }
   ]
 }
