@@ -486,6 +486,27 @@
           "tech": "하이브리드 최적화 · BIM 디지털 트윈 · GIS 운송 최적화"
         }
       ]
+    },
+    {
+      "name": "제온스",
+      "stage": "development",
+      "category": "construction",
+      "logo": "제온스.jpg",
+      "url": "https://www.zeons.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "이지램스 AI주택가격 산출 시스템",
+          "desc": "부동산 운영 빅데이터에 AVM·Geo AI를 접목해 적정 임대료·매매가를 예측하는 시세 분석 시스템",
+          "tech": "빅데이터 · 머신러닝"
+        },
+        {
+          "name": "EASYSAFE AI Note",
+          "desc": "음성 기반 스마트 현장 점검·일지 작성, TBM 회의록 자동 생성, 챗봇 기반 안전 수칙 가이드",
+          "tech": "LLM(대형언어모델) · 음성-텍스트 변환(STT/TTS)"
+        }
+      ]
     }
   ]
 }
