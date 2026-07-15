@@ -256,7 +256,9 @@
       "category": "brokerage",
       "logo": "직방.jpg",
       "url": "https://www.zigbang.com/",
-      "featured": false
+      "b2b": true,
+      "b2c": true,
+      "services": []
     },
     {
       "name": "CORNER",
