@@ -315,6 +315,7 @@ function renderViews() {
   });
   document.querySelector("#map-view").classList.toggle("is-active", state.view === "map");
   document.querySelector("#directory-view").classList.toggle("is-active", state.view === "directory");
+  document.querySelector("#map-only-desc").style.display = state.view === "map" ? "" : "none";
 }
 
 function render() {
