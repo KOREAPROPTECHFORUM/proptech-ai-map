@@ -346,7 +346,7 @@ function renderBusiness() {
     }
     list.forEach((company, i) => {
       const chip = createCompanyChip(company);
-      setFloatingPosition(chip, i, list.length, zoneId);
+      chip.dataset.vennIndex = i;
       zone.appendChild(chip);
     });
   };
@@ -354,6 +354,40 @@ function renderBusiness() {
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
+
+  requestAnimationFrame(() => {
+    ['zone-b2b', 'zone-both', 'zone-b2c'].forEach(zoneId => {
+      const zone = document.getElementById(zoneId);
+      if (!zone) return;
+      const chips = [...zone.querySelectorAll('.company-chip')];
+      if (!chips.length) return;
+
+      const W = zone.offsetWidth  || 200;
+      const H = zone.offsetHeight || 400;
+      const CHIP_W = 88;
+      const CHIP_H = 68;
+      const PAD_X = 10;
+      const PAD_Y = 40;
+
+      const cols = Math.max(1, Math.floor((W - PAD_X * 2) / CHIP_W));
+      const cellW = (W - PAD_X * 2) / cols;
+      const cellH = Math.max(CHIP_H * 1.1, (H - PAD_Y * 2) / Math.ceil(chips.length / cols));
+
+      chips.forEach((chip, i) => {
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        const x = ((PAD_X + (col + 0.5) * cellW) / W * 100).toFixed(1);
+        const y = ((PAD_Y + (row + 0.5) * cellH) / H * 100).toFixed(1);
+        chip.style.setProperty('--x', `${x}%`);
+        chip.style.setProperty('--y', `${y}%`);
+        chip.style.setProperty('--float-x', `${(i % 3 - 1) * 2}px`);
+        chip.style.setProperty('--float-y', `${(i % 5 - 2) * 2}px`);
+        chip.style.setProperty('--float-z', '0px');
+        chip.style.setProperty('--float-duration', `${5.5 + (i % 5) * 0.6}s`);
+        chip.style.setProperty('--float-delay', `${-(i % 7) * 0.5}s`);
+      });
+    });
+  });
 }
 
 const PAGE_TITLES = {
