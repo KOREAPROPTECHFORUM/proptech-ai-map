@@ -412,6 +412,22 @@
           "tech": "Computer Vision · AI · CAD 데이터 파싱"
         }
       ]
+    },
+    {
+      "name": "큐픽스",
+      "stage": "development",
+      "category": "construction",
+      "logo": "큐픽스.jpg",
+      "url": "https://www.cupix.com/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "CupixWorks",
+          "desc": "공간의 변화 과정을 효율적으로 기록하고 분석하는 의사결정 플랫폼",
+          "tech": "Computer Vision · SLAM · ML"
+        }
+      ]
     }
   ]
 }
