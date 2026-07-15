@@ -1699,6 +1699,22 @@
           "tech": "이미지 분석 · 데이터 정합성 검증 · 리포트 자동화"
         }
       ]
+    },
+    {
+      "name": "파이퍼블릭",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "파이퍼블릭.jpg",
+      "url": "https://realbuy.io/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "리얼리틱스 AI",
+          "desc": "상업용부동산 데이터를 AI분석모델로 구조화해 투자 검토, 자산가치 분석, 매물비교 등 지원",
+          "tech": "검색증강생성(RAG) · 부동산 빅데이터 분석 · 자산가치 산정모델"
+        }
+      ]
     }
   ]
 }
