@@ -639,14 +639,6 @@
       ]
     },
     {
-      "name": "KAP 한국자산매입",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "PEPPER",
       "stage": "infra",
       "category": "data-platform",
