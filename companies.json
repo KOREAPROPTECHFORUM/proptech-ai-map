@@ -426,14 +426,6 @@
       "featured": false
     },
     {
-      "name": "DiverCity",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "HOMES",
       "stage": "operation",
       "category": "rental",
