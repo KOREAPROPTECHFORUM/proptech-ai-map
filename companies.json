@@ -747,6 +747,22 @@
           "tech": "협업 필터링 추천 알고리즘 · 자연어 처리(NLP) · 행동 데이터 분석"
         }
       ]
+    },
+    {
+      "name": "호갱노노",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "호갱노노.jpg",
+      "url": "https://hogangnono.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI중개사",
+          "desc": "자연어로 주거 조건을 입력하면 AI가 시세·리뷰·교통·학군 데이터를 분석해 맞춤 단지를 추천",
+          "tech": "생성형 AI · 부동산 빅데이터 분석"
+        }
+      ]
     }
   ]
 }
