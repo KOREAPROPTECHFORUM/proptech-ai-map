@@ -853,6 +853,27 @@
           "tech": "AI 매물 광고 자동 생성 · STT 통화 분석 · 부동산 서류 OCR"
         }
       ]
+    },
+    {
+      "name": "무비스톡아이피",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "무비스톡아이피.jpg",
+      "url": "https://www.budicl.ai/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "부디클(D-Closing) AI 거래위험 검증 서비스",
+          "desc": "AI가 부동산 거래 단계별 위험을 실시간 검증해 전세사기를 사전 차단하는 서비스",
+          "tech": "머신러닝 위험예측 · 등기·권리 데이터 분석 · NLP"
+        },
+        {
+          "name": "D-Closing 원스톱 거래 종결 시스템",
+          "desc": "전자계약·안전결제·전자등기·화상공증·세금납부를 AI 자동화로 원스톱 처리",
+          "tech": "프로세스 자동화(AI+RPA) · 전자서명·인증 · 블록체인 거래기록"
+        }
+      ]
     }
   ]
 }
