@@ -362,14 +362,6 @@
       "services": []
     },
     {
-      "name": "호갱노노",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "https://hogangnono.com/",
-      "featured": false
-    },
-    {
       "name": "사랑방",
       "stage": "transaction",
       "category": "brokerage",
