@@ -73,8 +73,8 @@ input {
   left: 50%;
   transform: translateX(-50%);
   font-family: inherit;
-  font-weight: 300;
-  font-size: 17px;
+  font-weight: 700;
+  font-size: 19px;
   color: rgba(200, 215, 255, 0.75);
   letter-spacing: 0.06em;
   white-space: nowrap;
