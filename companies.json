@@ -1154,6 +1154,22 @@
           "tech": "LLM 기반 RAG · 자연어 처리(NLP) · 운영 데이터 분석"
         }
       ]
+    },
+    {
+      "name": "세컨신드롬",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "세컨신드롬.jpg",
+      "url": "https://www.dalock.kr/service/main",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "미니창고 다락",
+          "desc": "인공지능 데이터 기반 매장 내 실시간 온·습도 관리 인프라 및 지점 · 유닛 정보 자동 추천 기능",
+          "tech": "인공지능 · 데이터분석 · 사물인터넷"
+        }
+      ]
     }
   ]
 }
