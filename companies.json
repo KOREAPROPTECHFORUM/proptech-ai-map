@@ -1048,6 +1048,22 @@
           "tech": "AI 가격산정 자체 알고리즘 · LLM · CNN"
         }
       ]
+    },
+    {
+      "name": "리브애니웨어",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "리브애니웨어.jpg",
+      "url": "https://www.liveanywhere.me/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 매물 분석 및 등록 검수 자동화",
+          "desc": "호스트 등록 매물의 정책 위반 여부를 LLM으로 자동 분석·리포트 생성",
+          "tech": "생성형 AI · 컴퓨터 비전"
+        }
+      ]
     }
   ]
 }
