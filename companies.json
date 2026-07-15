@@ -1138,6 +1138,22 @@
           "tech": "머신러닝 생체 예측 · 듀얼모달 센서 퓨전 · 실시간 시계열 빅데이터 분석"
         }
       ]
+    },
+    {
+      "name": "Spacebring",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "스페이스브링.jpg",
+      "url": "https://www.spacebring.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Lem AI Agent (렘 AI 에이전트)",
+          "desc": "코워킹 고객 지원·데이터 분석·마케팅 카피를 자동화하는 AI 에이전트",
+          "tech": "LLM 기반 RAG · 자연어 처리(NLP) · 운영 데이터 분석"
+        }
+      ]
     }
   ]
 }
