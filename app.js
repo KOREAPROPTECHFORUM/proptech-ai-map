@@ -310,7 +310,12 @@ function renderStats() {
 }
 
 function renderBusiness() {
-  const allCompanies = uniqueCompanies(companies.filter(matchesCompany));
+  const seen = new Set();
+  const allCompanies = companies.filter(matchesCompany).filter(c => {
+    if (seen.has(c.name)) return false;
+    seen.add(c.name);
+    return true;
+  });
   const b2bOnly = allCompanies.filter(c => c.b2b && !c.b2c);
   const b2cOnly = allCompanies.filter(c => c.b2c && !c.b2b);
   const both    = allCompanies.filter(c => c.b2b && c.b2c);
