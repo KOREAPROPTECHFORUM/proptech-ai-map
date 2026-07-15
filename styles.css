@@ -68,6 +68,7 @@ input {
   backdrop-filter: blur(16px);
 }
 
+
 .brand {
   display: flex;
   align-items: center;
@@ -121,6 +122,9 @@ input {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255,255,255,0.06);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tab {
