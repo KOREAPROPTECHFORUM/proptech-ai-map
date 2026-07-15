@@ -995,6 +995,22 @@
           "tech": "LLM·AVM·RAG 기반 대화형 AI · 멀티에이전트"
         }
       ]
+    },
+    {
+      "name": "핸디즈",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "핸디즈.jpg",
+      "url": "https://handys.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "Plott OS (통합 숙박 자산 관리 플랫폼)",
+          "desc": "비대면 무인 운영 및 AI 기반 실시간 객실 요금 최적화를 지원하는 통합 플랫폼",
+          "tech": "스마트 체크인 · 스마트 프라이싱 2.0 · MLOps 자동화"
+        }
+      ]
     }
   ]
 }
