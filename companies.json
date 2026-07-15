@@ -38,12 +38,25 @@
       ]
     },
     {
-      "name": "LIVsolution",
+      "name": "리브솔루션",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "리브솔루션.jpg",
+      "url": "https://www.livsolution.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 역세권 미래가치분석",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 기반 땅찾기",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     },
     {
       "name": "Sweetspot",
