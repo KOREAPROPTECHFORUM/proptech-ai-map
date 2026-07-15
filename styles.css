@@ -65,6 +65,12 @@ input {
   gap: 12px;
 }
 
+.brand-logo {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
 .mark {
   display: flex;
   align-items: center;
