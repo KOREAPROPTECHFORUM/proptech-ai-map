@@ -316,6 +316,8 @@ function renderDirectory() {
 }
 
 function renderStats() {
+  const uniqueCount = new Set(companies.map(c => c.name)).size;
+  document.querySelector("#unique-company-count").textContent = String(uniqueCount);
   document.querySelector("#company-count").textContent = String(companies.length);
   document.querySelector("#category-count").textContent = String(Object.keys(categoryById).length);
 }
