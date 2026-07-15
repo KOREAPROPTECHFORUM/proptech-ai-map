@@ -1345,6 +1345,22 @@
           "tech": "딥러닝 추천 알고리즘 · 이미지 생성형 AI · RAG 기반 LLM"
         }
       ]
+    },
+    {
+      "name": "릴스퀘어",
+      "stage": "operation",
+      "category": "interior",
+      "logo": "릴스퀘어.jpg",
+      "url": "https://lilsquare.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "릴스퀘어 AI 프리뷰",
+          "desc": "AI 학습모델 기반 인테리어 시공 시뮬레이션 제공",
+          "tech": "머신러닝 · 이미지·공간 데이터 분석 · 시공 결과 예측"
+        }
+      ]
     }
   ]
 }
