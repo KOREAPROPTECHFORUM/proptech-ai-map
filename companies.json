@@ -104,9 +104,22 @@
       "name": "인리얼티",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "인리얼티.jpg",
+      "url": "https://bannyjuya-arch.github.io/inrealtylab/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "국공유지 민관협력(PPP) AI 매칭 플랫폼",
+          "desc": "도시공학 빅데이터 분석으로 국공유지 입지 발굴 및 민관협력 사업을 매칭하는 플랫폼",
+          "tech": "도시계획 규제 분석 알고리즘 · AI 기반 사업성 매칭 알고리즘 · 공간 빅데이터 GIS 시각화"
+        },
+        {
+          "name": "국공유지 AI 개발기획 및 리스크 시뮬레이터",
+          "desc": "규제 분석 알고리즘 기반 국공유지 개발기획 및 사업성 검토 시뮬레이션",
+          "tech": "도시계획 규제 데이터 자동 추출 · 용적률 및 배치 시뮬레이션 · 사업성 수지분석 자동화"
+        }
+      ]
     },
     {
       "name": "Meissa",
