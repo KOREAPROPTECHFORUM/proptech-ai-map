@@ -362,14 +362,6 @@
       "services": []
     },
     {
-      "name": "사랑방",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "SpaceCloud",
       "stage": "transaction",
       "category": "brokerage",
