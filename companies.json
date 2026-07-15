@@ -684,6 +684,27 @@
           "tech": "LLM Ops · 멀티 LLM 추론 · 공간 데이터 연계"
         }
       ]
+    },
+    {
+      "name": "내편컴퍼니",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "내편컴퍼니.jpg",
+      "url": "https://www.homeside.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부동산 내편 - AI 매물분석 리포트",
+          "desc": "시세·대출·세금·리스크를 AI로 통합 분석한 실수요자 맞춤 매물 리포트 제공",
+          "tech": "생성형 AI · AVM 시세 분석 · 빅데이터 분석"
+        },
+        {
+          "name": "부동산 내편 - AI 매물 큐레이션",
+          "desc": "고객 재무·라이프스타일·지역 선호도를 AI가 분석해 맞춤 매물 추천",
+          "tech": "개인화 추천 알고리즘 · 머신러닝 · 빅데이터 분석"
+        }
+      ]
     }
   ]
 }
