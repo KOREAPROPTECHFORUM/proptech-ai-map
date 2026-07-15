@@ -181,8 +181,8 @@
     },
     {
       "name": "위엑스코퍼레이션",
-      "stage": "development",
-      "category": "finance",
+      "stage": "infra",
+      "category": "data-platform",
       "logo": "위엑스코퍼레이션.jpg",
       "url": "https://wexcorporation.com/",
       "b2b": true,
