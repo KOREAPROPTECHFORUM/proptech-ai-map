@@ -763,6 +763,27 @@
           "tech": "생성형 AI · 부동산 빅데이터 분석"
         }
       ]
+    },
+    {
+      "name": "사랑방미디어",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "",
+      "url": "https://www.sarangbang.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "사랑방AI 부동산 매물 검색",
+          "desc": "당사 보유 부동산 빅데이터를 활용해 사용자의 자연어 질문에 대한 추천 아파트와 매물 제공",
+          "tech": "빅데이터 분석"
+        },
+        {
+          "name": "AI 아파트 전망분석",
+          "desc": "시계열 구축한 로컬 시세·개발·분양·정책 데이터를 활용해 AI로 작성한 아파트별 보고서 제공",
+          "tech": "빅데이터 분석"
+        }
+      ]
     }
   ]
 }
