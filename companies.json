@@ -1567,6 +1567,27 @@
           "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
         }
       ]
+    },
+    {
+      "name": "알스퀘어",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "알스퀘어.jpg",
+      "url": "https://www.rsquare.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 기반 상업용 부동산 데이터 분석 솔루션 (RA)",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 기반 부동산 공적장부 통합 분석 (데이터허브)",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
