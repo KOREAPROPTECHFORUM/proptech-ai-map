@@ -816,6 +816,22 @@
           "tech": "AI 견적 자동화 · 철거 빅데이터 분석 · 스마트 매칭 알고리즘"
         }
       ]
+    },
+    {
+      "name": "지에이원",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "지에이원.jpg",
+      "url": "https://www.rpaz.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "알파즈 RPAZ",
+          "desc": "중개 대상 매물에 대한 AI 분석 서비스",
+          "tech": "주변 상권 빅데이터 분석"
+        }
+      ]
     }
   ]
 }
