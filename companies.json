@@ -240,14 +240,6 @@
       "featured": false
     },
     {
-      "name": "unitlab",
-      "stage": "development",
-      "category": "procurement",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "CUPIX",
       "stage": "development",
       "category": "construction",
