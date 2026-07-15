@@ -733,6 +733,22 @@
       "logo": "",
       "url": "",
       "featured": false
+    },
+    {
+      "name": "에디트콜렉티브",
+      "stage": "development",
+      "category": "planning",
+      "logo": "에디트콜렉티브.jpg",
+      "url": "https://flexity.app/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "플렉시티",
+          "desc": "AI 기반으로 전국 필지 대상의 기획설계·법규검토·사업성 분석 솔루션 제공",
+          "tech": "AI 기획설계 자동화 · 현금흐름 기반 사업성 분석 · 건축법규 빅데이터"
+        }
+      ]
     }
   ]
 }
