@@ -1625,6 +1625,27 @@
           "tech": "예측 모델링 · 학습 패턴 분석 · 적응형 추천 알고리즘"
         }
       ]
+    },
+    {
+      "name": "지지옥션",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "지지옥션.jpg",
+      "url": "https://www.ggi.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "alg 낙찰예측 · alg 시세예측",
+          "desc": "경매/부동산/거시통계 등을 분석하여 부동산 시세와 경매 낙찰 예측",
+          "tech": "빅데이터 분석/전처리 · 머신러닝(XGBoost/HGBR) · 설명 가능한 AI(XAI)"
+        },
+        {
+          "name": "경매 종결일 예측",
+          "desc": "경매빅데이터를 분석하여, 진행중인 물건의 대금납부일 / 배당 및 종결일 예측",
+          "tech": "경매 빅데이터 수집 · 머신러닝(XGBoost) · EDA분석"
+        }
+      ]
     }
   ]
 }
