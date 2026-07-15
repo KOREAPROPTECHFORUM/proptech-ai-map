@@ -252,7 +252,9 @@
       "category": "contract",
       "logo": "모두싸인.jpg",
       "url": "https://www.modusign.co.kr/",
-      "featured": false
+      "b2b": true,
+      "b2c": false,
+      "services": []
     },
     {
       "name": "에디트콜렉티브",
