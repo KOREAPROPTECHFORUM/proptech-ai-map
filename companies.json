@@ -1435,6 +1435,22 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "이제이엠컴퍼니",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "이제이엠컴퍼니.jpg",
+      "url": "https://wooriga.kr/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "우리가 전자결의 올인원 플랫폼",
+          "desc": "AI 의사결정 예측 기반 올인원 전자총회·전자동의서 플랫폼",
+          "tech": "AI 의사결정 예측 알고리즘 · 공인전자서명(전자서명법) · 클라우드 보안"
+        }
+      ]
     }
   ]
 }
