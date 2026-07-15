@@ -6,7 +6,8 @@
       "category": "planning",
       "logo": "엘엔디씨.jpg",
       "url": "https://www.lan-dup.com/",
-      "featured": false,
+      "b2b": true,
+      "b2c": true,
       "services": [
         {
           "name": "랜드업(LanDup)",
@@ -16,76 +17,176 @@
       ]
     },
     {
-      "name": "Richgo",
+      "name": "데이터노우즈",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "데이터노우즈.jpg",
+      "url": "https://www.dataknows.ai/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 리치고 부동산",
+          "desc": "실시간 호가 분석과 거주·투자·호재 점수, 2년 후 미래 가격을 담은 AI 부동산 국민비서",
+          "tech": "AI 아파트 시세 · 미래가격예측 · AI LLM"
+        },
+        {
+          "name": "AI MAS(부동산시장분석·분양가산출)",
+          "desc": "분양가 산정 및 사업성·리스크 분석을 위한 기업 대상 구독형 SaaS 솔루션",
+          "tech": "AI 아파트 시세 · 미래가격예측 · 수요공급예측"
+        }
+      ]
     },
     {
-      "name": "LIVsolution",
+      "name": "리브솔루션",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "리브솔루션.jpg",
+      "url": "https://www.livsolution.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 역세권 미래가치분석",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 기반 땅찾기",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     },
     {
-      "name": "Sweetspot",
+      "name": "스위트스팟",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "스위트스팟.jpg",
+      "url": "https://www.sweetspot.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "인구통계 시뮬레이터",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 팝업스토어 시뮬레이터",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     },
     {
-      "name": "HOMES Flexity",
+      "name": "홈즈컴퍼니",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "홈즈컴퍼니.jpg",
+      "url": "https://www.homes.global/ko",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "홈즈컴퍼니 Mycroft PMS - 코리빙 운영 AI 에이전트",
+          "desc": "코리빙 운영을 위한 고객 리드·재고·계약·거주·시설을 잇는 운영 자동화 AI 에이전트",
+          "tech": "LLM 멀티 에이전트 · RAG·온톨로지 지식기반 · 워크플로 자동화"
+        },
+        {
+          "name": "홈즈컴퍼니 Mycroft IMS - 부동산 투자개발 AI 에이전트 시스템",
+          "desc": "부동산 딜 소싱·검토·조율·구조화를 자동화하는 부동산 투자개발 AI 에이전트",
+          "tech": "LLM 멀티 에이전트 · Valuation·CAPEX 자동화 · 부동산 데이터 크롤링·OCR"
+        }
+      ]
     },
     {
       "name": "인리얼티",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "인리얼티.jpg",
+      "url": "https://bannyjuya-arch.github.io/inrealtylab/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "국공유지 민관협력(PPP) AI 매칭 플랫폼",
+          "desc": "도시공학 빅데이터 분석으로 국공유지 입지 발굴 및 민관협력 사업을 매칭하는 플랫폼",
+          "tech": "도시계획 규제 분석 알고리즘 · AI 기반 사업성 매칭 알고리즘 · 공간 빅데이터 GIS 시각화"
+        },
+        {
+          "name": "국공유지 AI 개발기획 및 리스크 시뮬레이터",
+          "desc": "규제 분석 알고리즘 기반 국공유지 개발기획 및 사업성 검토 시뮬레이션",
+          "tech": "도시계획 규제 데이터 자동 추출 · 용적률 및 배치 시뮬레이션 · 사업성 수지분석 자동화"
+        }
+      ]
     },
     {
-      "name": "Meissa",
+      "name": "메이사",
+      "stage": "development",
+      "category": "construction",
+      "logo": "메이사.jpg",
+      "url": "https://www.meissa.ai/kr",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Meissa Platform (메이사 플랫폼)",
+          "desc": "드론·IoT·AI로 건설 현장의 공정·물량·안전·품질을 실시간 통합 관리",
+          "tech": "Reality Capture 3D 재구성 · 건설 도메인 컴퓨터비전 AI · BIM·GIS 데이터 통합"
+        },
+        {
+          "name": "Meissa Planet (메이사 플래닛)",
+          "desc": "위성영상에 SAR+EO 멀티센서 AI를 적용해 광역 부지·도시 변화 자동 분석",
+          "tech": "위성 SAR+EO 멀티센서 융합 AI · Macro Twin 광역 3D 재구성 · Bird-Eye View Object Detection"
+        }
+      ]
+    },
+    {
+      "name": "이도인터랙티브",
       "stage": "development",
       "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "이도인터랙티브.jpg",
+      "url": "https://biz.landmaster.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "부동산의 신 비즈",
+          "desc": "아파트 주거환경에 대한 데이터를 AI를 통해 분석해 일반인들에게 리포트로 제공",
+          "tech": "빅데이터 분석 · 자연어 처리"
+        }
+      ]
     },
     {
-      "name": "부동산의신",
+      "name": "렉터스",
       "stage": "development",
-      "category": "planning",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "LECTUS",
-      "stage": "development",
-      "category": "finance",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "category": "design-permit",
+      "logo": "렉터스.jpg",
+      "url": "https://lectus.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 BIM 자동화 솔루션",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 기반 토지 분석 및 개발 사업 관리",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     },
     {
       "name": "위엑스코퍼레이션",
-      "stage": "development",
-      "category": "finance",
+      "stage": "infra",
+      "category": "data-platform",
       "logo": "위엑스코퍼레이션.jpg",
       "url": "https://wexcorporation.com/",
-      "featured": false,
+      "b2b": true,
+      "b2c": true,
       "services": [
         {
           "name": "AI Portfolio Investment Model",
@@ -98,14 +199,6 @@
           "tech": "LLM 기반 AI Agent · 투자 시뮬레이션 · RWA·스테이블코인 분석"
         }
       ]
-    },
-    {
-      "name": "밸류맵",
-      "stage": "development",
-      "category": "finance",
-      "logo": "",
-      "url": "https://www.valueupmap.com/",
-      "featured": false
     },
     {
       "name": "공감랩",
@@ -123,396 +216,25 @@
       ]
     },
     {
-      "name": "READPOST",
-      "stage": "development",
-      "category": "design-permit",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "CHANGSOFT I&I",
-      "stage": "development",
-      "category": "design-permit",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "TENELEVEN",
-      "stage": "development",
-      "category": "design-permit",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "HOWBUILD",
-      "stage": "development",
-      "category": "design-permit",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "빌더",
-      "stage": "development",
-      "category": "procurement",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "FOBEECON",
-      "stage": "development",
-      "category": "procurement",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "unitlab",
-      "stage": "development",
-      "category": "procurement",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "zeons",
-      "stage": "development",
-      "category": "procurement",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "CUPIX",
-      "stage": "development",
-      "category": "construction",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "자취방센터114",
-      "stage": "transaction",
-      "category": "marketing",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "eduwill",
-      "stage": "transaction",
-      "category": "marketing",
-      "logo": "",
-      "url": "https://www.eduwill.net/",
-      "featured": false
-    },
-    {
-      "name": "boospatch",
-      "stage": "transaction",
-      "category": "marketing",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "HOMES IN KOREA",
-      "stage": "transaction",
-      "category": "marketing",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "ANIPEN",
-      "stage": "transaction",
-      "category": "marketing",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "GoodPick",
-      "stage": "transaction",
-      "category": "marketing",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "boopd",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "직방",
       "stage": "transaction",
       "category": "brokerage",
       "logo": "직방.jpg",
       "url": "https://www.zigbang.com/",
-      "featured": false
-    },
-    {
-      "name": "CORNER",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "BigValue",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "부동산내편",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "호갱노노",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "https://hogangnono.com/",
-      "featured": false
-    },
-    {
-      "name": "사랑방",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "SpaceCloud",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "https://www.spacecloud.kr/",
-      "featured": false
-    },
-    {
-      "name": "RPAZ",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "픽아이엔",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "BUDICL",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "DiverCity",
-      "stage": "transaction",
-      "category": "brokerage",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "ZIPUP",
-      "stage": "operation",
-      "category": "rental",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "HOMES",
-      "stage": "operation",
-      "category": "rental",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "Dooongji",
-      "stage": "operation",
-      "category": "rental",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "케어링",
-      "stage": "operation",
-      "category": "rental",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "부동산플래닛",
-      "stage": "operation",
-      "category": "rental",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "handus",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "아이엠박스",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "homeflix",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "한국공간데이터",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "JCTechnology",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "REALWORLD",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "Rovoock",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "BENDS",
-      "stage": "operation",
-      "category": "facility",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "salto",
-      "stage": "operation",
-      "category": "facility",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "TRUSTAY",
-      "stage": "operation",
-      "category": "facility",
-      "logo": "",
-      "url": "https://trustay.com/",
-      "featured": false
-    },
-    {
-      "name": "Divii Consulting",
-      "stage": "operation",
-      "category": "facility",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "soldoc",
-      "stage": "operation",
-      "category": "facility",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "오늘의집",
-      "stage": "operation",
-      "category": "interior",
-      "logo": "",
-      "url": "https://ohou.se/",
-      "featured": false
-    },
-    {
-      "name": "LILSQUARE",
-      "stage": "operation",
-      "category": "interior",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "TAXAI",
-      "stage": "asset",
-      "category": "asset-sale",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "realbuy",
-      "stage": "asset",
-      "category": "asset-sale",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "얼마집",
-      "stage": "asset",
-      "category": "asset-sale",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI중개사",
+          "desc": "자연어 대화형 인터페이스로 이용자의 선호와 조건을 파악해 맞춤형 매물을 선별·추천",
+          "tech": "LLM · AI멀티에이전트 · RAG기반시멘틱검색"
+        },
+        {
+          "name": "지킴 AI 진단",
+          "desc": "해당 매물의 권리관계와 주변 환경 정보를 종합 분석하여 잠재 리스크를 진단",
+          "tech": "멀티 에이전트 검증 · 역할 기반 프롬프팅 · 검색 결합형 생성"
+        }
+      ]
     },
     {
       "name": "위엑스코퍼레이션",
@@ -520,7 +242,8 @@
       "category": "asset-liquidity",
       "logo": "위엑스코퍼레이션.jpg",
       "url": "https://wexcorporation.com/",
-      "featured": false,
+      "b2b": true,
+      "b2c": true,
       "services": [
         {
           "name": "AI Portfolio Investment Model",
@@ -535,100 +258,1542 @@
       ]
     },
     {
-      "name": "우리가",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "ValueShopping",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "부동산플래닛",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "R2Square",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "https://www.rsquare.co.kr/",
-      "featured": false
-    },
-    {
-      "name": "KAP 한국자산매입",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "PEPPER",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "DTW",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "지지옥션",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
-      "name": "Archisketch",
-      "stage": "infra",
-      "category": "design-tool",
-      "logo": "",
-      "url": "https://www.archisketch.com/",
-      "featured": false
-    },
-    {
       "name": "모두싸인",
       "stage": "infra",
       "category": "contract",
       "logo": "모두싸인.jpg",
       "url": "https://www.modusign.co.kr/",
-      "featured": false
+      "b2b": true,
+      "b2c": false,
+      "services": []
     },
     {
-      "name": "픽아이엔",
-      "stage": "infra",
-      "category": "contract",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "name": "에디트콜렉티브",
+      "stage": "development",
+      "category": "planning",
+      "logo": "에디트콜렉티브.jpg",
+      "url": "https://flexity.app/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "플렉시티",
+          "desc": "AI 기반으로 전국 필지 대상의 기획설계·법규검토·사업성 분석 솔루션 제공",
+          "tech": "AI 기획설계 자동화 · 현금흐름 기반 사업성 분석 · 건축법규 빅데이터"
+        }
+      ]
     },
     {
-      "name": "READPOST",
+      "name": "밸류맵",
+      "stage": "development",
+      "category": "finance",
+      "logo": "밸류맵.jpg",
+      "url": "https://www.valueupmap.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "부동산 채무이행평가",
+          "desc": "AI 분석으로 담보채권 회수가능성 판단 지원",
+          "tech": "AI 기반 시세 보정 · 매각가율 예측모델 · 부동산 빅데이터 분석"
+        },
+        {
+          "name": "AI 부동산 중개 에이전트",
+          "desc": "AI가 내게 맞는 집 찾기와 계약 판단 지원",
+          "tech": "부동산 도메인 LLM · 매물 추천 알고리즘 · 계약 리스크 분석"
+        }
+      ]
+    },
+    {
+      "name": "이제이엠컴퍼니",
+      "stage": "development",
+      "category": "finance",
+      "logo": "이제이엠컴퍼니.jpg",
+      "url": "https://wooriga.kr/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "우리가 전자결의 올인원 플랫폼",
+          "desc": "AI 의사결정 예측 기반 올인원 전자총회·전자동의서 플랫폼",
+          "tech": "AI 의사결정 예측 알고리즘 · 공인전자서명(전자서명법) · 클라우드 보안"
+        }
+      ]
+    },
+    {
+      "name": "창소프트아이앤아이",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "창소프트아이앤아이.jpg",
+      "url": "https://chang-soft.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 도면 자동 인식",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "텐일레븐",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "텐일레븐.jpg",
+      "url": "https://www.1011.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "BUILDIT",
+          "desc": "인공지능 건축설계 서비스",
+          "tech": "건축설계 · 분석 · 렌더링"
+        }
+      ]
+    },
+    {
+      "name": "한국프롭테크",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "한국프롭테크.jpg",
+      "url": "https://www.howmuchhome.co/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "도시정비 조합원을 위한 AI 사무장",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "부동산 소유자를 위한 세무 상담 AI 서비스",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "레디포스트",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "레디포스트.jpg",
+      "url": "https://www.chongone.com/solution/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "재개발/재건축 전용 AI 챗봇",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 속기사",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "하우빌드",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "하우빌드.jpg",
+      "url": "https://www.howbuild.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "스마콘",
+          "desc": "CAD 도면을 AI로 분석해 3D BIM으로 자동 변환하여 물량 데이터와 함께 고객에게 제공",
+          "tech": "컴퓨터비전 객체탐지 · 그래프 신경망(GNN) · OCR·VLM"
+        }
+      ]
+    },
+    {
+      "name": "포비콘",
+      "stage": "development",
+      "category": "procurement",
+      "logo": "포비콘.jpg",
+      "url": "http://www.fobecon.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "오토적산 엔터프라이즈",
+          "desc": "건설 CAD 도면을 AI로 자동 분석해 대형건설사 대상 맞춤형 적산 및 도면 검토 솔루션 제공",
+          "tech": "Computer Vision · AI · CAD 데이터 파싱"
+        }
+      ]
+    },
+    {
+      "name": "큐픽스",
+      "stage": "development",
+      "category": "construction",
+      "logo": "큐픽스.jpg",
+      "url": "https://www.cupix.com/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "CupixWorks",
+          "desc": "공간의 변화 과정을 효율적으로 기록하고 분석하는 의사결정 플랫폼",
+          "tech": "Computer Vision · SLAM · ML"
+        }
+      ]
+    },
+    {
+      "name": "빌드하다",
+      "stage": "development",
+      "category": "construction",
+      "logo": "빌드하다.jpg",
+      "url": "https://buildhada.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 공사 현황(CM) 분석",
+          "desc": "최종 견적 및 물량산출서, 공정 데이터 대비 실제 공사 현황 비교 분석",
+          "tech": "물량산출서 대비 투입 물량 검토 · 예상 투입 물량 예측 · 공사비 대비 현장 물량·공정 예측"
+        },
+        {
+          "name": "AI 견적 분석 및 공사비 조정(V.E)",
+          "desc": "실시설계, 물량산출서 기반, 입찰에 참여한 시공사들의 세부견적 비교분석 및 조정",
+          "tech": "실시설계 내 물량 산출 분석 · 물량 산출 대비 공사비 조정"
+        }
+      ]
+    },
+    {
+      "name": "지구하다",
+      "stage": "development",
+      "category": "construction",
+      "logo": "지구하다.jpg",
+      "url": "http://chunilenergy.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 폐기물 통합관리 플랫폼",
+          "desc": "폐기물 성상과 처리 이력을 AI로 분석해 자원화 관리",
+          "tech": "AI 성상 분석 · 빅데이터 분석 · GPS·ERP 연동"
+        },
+        {
+          "name": "AI 처리이력 검증·ESG 리포트",
+          "desc": "배차·계근·사진 데이터를 통합해 처리 흐름 자동 검증",
+          "tech": "이미지 분석 · 데이터 정합성 검증 · 리포트 자동화"
+        }
+      ]
+    },
+    {
+      "name": "유닛랩",
+      "stage": "development",
+      "category": "construction",
+      "logo": "유닛랩.jpg",
+      "url": "https://www.unithaus.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "중저층 자동 검토·설계 모듈러 빌딩 플랫폼 서비스",
+          "desc": "AI가 부지 분석부터 다층조합 설계·견적까지 5분 자동화",
+          "tech": "하이브리드 최적화 · BIM 디지털 트윈 · GIS 운송 최적화"
+        }
+      ]
+    },
+    {
+      "name": "제온스",
+      "stage": "development",
+      "category": "construction",
+      "logo": "제온스.jpg",
+      "url": "https://www.zeons.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "이지램스 AI주택가격 산출 시스템",
+          "desc": "부동산 운영 빅데이터에 AVM·Geo AI를 접목해 적정 임대료·매매가를 예측하는 시세 분석 시스템",
+          "tech": "빅데이터 · 머신러닝"
+        },
+        {
+          "name": "EASYSAFE AI Note",
+          "desc": "음성 기반 스마트 현장 점검·일지 작성, TBM 회의록 자동 생성, 챗봇 기반 안전 수칙 가이드",
+          "tech": "LLM(대형언어모델) · 음성-텍스트 변환(STT/TTS)"
+        }
+      ]
+    },
+    {
+      "name": "알이파트너",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "알이파트너.jpg",
+      "url": "https://www.kic114.kr/main.do",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 데이터 기반 지식산업센터 챗봇",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "데이터노우즈",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "데이터노우즈.jpg",
+      "url": "https://www.dataknows.ai/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 리치고 부동산",
+          "desc": "실시간 호가 분석과 거주·투자·호재 점수, 2년 후 미래 가격을 담은 AI 부동산 국민비서",
+          "tech": "AI 아파트 시세 · 미래가격예측 · AI LLM"
+        },
+        {
+          "name": "AI MAS(부동산시장분석·분양가산출)",
+          "desc": "분양가 산정 및 사업성·리스크 분석을 위한 기업 대상 구독형 SaaS 솔루션",
+          "tech": "AI 아파트 시세 · 미래가격예측 · 수요공급예측"
+        }
+      ]
+    },
+    {
+      "name": "에듀윌",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "에듀윌.jpg",
+      "url": "https://www.eduwill.net/sites/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부동산 중개업 AI마케팅 자동화",
+          "desc": "교수진 300명의 실무 노하우를 학습한 AI가 매물소개·시세 리포트·홍보 콘텐츠를 자동 생성",
+          "tech": "노하우 기반 LLM · RPA워크플로 자동화 · 생성형 AI이미지 합성"
+        },
+        {
+          "name": "공인중개사 합격 예측 AI",
+          "desc": "평균 대비 4.5배 합격률을 검증한 34년 학습 데이터로 합격 가능성 진단·맞춤형 문제 자동 추천",
+          "tech": "예측 모델링 · 학습 패턴 분석 · 적응형 추천 알고리즘"
+        }
+      ]
+    },
+    {
+      "name": "엔이피데이터",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "엔이피데이터.jpg",
+      "url": "https://www.boospatch.com/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부스패치 AI 맞춤 레포트",
+          "desc": "시세·입지·상품 데이터를 기반으로 AI가 사용자 조건을 분석해 맞춤 단지를 추천",
+          "tech": "LLM 기반 분석 · 부동산 데이터 정제·구조화 · 맞춤형 리포트 생성"
+        }
+      ]
+    },
+    {
+      "name": "애니펜",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "애니펜.jpg",
+      "url": "https://www.anipen.com/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 멀티미디어 콘텐츠 생성 플랫폼",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "굿픽",
+      "stage": "transaction",
+      "category": "marketing",
+      "logo": "굿픽.jpg",
+      "url": "https://www.goodpick.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "클로징북(Closing Book) 자동 생성 및 콘텐츠 레이어링",
+          "desc": "한눈에 보는 직관적 핵심 요약 · 데이터 기반 다차원 시장 분석 · 맞춤형 금융·법률 클로징 세션",
+          "tech": "인터랙티브 웹 변환 기술 · 3-Layer 보고서 구조화"
+        }
+      ]
+    },
+    {
+      "name": "부동산빅뱅",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "부동산빅뱅.jpg",
+      "url": "https://boopd.ai/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "피디언 AI(PIDIAN AI)",
+          "desc": "LLM을 활용한 대화형 AI가 국내 부동산에 대한 정보를 실시간으로 제공",
+          "tech": "머신러닝 · 빅데이터 · 가격예측"
+        }
+      ]
+    },
+    {
+      "name": "코너",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "코너.jpg",
+      "url": "https://www.corner.co.kr/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 부동산 매입 서비스",
+          "desc": "상가 주소 입력만으로 AI 시세산정 후 7일 내 직매입",
+          "tech": "매물인식(CNN) · 텍스트마이닝(NLP/RNN) · 시세평가(GAN) · 가치평가척도(LLM)"
+        },
+        {
+          "name": "코너 우량자산 선별 및 종합투자리포트",
+          "desc": "AI 기반 우량 자산 선별 및 투자 상세 분석 리포트 제공",
+          "tech": "AI 가격산정 자체 알고리즘 · LLM · CNN"
+        }
+      ]
+    },
+    {
+      "name": "빅밸류",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "빅밸류.jpg",
+      "url": "https://bigvalue.ai/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 부동산 비서 ‘복덕방 가재’",
+          "desc": "대출·청약·세금 등 24시간 개인 맞춤형 주거 상담 AI 에이전트",
+          "tech": "AI 에이전트 · 다층 데이터 분석 · 데이터 마트"
+        },
+        {
+          "name": "공간 기반 AI 운영 인프라 '지오체인(GeoChain)'",
+          "desc": "AI 도입의 병목을 해소하는 데이터·LLM·시각화 통합 운영 솔루션",
+          "tech": "LLM Ops · 멀티 LLM 추론 · 공간 데이터 연계"
+        }
+      ]
+    },
+    {
+      "name": "내편컴퍼니",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "내편컴퍼니.jpg",
+      "url": "https://www.homeside.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부동산 내편 - AI 매물분석 리포트",
+          "desc": "시세·대출·세금·리스크를 AI로 통합 분석한 실수요자 맞춤 매물 리포트 제공",
+          "tech": "생성형 AI · AVM 시세 분석 · 빅데이터 분석"
+        },
+        {
+          "name": "부동산 내편 - AI 매물 큐레이션",
+          "desc": "고객 재무·라이프스타일·지역 선호도를 AI가 분석해 맞춤 매물 추천",
+          "tech": "개인화 추천 알고리즘 · 머신러닝 · 빅데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "제온스",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "제온스.jpg",
+      "url": "https://www.zeons.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "이지램스 AI주택가격 산출 시스템",
+          "desc": "부동산 운영 빅데이터에 AVM·Geo AI를 접목해 적정 임대료·매매가를 예측하는 시세 분석 시스템",
+          "tech": "빅데이터 · 머신러닝"
+        },
+        {
+          "name": "EASYSAFE AI Note",
+          "desc": "음성 기반 스마트 현장 점검·일지 작성, TBM 회의록 자동 생성, 챗봇 기반 안전 수칙 가이드",
+          "tech": "LLM(대형언어모델) · 음성-텍스트 변환(STT/TTS)"
+        }
+      ]
+    },
+    {
+      "name": "홈스인코리아",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "홈스인코리아.jpg",
+      "url": "https://homesinkor.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "고객 상담 및 예약관리 AI 자동화",
+          "desc": "고객 문의 · 예약 요청을 AI가 자동 분류 및 응답하여 CX 운영 효율화",
+          "tech": "LLM 기반 챗봇 · 자연어 처리(NLP) · 업무 자동화(RPA)"
+        },
+        {
+          "name": "부동산 매물 검색 AI 기반 추천",
+          "desc": "외국인 선호 조건을 AI가 분석해 최적 매물을 자동 추천",
+          "tech": "협업 필터링 추천 알고리즘 · 자연어 처리(NLP) · 행동 데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "호갱노노",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "호갱노노.jpg",
+      "url": "https://hogangnono.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI중개사",
+          "desc": "자연어로 주거 조건을 입력하면 AI가 시세·리뷰·교통·학군 데이터를 분석해 맞춤 단지를 추천",
+          "tech": "생성형 AI · 부동산 빅데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "사랑방미디어",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "사랑방미디어.jpg",
+      "url": "https://www.sarangbang.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "사랑방AI 부동산 매물 검색",
+          "desc": "당사 보유 부동산 빅데이터를 활용해 사용자의 자연어 질문에 대한 추천 아파트와 매물 제공",
+          "tech": "빅데이터 분석"
+        },
+        {
+          "name": "AI 아파트 전망분석",
+          "desc": "시계열 구축한 로컬 시세·개발·분양·정책 데이터를 활용해 AI로 작성한 아파트별 보고서 제공",
+          "tech": "빅데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "스페이스클라우드",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "앤스페이스.jpg",
+      "url": "https://www.nspace.co/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "스페이스비즈 (SpaceBiz.ai)",
+          "desc": "대형 및 장기 공간 계약 전 견적 기반으로 AI agent를 통해 공간 매칭",
+          "tech": "Space MCP · 데이터 매칭 · 컨시어지 에이전트"
+        }
+      ]
+    },
+    {
+      "name": "무촌",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "무촌철거.jpg",
+      "url": "https://muchon.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "무촌철거",
+          "desc": "철거 데이터를 AI로 분석해 정확한 비교 견적을 실시간 산출",
+          "tech": "AI 견적 자동화 · 철거 빅데이터 분석 · 스마트 매칭 알고리즘"
+        }
+      ]
+    },
+    {
+      "name": "지에이원",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "지에이원.jpg",
+      "url": "https://www.rpaz.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "알파즈 RPAZ",
+          "desc": "중개 대상 매물에 대한 AI 분석 서비스",
+          "tech": "주변 상권 빅데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "아이엔",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "아이엔.jpg",
+      "url": "https://www.imcha-in.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "임차in케어 AI",
+          "desc": "안심계약앱 탑재 모듈로 임차인 거주 중 위험을 실시간 탐지·대응",
+          "tech": "등기변동 실시간 탐지 ML · Exactly-once 파이프라인 · 4단계 맞춤 대응 알고리즘"
+        },
+        {
+          "name": "중개in",
+          "desc": "AI 매물 자동화·통화 분석·세금 리포트 결합 업무 SaaS",
+          "tech": "AI 매물 광고 자동 생성 · STT 통화 분석 · 부동산 서류 OCR"
+        }
+      ]
+    },
+    {
+      "name": "무비스톡아이피",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "무비스톡아이피.jpg",
+      "url": "https://www.budicl.ai/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "부디클(D-Closing) AI 거래위험 검증 서비스",
+          "desc": "AI가 부동산 거래 단계별 위험을 실시간 검증해 전세사기를 사전 차단하는 서비스",
+          "tech": "머신러닝 위험예측 · 등기·권리 데이터 분석 · NLP"
+        },
+        {
+          "name": "D-Closing 원스톱 거래 종결 시스템",
+          "desc": "전자계약·안전결제·전자등기·화상공증·세금납부를 AI 자동화로 원스톱 처리",
+          "tech": "프로세스 자동화(AI+RPA) · 전자서명·인증 · 블록체인 거래기록"
+        }
+      ]
+    },
+    {
+      "name": "다이버시티하우스",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "다이버시티하우스.jpg",
+      "url": "https://www.divercityhouse.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 기반 외국인 전용 맞춤형 매물 추천",
+          "desc": "외국인 유학생 및 근로자의 조건에 맞는 최적의 부동산 매물을 AI로 분석 및 추천",
+          "tech": "빅데이터 분석 · 머신러닝(Machine Learning) · NLP(자연어 처리)"
+        },
+        {
+          "name": "주거·생활·행정 서비스를 아우르는 AI 정착 지원 챗봇",
+          "desc": "외국인의 국내 정착을 돕는 주거, 생활, 행정 정보 통합 제공 AI 챗봇 서비스",
+          "tech": "생성형 AI(LLM) · NLP(자연어 처리) · 다국어 번역 엔진"
+        }
+      ]
+    },
+    {
+      "name": "밸류맵",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "밸류맵.jpg",
+      "url": "https://www.valueupmap.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "부동산 채무이행평가",
+          "desc": "AI 분석으로 담보채권 회수가능성 판단 지원",
+          "tech": "AI 기반 시세 보정 · 매각가율 예측모델 · 부동산 빅데이터 분석"
+        },
+        {
+          "name": "AI 부동산 중개 에이전트",
+          "desc": "AI가 내게 맞는 집 찾기와 계약 판단 지원",
+          "tech": "부동산 도메인 LLM · 매물 추천 알고리즘 · 계약 리스크 분석"
+        }
+      ]
+    },
+    {
+      "name": "데브디",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "데브디.jpg",
+      "url": "https://www.zipup.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "임대차 계약서 자동승인",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "홈즈컴퍼니",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "홈즈컴퍼니.jpg",
+      "url": "https://www.homes.global/ko",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "홈즈컴퍼니 Mycroft PMS — 코리빙 운영 AI 에이전트",
+          "desc": "코리빙 운영을 위한 고객 리드·재고·계약·거주·시설을 잇는 운영 자동화 AI 에이전트",
+          "tech": "LLM 멀티 에이전트 · RAG·온톨로지 지식기반 · 워크플로 자동화"
+        },
+        {
+          "name": "홈즈컴퍼니 Mycroft IMS — 부동산 투자개발 AI 에이전트 시스템",
+          "desc": "부동산 딜 소싱·검토·조율·구조화를 자동화하는 부동산 투자개발 AI 에이전트",
+          "tech": "LLM 멀티 에이전트 · Valuation·CAPEX 자동화 · 부동산 데이터 크롤링·OCR"
+        }
+      ]
+    },
+    {
+      "name": "다이버시티하우스",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "다이버시티하우스.jpg",
+      "url": "https://www.divercityhouse.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 기반 외국인 전용 맞춤형 매물 추천",
+          "desc": "외국인 유학생 및 근로자의 조건에 맞는 최적의 부동산 매물을 AI로 분석 및 추천",
+          "tech": "빅데이터 분석 · 머신러닝(Machine Learning) · NLP(자연어 처리)"
+        },
+        {
+          "name": "주거·생활·행정 서비스를 아우르는 AI 정착 지원 챗봇",
+          "desc": "외국인의 국내 정착을 돕는 주거, 생활, 행정 정보 통합 제공 AI 챗봇 서비스",
+          "tech": "생성형 AI(LLM) · NLP(자연어 처리) · 다국어 번역 엔진"
+        }
+      ]
+    },
+    {
+      "name": "부동산플래닛",
+      "stage": "operation",
+      "category": "rental",
+      "logo": "부동산플래닛.jpg",
+      "url": "https://main.bdsplanet.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 추정가(AVM)",
+          "desc": "전국 주거·상업용 부동산 시세를 자동으로 알려주는 AI 추정가",
+          "tech": "머신러닝.딥러닝 시세 예측 · 비아파트 특화 모델링 · GIS 공간분석"
+        },
+        {
+          "name": "Planet AI",
+          "desc": "시세 상담부터 빌딩 운영·거래 마케팅까지 돕는 멀티에이전트 AI",
+          "tech": "LLM·AVM·RAG 기반 대화형 AI · 멀티에이전트"
+        }
+      ]
+    },
+    {
+      "name": "핸디즈",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "핸디즈.jpg",
+      "url": "https://handys.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "Plott OS (통합 숙박 자산 관리 플랫폼)",
+          "desc": "비대면 무인 운영 및 AI 기반 실시간 객실 요금 최적화를 지원하는 통합 플랫폼",
+          "tech": "스마트 체크인 · 스마트 프라이싱 2.0 · MLOps 자동화"
+        }
+      ]
+    },
+    {
+      "name": "아이엠박스코리아",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "아이엠박스.jpg",
+      "url": "https://www.iambox.co.kr/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "아이엠박스 AI 상담 챗봇 '아이엠이'",
+          "desc": "250여 개 지점 데이터를 AI로 분석해 24시간 고객 맞춤형 짐 보관 컨설팅 제공",
+          "tech": "LLM 기반 AI 챗봇 · RAG · NLP"
+        }
+      ]
+    },
+    {
+      "name": "코너",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "코너.jpg",
+      "url": "https://www.corner.co.kr/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 부동산 매입 서비스",
+          "desc": "상가 주소 입력만으로 AI 시세산정 후 7일 내 직매입",
+          "tech": "매물인식(CNN) · 텍스트마이닝(NLP/RNN) · 시세평가(GAN) · 가치평가척도(LLM)"
+        },
+        {
+          "name": "코너 우량자산 선별 및 종합투자리포트",
+          "desc": "AI 기반 우량 자산 선별 및 투자 상세 분석 리포트 제공",
+          "tech": "AI 가격산정 자체 알고리즘 · LLM · CNN"
+        }
+      ]
+    },
+    {
+      "name": "리브애니웨어",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "리브애니웨어.jpg",
+      "url": "https://www.liveanywhere.me/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 매물 분석 및 등록 검수 자동화",
+          "desc": "호스트 등록 매물의 정책 위반 여부를 LLM으로 자동 분석·리포트 생성",
+          "tech": "생성형 AI · 컴퓨터 비전"
+        }
+      ]
+    },
+    {
+      "name": "홈플릭스",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "홈플릭스.jpg",
+      "url": "https://www.homeflix.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "홈플릭스 AI 아우라피 케어 플랫폼",
+          "desc": "AI 비접촉 생체신호 분석과 스마트 센서로 건강 상태·이상징후를 실시간 모니터링",
+          "tech": "AI 생체신호 분석 알고리즘 · 비접촉 레이더·IoT 센서 기술 · 실시간 데이터 모니터링 플랫폼"
+        },
+        {
+          "name": "홈플릭스 Space OS",
+          "desc": "사용자·공간 맥락에 반응하는 맞춤 환경과 웰니스 중심 프리미엄 공간 운영 AI 시스템",
+          "tech": "AI 공간 상태 분석 기술 · 공간 반응형 환경 제어 기술 · 생체·환경 데이터 웰니스 운영 기술"
+        }
+      ]
+    },
+    {
+      "name": "한국공간데이터",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "한국공간데이터.jpg",
+      "url": "https://www.thecleanier.com/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "공간관리 현황분석(이슈 트래킹 등)",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "케어링",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "케어링.jpg",
+      "url": "https://caring.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "케어링 통합 운영 플랫폼 (ERP·CAATS·NEXUS·AI마음돌봄)",
+          "desc": "생성형 AI 기반 돌봄 행정 자동화·운영 데이터 분석과 음성 AI 안부 전화 정서 케어 제공",
+          "tech": "생성형 AI 및 자연어 처리 기술 · 분산 처리 자동화 및 데이터 인프라"
+        },
+        {
+          "name": "Physical AI 시뮬레이션 (로봇돌봄학습)",
+          "desc": "돌봄 노하우 기반 시뮬레이션 환경에서 Physical AI 학습 데이터 생성 및 실증",
+          "tech": "Physical AI 및 시뮬레이션"
+        }
+      ]
+    },
+    {
+      "name": "제이씨에프테크놀러지",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "제이씨에프테크놀러지.jpg",
+      "url": "https://www.jcft-global.com/ko",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "McKare AI (맥케어 AI)",
+          "desc": "비접촉 레이더로 생체 신호를 감지 및 분석하는 구독형 실시간 돌봄 관제 플랫폼",
+          "tech": "머신러닝 생체 예측 · 듀얼모달 센서 퓨전 · 실시간 시계열 빅데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "Spacebring",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "스페이스브링.jpg",
+      "url": "https://www.spacebring.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Lem AI Agent (렘 AI 에이전트)",
+          "desc": "코워킹 고객 지원·데이터 분석·마케팅 카피를 자동화하는 AI 에이전트",
+          "tech": "LLM 기반 RAG · 자연어 처리(NLP) · 운영 데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "세컨신드롬",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "세컨신드롬.jpg",
+      "url": "https://www.dalock.kr/service/main",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "미니창고 다락",
+          "desc": "인공지능 데이터 기반 매장 내 실시간 온·습도 관리 인프라 및 지점 · 유닛 정보 자동 추천 기능",
+          "tech": "인공지능 · 데이터분석 · 사물인터넷"
+        }
+      ]
+    },
+    {
+      "name": "유니크굿컴퍼니",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "유니크굿컴퍼니.jpg",
+      "url": "https://business.realworld.to/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "리얼월드 스튜디오 (Realworld Studio)",
+          "desc": "아이디어를 입력하면 AI가 실감형 미션 콘텐츠를 자동 생성",
+          "tech": "생성형 AI(LLM) · 콘텐츠 자동 생성 · 멀티모달(이미지·음성)"
+        },
+        {
+          "name": "리얼월드",
+          "desc": "체류 공간에서 체험형 콘텐츠를 공급하는 운영 SW 플랫폼",
+          "tech": "피지털AI 콘텐츠 · 인터랙티브 콘텐츠"
+        }
+      ]
+    },
+    {
+      "name": "루북",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "루북.jpg",
+      "url": "https://business.roovook.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Roovook EMS - Roovis",
+          "desc": "호텔 영업 통화를 AI로 분석 연회장, B2B 세일즈팀 업무 자동화",
+          "tech": "음성 인식(STT) · LLM 텍스트 요약 · 대화 데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "비니즈",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "비니즈.jpg",
+      "url": "https://beneeds.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "디어웰 허브 - AI 기반 시설 운영 리포트",
+          "desc": "공간 관리 시설 데이터를 AI가 분석해 자동 운영 리포트 생성",
+          "tech": "로컬LLM · 데이터분석 · 멀티테넌트SaaS"
+        },
+        {
+          "name": "디어웰 허브 - AI 기반 수요 예측 및 발주 자동화",
+          "desc": "공간 관리 물품 데이터를 AI가 분석해 수요 예측·자동 발주",
+          "tech": "AI수요예측 · 이커머스SaaS · B2B유통"
+        }
+      ]
+    },
+    {
+      "name": "살토시스템즈",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "살토시스템즈.jpg",
+      "url": "https://saltosystems.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "권한 기반의 지능형 보안 출입관리 솔루션, Data-on-Card (SVN)",
+          "desc": "네트워크 단절 시에도 가상 네트워크로 자체 통신·진단하는 지능형 데이터 출입관리 솔루션",
+          "tech": "Data-on-Card (Salto Virtual Network) · 출입자 분석 및 추적 (Audit Trail)"
+        }
+      ]
+    },
+    {
+      "name": "트러스테이",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "트러스테이.jpg",
+      "url": "https://www.trustay.me/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "노키 AI(nocki AI) - 화재감지",
+          "desc": "AI 기반 화재 감지·대응·실시간 신고 및 사후 분석 통합 AI 화재감지 서비스",
+          "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
+        },
+        {
+          "name": "노키 AI(nocki AI) - 주차관제",
+          "desc": "실시간 영상 감지 기반 전기차 충전·빈자리 알림 AI 주차 영상관제 서비스",
+          "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
+        }
+      ]
+    },
+    {
+      "name": "큐픽스",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "큐픽스.jpg",
+      "url": "https://www.cupix.com/kr",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "CupixWorks",
+          "desc": "공간의 변화 과정을 효율적으로 기록하고 분석하는 의사결정 플랫폼",
+          "tech": "Computer Vision · SLAM · ML"
+        }
+      ]
+    },
+    {
+      "name": "솔닥",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "솔닥.jpg",
+      "url": "https://www.soldoc.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "헬스케어 데이터 분석 및 진단보조",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "디비스쿨",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "디비스쿨.jpg",
+      "url": "https://divii.com/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "서핑베어 (Surfing Bear)",
+          "desc": "에이전틱 AI 멀티에이전트 기반 글로벌 AI 인재 실무 양성 교육 플랫폼",
+          "tech": "멀티 에이전트 오케스트레이션 · LLM 파인튜닝 · RAG 기반 학습 콘텐츠 생성"
+        }
+      ]
+    },
+    {
+      "name": "컨텍터스",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "컨텍터스.jpg",
+      "url": "https://www.doongji.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "스마트 레포트",
+          "desc": "기간별 건물에서 발생하는 비용, 민원, 임대차의 모든 정보를 요약하고 제공",
+          "tech": "빅데이터 분석 · LLM"
+        }
+      ]
+    },
+    {
+      "name": "오늘의집",
+      "stage": "operation",
+      "category": "interior",
+      "logo": "오늘의집.jpg",
+      "url": "https://ohou.se/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Ohouse AI",
+          "desc": "추천·검색, 3D방꾸미기, AR, 광고, 챗봇 등 전 영역에 AI 적용",
+          "tech": "딥러닝 추천 알고리즘 · 이미지 생성형 AI · RAG 기반 LLM"
+        }
+      ]
+    },
+    {
+      "name": "릴스퀘어",
+      "stage": "operation",
+      "category": "interior",
+      "logo": "릴스퀘어.jpg",
+      "url": "https://lilsquare.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "릴스퀘어 AI 프리뷰",
+          "desc": "AI 학습모델 기반 인테리어 시공 시뮬레이션 제공",
+          "tech": "머신러닝 · 이미지·공간 데이터 분석 · 시공 결과 예측"
+        }
+      ]
+    },
+    {
+      "name": "뉴아이",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "뉴아이.jpg",
+      "url": "https://taxai.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "자산 및 부동산 세금 AI솔루션 택스아이",
+          "desc": "930만 개 특허 알고리즘으로 맞춤형 세금 시뮬레이션과 절세 방안을 제공하는 세무 특화 AI",
+          "tech": "버티컬AI · 머신러닝 · 시뮬레이션 엔진"
+        },
+        {
+          "name": "토지보상 전용 AI알고리즘 서비스 보상아이",
+          "desc": "토지보상금 수령 시 양도세를 비교 시뮬레이션 하는 AI 솔루션",
+          "tech": "도메인AI · 머신러닝 · 빅데이터"
+        }
+      ]
+    },
+    {
+      "name": "엔이피데이터",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "엔이피데이터.jpg",
+      "url": "https://www.boospatch.com/",
+      "b2b": false,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부스패치 AI 맞춤 레포트",
+          "desc": "시세·입지·상품 데이터를 기반으로 AI가 사용자 조건을 분석해 맞춤 단지를 추천",
+          "tech": "LLM 기반 분석 · 부동산 데이터 정제·구조화 · 맞춤형 리포트 생성"
+        }
+      ]
+    },
+    {
+      "name": "파이퍼블릭",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "파이퍼블릭.jpg",
+      "url": "https://realbuy.io/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "리얼리틱스 AI",
+          "desc": "상업용부동산 데이터를 AI분석모델로 구조화해 투자 검토, 자산가치 분석, 매물비교 등 지원",
+          "tech": "검색증강생성(RAG) · 부동산 빅데이터 분석 · 자산가치 산정모델"
+        }
+      ]
+    },
+    {
+      "name": "한국프롭테크",
+      "stage": "asset",
+      "category": "asset-sale",
+      "logo": "한국프롭테크.jpg",
+      "url": "https://www.howmuchhome.co/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "도시정비 조합원을 위한 AI 사무장",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "부동산 소유자를 위한 세무 상담 AI 서비스",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "이제이엠컴퍼니",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "이제이엠컴퍼니.jpg",
+      "url": "https://wooriga.kr/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "우리가 전자결의 올인원 플랫폼",
+          "desc": "AI 의사결정 예측 기반 올인원 전자총회·전자동의서 플랫폼",
+          "tech": "AI 의사결정 예측 알고리즘 · 공인전자서명(전자서명법) · 클라우드 보안"
+        }
+      ]
+    },
+    {
+      "name": "4차혁명",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "4차혁명.jpg",
+      "url": "https://valueshopping.land/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 AVM",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 기반 시세 적정성 추정",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "부동산플래닛",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "부동산플래닛.jpg",
+      "url": "https://main.bdsplanet.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 추정가(AVM)",
+          "desc": "전국 주거·상업용 부동산 시세를 자동으로 알려주는 AI 추정가",
+          "tech": "머신러닝.딥러닝 시세 예측 · 비아파트 특화 모델링 · GIS 공간분석"
+        },
+        {
+          "name": "Planet AI",
+          "desc": "시세 상담부터 빌딩 운영·거래 마케팅까지 돕는 멀티에이전트 AI",
+          "tech": "LLM·AVM·RAG 기반 대화형 AI · 멀티에이전트"
+        }
+      ]
+    },
+    {
+      "name": "알이파트너",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "알이파트너.jpg",
+      "url": "https://www.kic114.kr/main.do",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 데이터 기반 지식산업센터 챗봇",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "핸디즈",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "핸디즈.jpg",
+      "url": "https://handys.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "Plott OS (통합 숙박 자산 관리 플랫폼)",
+          "desc": "비대면 무인 운영 및 AI 기반 실시간 객실 요금 최적화를 지원하는 통합 플랫폼",
+          "tech": "스마트 체크인 · 스마트 프라이싱 2.0 · MLOps 자동화"
+        }
+      ]
+    },
+    {
+      "name": "뉴아이",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "뉴아이.jpg",
+      "url": "https://taxai.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "자산 및 부동산 세금 AI솔루션 택스아이",
+          "desc": "930만 개 특허 알고리즘으로 맞춤형 세금 시뮬레이션과 절세 방안을 제공하는 세무 특화 AI",
+          "tech": "버티컬AI · 머신러닝 · 시뮬레이션 엔진"
+        },
+        {
+          "name": "토지보상 전용 AI알고리즘 서비스 보상아이",
+          "desc": "토지보상금 수령 시 양도세를 비교 시뮬레이션 하는 AI 솔루션",
+          "tech": "도메인AI · 머신러닝 · 빅데이터"
+        }
+      ]
+    },
+    {
+      "name": "트러스테이",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "트러스테이.jpg",
+      "url": "https://www.trustay.me/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "노키 AI(nocki AI) - 화재감지",
+          "desc": "AI 기반 화재 감지·대응·실시간 신고 및 사후 분석 통합 AI 화재감지 서비스",
+          "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
+        },
+        {
+          "name": "노키 AI(nocki AI) - 주차관제",
+          "desc": "실시간 영상 감지 기반 전기차 충전·빈자리 알림 AI 주차 영상관제 서비스",
+          "tech": "컴퓨터 비전 (Computer Vision) · On-site AI · Hyper-Connected AI"
+        }
+      ]
+    },
+    {
+      "name": "알스퀘어",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "알스퀘어.jpg",
+      "url": "https://www.rsquare.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 기반 상업용 부동산 데이터 분석 솔루션 (RA)",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 기반 부동산 공적장부 통합 분석 (데이터허브)",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "한국자산매입",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "한국자산매입.jpg",
+      "url": "https://kap.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 기반 부동산 보호약정 플랫폼",
+          "desc": "",
+          "tech": ""
+        }
+      ]
+    },
+    {
+      "name": "에듀윌",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "에듀윌.jpg",
+      "url": "https://www.eduwill.net/sites/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "부동산 중개업 AI마케팅 자동화",
+          "desc": "교수진 300명의 실무 노하우를 학습한 AI가 매물소개·시세 리포트·홍보 콘텐츠를 자동 생성",
+          "tech": "노하우 기반 LLM · RPA워크플로 자동화 · 생성형 AI이미지 합성"
+        },
+        {
+          "name": "공인중개사 합격 예측 AI",
+          "desc": "평균 대비 4.5배 합격률을 검증한 34년 학습 데이터로 합격 가능성 진단·맞춤형 문제 자동 추천",
+          "tech": "예측 모델링 · 학습 패턴 분석 · 적응형 추천 알고리즘"
+        }
+      ]
+    },
+    {
+      "name": "지지옥션",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "지지옥션.jpg",
+      "url": "https://www.ggi.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "alg 낙찰예측 · alg 시세예측",
+          "desc": "경매/부동산/거시통계 등을 분석하여 부동산 시세와 경매 낙찰 예측",
+          "tech": "빅데이터 분석/전처리 · 머신러닝(XGBoost/HGBR) · 설명 가능한 AI(XAI)"
+        },
+        {
+          "name": "경매 종결일 예측",
+          "desc": "경매빅데이터를 분석하여, 진행중인 물건의 대금납부일 / 배당 및 종결일 예측",
+          "tech": "경매 빅데이터 수집 · 머신러닝(XGBoost) · EDA분석"
+        }
+      ]
+    },
+    {
+      "name": "공간의가치",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "공간의가치.jpg",
+      "url": "https://vos.land/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "파이퍼(Piper) - AI 부동산 금융 플랫폼",
+          "desc": "금융기관 대상 AI 자동평가·대출중개·자산관리 통합 솔루션 제공",
+          "tech": "머신러닝·딥러닝 AVM · LLM 기반 대출진단 · 빅데이터 분석"
+        }
+      ]
+    },
+    {
+      "name": "더존테크윌",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "더존테크윌.jpg",
+      "url": "https://www.dztechwill.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "DEEPTAX AI",
+          "desc": "세법 관련 질의에 대해 법령·판례·해설을 기반으로 AI 답변 제공",
+          "tech": "그래프 기반 다중 AI 에이전트 오케스트레이션 · 세무 질의 구조 분석을 통한 답변 생성"
+        }
+      ]
+    },
+    {
+      "name": "지구하다",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "지구하다.jpg",
+      "url": "https://chunilenergy.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 폐기물 통합관리 플랫폼",
+          "desc": "폐기물 성상과 처리 이력을 AI로 분석해 자원화 관리",
+          "tech": "AI 성상 분석 · 빅데이터 분석 · GPS·ERP 연동"
+        },
+        {
+          "name": "AI 처리이력 검증·ESG 리포트",
+          "desc": "배차·계근·사진 데이터를 통합해 처리 흐름 자동 검증",
+          "tech": "이미지 분석 · 데이터 정합성 검증 · 리포트 자동화"
+        }
+      ]
+    },
+    {
+      "name": "파이퍼블릭",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "파이퍼블릭.jpg",
+      "url": "https://realbuy.io/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "리얼리틱스 AI",
+          "desc": "상업용부동산 데이터를 AI분석모델로 구조화해 투자 검토, 자산가치 분석, 매물비교 등 지원",
+          "tech": "검색증강생성(RAG) · 부동산 빅데이터 분석 · 자산가치 산정모델"
+        }
+      ]
+    },
+    {
+      "name": "아키스케치",
+      "stage": "infra",
+      "category": "design-tool",
+      "logo": "아키스케치.jpg",
+      "url": "https://www.archisketch.com/ko/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "Archisketch AI Agent",
+          "desc": "AI가 도면을 분석하고 가구의 추천 및 자동 배치로 설계 효율성을 높임",
+          "tech": "LLM · Spatial Analysis · AI Layout"
+        },
+        {
+          "name": "AI Studio",
+          "desc": "AI가 사진 속 공간과 가구 크기를 분석해 사진만으로 가구 상담을 지원",
+          "tech": "Image Segmentation · AI render · Scene Generation"
+        }
+      ]
+    },
+    {
+      "name": "유닛랩",
+      "stage": "infra",
+      "category": "design-tool",
+      "logo": "유닛랩.jpg",
+      "url": "https://www.unithaus.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "중저층 자동 검토·설계 모듈러 빌딩 플랫폼 서비스",
+          "desc": "AI가 부지 분석부터 다층조합 설계·견적까지 5분 자동화",
+          "tech": "하이브리드 최적화 · BIM 디지털 트윈 · GIS 운송 최적화"
+        }
+      ]
+    },
+    {
+      "name": "아이엔",
       "stage": "infra",
       "category": "contract",
-      "logo": "",
-      "url": "",
-      "featured": false
+      "logo": "아이엔.jpg",
+      "url": "https://www.imcha-in.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "임차in케어 AI",
+          "desc": "안심계약앱 탑재 모듈로 임차인 거주 중 위험을 실시간 탐지·대응",
+          "tech": "등기변동 실시간 탐지 ML · Exactly-once 파이프라인 · 4단계 맞춤 대응 알고리즘"
+        },
+        {
+          "name": "중개in",
+          "desc": "AI 매물 자동화·통화 분석·세금 리포트 결합 업무 SaaS",
+          "tech": "매물 광고 자동 생성 · STT 통화 분석 · 부동산 서류 OCR"
+        }
+      ]
+    },
+    {
+      "name": "레디포스트",
+      "stage": "infra",
+      "category": "contract",
+      "logo": "레디포스트.jpg",
+      "url": "https://www.chongone.com/solution/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "재개발/재건축 전용 AI 챗봇",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 속기사",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
