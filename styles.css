@@ -72,9 +72,9 @@ input {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-family: inherit;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   color: rgba(200, 215, 255, 0.75);
   letter-spacing: 0.06em;
   white-space: nowrap;
