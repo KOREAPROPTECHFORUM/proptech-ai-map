@@ -1736,6 +1736,22 @@
           "tech": "Image Segmentation · AI render · Scene Generation"
         }
       ]
+    },
+    {
+      "name": "유닛랩",
+      "stage": "infra",
+      "category": "design-tool",
+      "logo": "유닛랩.jpg",
+      "url": "https://www.unithaus.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "중저층 자동 검토·설계 모듈러 빌딩 플랫폼 서비스",
+          "desc": "AI가 부지 분석부터 다층조합 설계·견적까지 5분 자동화",
+          "tech": "하이브리드 최적화 · BIM 디지털 트윈 · GIS 운송 최적화"
+        }
+      ]
     }
   ]
 }
