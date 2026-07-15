@@ -639,14 +639,6 @@
       ]
     },
     {
-      "name": "PEPPER",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "DTW",
       "stage": "infra",
       "category": "data-platform",
