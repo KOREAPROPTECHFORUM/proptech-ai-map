@@ -498,14 +498,6 @@
       "featured": false
     },
     {
-      "name": "homeflix",
-      "stage": "operation",
-      "category": "space-operation",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "한국공간데이터",
       "stage": "operation",
       "category": "space-operation",
