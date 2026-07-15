@@ -428,6 +428,27 @@
           "tech": "Computer Vision · SLAM · ML"
         }
       ]
+    },
+    {
+      "name": "빌드하다",
+      "stage": "development",
+      "category": "construction",
+      "logo": "빌드하다.jpg",
+      "url": "https://buildhada.com/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "AI 공사 현황(CM) 분석",
+          "desc": "최종 견적 및 물량산출서, 공정 데이터 대비 실제 공사 현황 비교 분석",
+          "tech": "물량산출서 대비 투입 물량 검토 · 예상 투입 물량 예측 · 공사비 대비 현장 물량·공정 예측"
+        },
+        {
+          "name": "AI 견적 분석 및 공사비 조정(V.E)",
+          "desc": "실시설계, 물량산출서 기반, 입찰에 참여한 시공사들의 세부견적 비교분석 및 조정",
+          "tech": "실시설계 내 물량 산출 분석 · 물량 산출 대비 공사비 조정"
+        }
+      ]
     }
   ]
 }
