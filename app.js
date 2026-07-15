@@ -309,12 +309,42 @@ function renderStats() {
   document.querySelector("#category-count").textContent = String(Object.keys(categoryById).length);
 }
 
+function renderBusiness() {
+  const allCompanies = uniqueCompanies(companies.filter(matchesCompany));
+  const b2bOnly = allCompanies.filter(c => c.b2b && !c.b2c);
+  const b2cOnly = allCompanies.filter(c => c.b2c && !c.b2b);
+  const both    = allCompanies.filter(c => c.b2b && c.b2c);
+
+  const fillZone = (zoneId, list) => {
+    const zone = document.getElementById(zoneId);
+    if (!zone) return;
+    zone.replaceChildren();
+    if (!list.length) {
+      const empty = document.createElement('span');
+      empty.className = 'venn-empty';
+      empty.textContent = '해당 기업 없음';
+      zone.appendChild(empty);
+      return;
+    }
+    list.forEach((company, i) => {
+      const chip = createCompanyChip(company);
+      setFloatingPosition(chip, i, list.length, zoneId);
+      zone.appendChild(chip);
+    });
+  };
+
+  fillZone('zone-b2b', b2bOnly);
+  fillZone('zone-both', both);
+  fillZone('zone-b2c', b2cOnly);
+}
+
 function renderViews() {
   document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.toggle("is-active", tab.dataset.view === state.view);
   });
   document.querySelector("#map-view").classList.toggle("is-active", state.view === "map");
   document.querySelector("#directory-view").classList.toggle("is-active", state.view === "directory");
+  document.querySelector("#business-view").classList.toggle("is-active", state.view === "business");
   document.querySelector("#map-only-desc").style.display = state.view === "map" ? "" : "none";
 }
 
@@ -324,6 +354,7 @@ function render() {
   renderCategoryFilters();
   renderMap();
   renderDirectory();
+  renderBusiness();
 }
 
 document.querySelectorAll(".tab").forEach(tab => {

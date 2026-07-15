@@ -24,8 +24,9 @@
       <img src="assets/kpf-logo.png" alt="Korea Proptech Forum" class="brand-logo">
     </div>
     <nav class="view-tabs" aria-label="보기 전환">
-      <button class="tab is-active" type="button" data-view="map">맵 보기</button>
-      <button class="tab" type="button" data-view="directory">목록 보기</button>
+      <button class="tab is-active" type="button" data-view="map">프롭테크 AI 맵</button>
+      <button class="tab" type="button" data-view="directory">프롭테크 AI 기업 목록</button>
+      <button class="tab" type="button" data-view="business">비즈니스 영역</button>
     </nav>
   </header>
 
@@ -58,6 +59,31 @@
     </section>
 
     <section id="map-view" class="view is-active" aria-label="프롭테크 AI 맵"></section>
+
+    <section id="business-view" class="view" aria-label="비즈니스 영역">
+      <div class="venn-wrap">
+        <div class="venn-diagram">
+          <div class="venn-circle-b2b" aria-hidden="true"></div>
+          <div class="venn-circle-b2c" aria-hidden="true"></div>
+          <div class="venn-zones">
+            <div class="venn-zone venn-zone-b2b">
+              <div class="venn-zone-label">B2B</div>
+              <div class="venn-zone-sub">기업 및 정부·공공기관 대상</div>
+              <div class="venn-chip-area floating-list" id="zone-b2b"></div>
+            </div>
+            <div class="venn-zone venn-zone-both">
+              <div class="venn-zone-label">B2B · B2C</div>
+              <div class="venn-chip-area floating-list" id="zone-both"></div>
+            </div>
+            <div class="venn-zone venn-zone-b2c">
+              <div class="venn-zone-label">B2C</div>
+              <div class="venn-zone-sub">일반 소비자 대상</div>
+              <div class="venn-chip-area floating-list" id="zone-b2c"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="directory-view" class="view" aria-label="회사 목록">
       <div class="directory-layout">

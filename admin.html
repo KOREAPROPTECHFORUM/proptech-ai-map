@@ -243,6 +243,7 @@
           <th>단계</th>
           <th>카테고리</th>
           <th>홈페이지</th>
+          <th style="width:90px">영역</th>
           <th style="width:110px">관리</th>
         </tr>
       </thead>
@@ -323,6 +324,19 @@
     <div id="logo-preview-wrap">
       <img id="logo-preview" src="" alt="로고 미리보기" />
       <span id="logo-fname"></span>
+    </div>
+
+    <div class="field">
+      <label>비즈니스 영역</label>
+      <div class="check-row">
+        <input type="checkbox" id="f-b2b" />
+        <label for="f-b2b">B2B — 기업 및 정부·공공기관 대상 서비스</label>
+      </div>
+      <div class="check-row">
+        <input type="checkbox" id="f-b2c" />
+        <label for="f-b2c">B2C — 일반 소비자 대상 서비스</label>
+      </div>
+      <span class="help-text">둘 다 체크하면 B2B·B2C 교차 영역에 표시됩니다.</span>
     </div>
 
     <div class="check-row">
@@ -515,6 +529,7 @@ function renderList() {
       <td><span class="stage-pill">${stageMap[c.stage]?.name || c.stage}</span></td>
       <td class="cat-text">${catMap[c.category]?.name || c.category}</td>
       <td>${c.url ? `<a class="url-text" href="${c.url}" target="_blank">${c.url}</a>` : '<span style="color:var(--muted)">—</span>'}</td>
+      <td style="font-size:12px">${[c.b2b && 'B2B', c.b2c && 'B2C'].filter(Boolean).join(' · ') || '<span style="color:var(--muted)">—</span>'}</td>
       <td><div class="actions">
         <button class="btn-ghost" data-edit="${c._i}">수정</button>
         <button class="btn-danger" data-del="${c._i}">삭제</button>
@@ -635,6 +650,8 @@ document.getElementById('btn-add').onclick = () => {
   document.getElementById('f-stage').value = '';
   document.getElementById('f-category').replaceChildren(new Option('단계 먼저 선택', ''));
   document.getElementById('f-url').value = '';
+  document.getElementById('f-b2b').checked = false;
+  document.getElementById('f-b2c').checked = false;
   document.getElementById('f-featured').checked = false;
   currentLogo = '';
   clearServiceFields();
@@ -650,6 +667,8 @@ function openEdit(i) {
   document.getElementById('f-stage').dispatchEvent(new Event('change'));
   document.getElementById('f-category').value = c.category;
   document.getElementById('f-url').value = c.url || '';
+  document.getElementById('f-b2b').checked = !!c.b2b;
+  document.getElementById('f-b2c').checked = !!c.b2c;
   document.getElementById('f-featured').checked = !!c.featured;
   loadServiceFields(c.services);
   currentLogo = c.logo || '';
@@ -669,6 +688,8 @@ async function saveCompany() {
   const stage = document.getElementById('f-stage').value;
   const category = document.getElementById('f-category').value;
   const url = document.getElementById('f-url').value.trim();
+  const b2b = document.getElementById('f-b2b').checked;
+  const b2c = document.getElementById('f-b2c').checked;
   const featured = document.getElementById('f-featured').checked;
 
   if (!name || !stage || !category) { alert('기업명, 단계, 카테고리는 필수입니다.'); return; }
@@ -685,7 +706,7 @@ async function saveCompany() {
     }
 
     const services = collectServices();
-    const entry = { name, stage, category, logo, url, featured, services };
+    const entry = { name, stage, category, logo, url, b2b, b2c, featured, services };
     if (editIdx === -1) companies.push(entry);
     else companies[editIdx] = entry;
 

@@ -624,6 +624,96 @@ h1 {
   display: none;
 }
 
+/* ── Venn / Business View ───────────────────────────────────── */
+.venn-wrap {
+  padding: 24px 16px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.venn-diagram {
+  position: relative;
+  min-height: 480px;
+}
+
+.venn-circle-b2b,
+.venn-circle-b2c {
+  position: absolute;
+  top: 50%;
+  width: 67%;
+  height: 400px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.venn-circle-b2b {
+  left: 0;
+  background: rgba(43, 99, 255, 0.10);
+  border: 2px solid rgba(43, 99, 255, 0.38);
+}
+
+.venn-circle-b2c {
+  right: 0;
+  background: rgba(97, 38, 217, 0.10);
+  border: 2px solid rgba(97, 38, 217, 0.38);
+}
+
+.venn-zones {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 480px;
+}
+
+.venn-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 12px 16px;
+}
+
+.venn-zone-label {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.venn-zone-sub {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.venn-zone-both .venn-zone-label {
+  color: rgba(178, 199, 255, 0.9);
+}
+
+.venn-chip-area {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 360px;
+}
+
+.venn-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ── Directory ───────────────────────────────────────────────── */
 .directory-layout {
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr);
