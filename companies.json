@@ -639,14 +639,6 @@
       ]
     },
     {
-      "name": "Archisketch",
-      "stage": "infra",
-      "category": "design-tool",
-      "logo": "",
-      "url": "https://www.archisketch.com/",
-      "featured": false
-    },
-    {
       "name": "모두싸인",
       "stage": "infra",
       "category": "contract",
