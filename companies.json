@@ -1085,6 +1085,22 @@
           "tech": "AI 공간 상태 분석 기술 · 공간 반응형 환경 제어 기술 · 생체·환경 데이터 웰니스 운영 기술"
         }
       ]
+    },
+    {
+      "name": "한국공간데이터",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "한국공간데이터.jpg",
+      "url": "https://www.thecleanier.com/",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "공간관리 현황분석(이슈 트래킹 등)",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
