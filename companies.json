@@ -224,14 +224,6 @@
       ]
     },
     {
-      "name": "READPOST",
-      "stage": "development",
-      "category": "design-permit",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "직방",
       "stage": "transaction",
       "category": "brokerage",
