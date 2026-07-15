@@ -1493,6 +1493,22 @@
           "tech": "LLM·AVM·RAG 기반 대화형 AI · 멀티에이전트"
         }
       ]
+    },
+    {
+      "name": "알이파트너",
+      "stage": "infra",
+      "category": "data-platform",
+      "logo": "알이파트너.jpg",
+      "url": "https://www.kic114.kr/main.do",
+      "b2b": true,
+      "b2c": false,
+      "services": [
+        {
+          "name": "AI 데이터 기반 지식산업센터 챗봇",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
