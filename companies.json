@@ -1281,6 +1281,22 @@
           "tech": "Computer Vision · SLAM · ML"
         }
       ]
+    },
+    {
+      "name": "솔닥",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "솔닥.jpg",
+      "url": "https://www.soldoc.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "헬스케어 데이터 분석 및 진단보조",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
