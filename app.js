@@ -338,6 +338,12 @@ function renderBusiness() {
   fillZone('zone-b2c', b2cOnly);
 }
 
+const PAGE_TITLES = {
+  map: "Proptech AI Map",
+  directory: "프롭테크 AI 기업 목록",
+  business: "프롭테크 AI 비즈니스 벤다이어그램"
+};
+
 function renderViews() {
   document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.toggle("is-active", tab.dataset.view === state.view);
@@ -346,6 +352,7 @@ function renderViews() {
   document.querySelector("#directory-view").classList.toggle("is-active", state.view === "directory");
   document.querySelector("#business-view").classList.toggle("is-active", state.view === "business");
   document.querySelector("#map-only-desc").style.display = state.view === "map" ? "" : "none";
+  document.querySelector("#page-title").textContent = PAGE_TITLES[state.view] || PAGE_TITLES.map;
 }
 
 function render() {
