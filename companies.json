@@ -832,6 +832,27 @@
           "tech": "주변 상권 빅데이터 분석"
         }
       ]
+    },
+    {
+      "name": "아이엔",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "아이엔.jpg",
+      "url": "https://www.imcha-in.com/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "임차in케어 AI",
+          "desc": "안심계약앱 탑재 모듈로 임차인 거주 중 위험을 실시간 탐지·대응",
+          "tech": "등기변동 실시간 탐지 ML · Exactly-once 파이프라인 · 4단계 맞춤 대응 알고리즘"
+        },
+        {
+          "name": "중개in",
+          "desc": "AI 매물 자동화·통화 분석·세금 리포트 결합 업무 SaaS",
+          "tech": "AI 매물 광고 자동 생성 · STT 통화 분석 · 부동산 서류 OCR"
+        }
+      ]
     }
   ]
 }
