@@ -340,8 +340,8 @@ function renderBusiness() {
 
 const PAGE_TITLES = {
   map: "Proptech AI Map",
-  directory: "프롭테크 AI 기업 목록",
-  business: "프롭테크 AI 비즈니스 벤다이어그램"
+  directory: "Proptech AI Directory",
+  business: "Proptech AI Business Segments"
 };
 
 function renderViews() {
