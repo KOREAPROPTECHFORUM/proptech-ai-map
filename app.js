@@ -200,7 +200,7 @@ function renderMap() {
 
   const title = document.createElement("div");
   title.className = "map-title";
-  title.innerHTML = `<strong>Proptech AI Map</strong><span>${visibleCompanies.length} logo placements · floating ecosystem</span>`;
+  title.innerHTML = `<strong>Proptech AI Map</strong><span>Korea Proptech Forum</span>`;
 
   const content = document.createElement("div");
   content.className = "map-content";
