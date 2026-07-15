@@ -1207,6 +1207,27 @@
           "tech": "음성 인식(STT) · LLM 텍스트 요약 · 대화 데이터 분석"
         }
       ]
+    },
+    {
+      "name": "비니즈",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "비니즈.jpg",
+      "url": "https://beneeds.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "디어웰 허브 - AI 기반 시설 운영 리포트",
+          "desc": "공간 관리 시설 데이터를 AI가 분석해 자동 운영 리포트 생성",
+          "tech": "로컬LLM · 데이터분석 · 멀티테넌트SaaS"
+        },
+        {
+          "name": "디어웰 허브 - AI 기반 수요 예측 및 발주 자동화",
+          "desc": "공간 관리 물품 데이터를 AI가 분석해 수요 예측·자동 발주",
+          "tech": "AI수요예측 · 이커머스SaaS · B2B유통"
+        }
+      ]
     }
   ]
 }
