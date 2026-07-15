@@ -14,10 +14,22 @@ function startChipRotation(containerSelector, interval = 2500) {
     if (chips.length <= 1) return;
     let current = 0;
     chips[current].style.zIndex = '10';
+    const activate = (chip) => {
+      chip.style.zIndex = '10';
+      chip.style.transform = 'translate(-50%, -50%) scale(1.18)';
+      chip.style.boxShadow = '0 0 0 2px #5384ff, 0 12px 28px rgba(0,0,0,0.36)';
+      chip.style.transition = 'transform 300ms ease, box-shadow 300ms ease';
+    };
+    const deactivate = (chip) => {
+      chip.style.zIndex = '';
+      chip.style.transform = '';
+      chip.style.boxShadow = '';
+    };
+    activate(chips[current]);
     const tick = () => {
-      chips[current].style.zIndex = '';
+      deactivate(chips[current]);
       current = (current + 1) % chips.length;
-      chips[current].style.zIndex = '10';
+      activate(chips[current]);
       const id = setTimeout(tick, interval);
       _rotationTimers.push(id);
     };
