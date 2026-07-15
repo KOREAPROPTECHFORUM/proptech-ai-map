@@ -359,6 +359,27 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "레디포스트",
+      "stage": "development",
+      "category": "design-permit",
+      "logo": "레디포스트.jpg",
+      "url": "https://www.chongone.com/solution/home",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "재개발/재건축 전용 AI 챗봇",
+          "desc": "",
+          "tech": ""
+        },
+        {
+          "name": "AI 속기사",
+          "desc": "",
+          "tech": ""
+        }
+      ]
     }
   ]
 }
