@@ -1313,6 +1313,22 @@
           "tech": "멀티 에이전트 오케스트레이션 · LLM 파인튜닝 · RAG 기반 학습 콘텐츠 생성"
         }
       ]
+    },
+    {
+      "name": "컨텍터스",
+      "stage": "operation",
+      "category": "facility",
+      "logo": "컨텍터스.jpg",
+      "url": "https://www.doongji.co.kr/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "스마트 레포트",
+          "desc": "기간별 건물에서 발생하는 비용, 민원, 임대차의 모든 정보를 요약하고 제공",
+          "tech": "빅데이터 분석 · LLM"
+        }
+      ]
     }
   ]
 }
