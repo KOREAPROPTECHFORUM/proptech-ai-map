@@ -615,6 +615,22 @@
           "tech": "인터랙티브 웹 변환 기술 · 3-Layer 보고서 구조화"
         }
       ]
+    },
+    {
+      "name": "부동산빅뱅",
+      "stage": "transaction",
+      "category": "brokerage",
+      "logo": "부동산빅뱅.jpg",
+      "url": "https://boopd.ai/",
+      "b2b": true,
+      "b2c": true,
+      "services": [
+        {
+          "name": "피디언 AI(PIDIAN AI)",
+          "desc": "LLM을 활용한 대화형 AI가 국내 부동산에 대한 정보를 실시간으로 제공",
+          "tech": "머신러닝 · 빅데이터 · 가격예측"
+        }
+      ]
     }
   ]
 }
