@@ -393,6 +393,24 @@ h1 {
   text-align: center;
 }
 
+.rail-stage.is-active strong {
+  color: #fff;
+}
+
+.rail-stage.is-active::after {
+  background: #fff;
+  box-shadow:
+    0 0 0 3px var(--blue),
+    0 0 0 5px rgba(92, 139, 255, 0.5),
+    0 0 20px 4px rgba(92, 139, 255, 0.9);
+  animation: rail-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes rail-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px var(--blue), 0 0 0 5px rgba(92,139,255,0.5), 0 0 20px 4px rgba(92,139,255,0.9); }
+  50%       { box-shadow: 0 0 0 3px var(--blue), 0 0 0 8px rgba(92,139,255,0.3), 0 0 32px 8px rgba(92,139,255,0.6); }
+}
+
 .rail-stage span {
   display: none;
   font-size: 12px;

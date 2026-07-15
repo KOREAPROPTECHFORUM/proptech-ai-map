@@ -210,6 +210,8 @@ function renderMap() {
   rail.replaceChildren(...stages.map(stage => {
     const node = document.createElement("div");
     node.className = "rail-stage";
+    node.dataset.stage = stage.id;
+    if (state.stage === stage.id) node.classList.add("is-active");
     node.innerHTML = `<strong>${stage.name}</strong>`;
     return node;
   }));
