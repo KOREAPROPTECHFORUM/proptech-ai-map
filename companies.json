@@ -1101,6 +1101,27 @@
           "tech": ""
         }
       ]
+    },
+    {
+      "name": "케어링",
+      "stage": "operation",
+      "category": "space-operation",
+      "logo": "케어링.jpg",
+      "url": "https://caring.co.kr/",
+      "b2b": false,
+      "b2c": false,
+      "services": [
+        {
+          "name": "케어링 통합 운영 플랫폼 (ERP·CAATS·NEXUS·AI마음돌봄)",
+          "desc": "생성형 AI 기반 돌봄 행정 자동화·운영 데이터 분석과 음성 AI 안부 전화 정서 케어 제공",
+          "tech": "생성형 AI 및 자연어 처리 기술 · 분산 처리 자동화 및 데이터 인프라"
+        },
+        {
+          "name": "Physical AI 시뮬레이션 (로봇돌봄학습)",
+          "desc": "돌봄 노하우 기반 시뮬레이션 환경에서 Physical AI 학습 데이터 생성 및 실증",
+          "tech": "Physical AI 및 시뮬레이션"
+        }
+      ]
     }
   ]
 }
