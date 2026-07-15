@@ -546,14 +546,6 @@
       "featured": false
     },
     {
-      "name": "soldoc",
-      "stage": "operation",
-      "category": "facility",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "오늘의집",
       "stage": "operation",
       "category": "interior",
