@@ -210,7 +210,7 @@ function renderMap() {
   rail.replaceChildren(...stages.map(stage => {
     const node = document.createElement("div");
     node.className = "rail-stage";
-    node.innerHTML = `<strong>${stage.number}</strong><span>${stage.name}</span>`;
+    node.innerHTML = `<strong>${stage.name}</strong>`;
     return node;
   }));
 
