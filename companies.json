@@ -639,14 +639,6 @@
       ]
     },
     {
-      "name": "R2Square",
-      "stage": "infra",
-      "category": "data-platform",
-      "logo": "",
-      "url": "https://www.rsquare.co.kr/",
-      "featured": false
-    },
-    {
       "name": "KAP 한국자산매입",
       "stage": "infra",
       "category": "data-platform",
