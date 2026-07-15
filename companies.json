@@ -647,14 +647,6 @@
       "featured": false
     },
     {
-      "name": "READPOST",
-      "stage": "infra",
-      "category": "contract",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "에디트콜렉티브",
       "stage": "development",
       "category": "planning",
