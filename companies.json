@@ -86,7 +86,7 @@
       "logo": "위엑스코퍼레이션.jpg",
       "url": "https://wexcorporation.com/",
       "b2b": true,
-      "b2c": false,
+      "b2c": true,
       "services": [
         {
           "name": "AI Portfolio Investment Model",
