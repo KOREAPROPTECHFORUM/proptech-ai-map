@@ -232,14 +232,6 @@
       "featured": false
     },
     {
-      "name": "CUPIX",
-      "stage": "development",
-      "category": "construction",
-      "logo": "",
-      "url": "",
-      "featured": false
-    },
-    {
       "name": "직방",
       "stage": "transaction",
       "category": "brokerage",
