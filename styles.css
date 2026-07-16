@@ -787,6 +787,13 @@ h1 {
   width: clamp(80px, 6.4vw, 108px);
   height: clamp(36px, 2.8vw, 48px);
   padding: 6px 12px;
+  z-index: 1;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.venn-chip-area .company-chip.venn-raised {
+  z-index: 50;
+  transform: translate(-50%, -50%) scale(1.07);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
 }
 
 .venn-empty {

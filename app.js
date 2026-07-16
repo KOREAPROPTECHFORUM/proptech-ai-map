@@ -1,4 +1,5 @@
 let companies = [];
+let vennCycleTimers = [];
 
 const stages = [
   {
@@ -356,9 +357,26 @@ function renderBusiness() {
     });
   };
 
+  vennCycleTimers.forEach(clearInterval);
+  vennCycleTimers = [];
+
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
+
+  ['zone-b2b', 'zone-both', 'zone-b2c'].forEach(zoneId => {
+    const zone = document.getElementById(zoneId);
+    if (!zone) return;
+    const chips = Array.from(zone.querySelectorAll('.company-chip'));
+    if (chips.length <= 1) return;
+    let cur = 0;
+    const tick = () => {
+      chips.forEach((c, i) => c.classList.toggle('venn-raised', i === cur));
+      cur = (cur + 1) % chips.length;
+    };
+    tick();
+    vennCycleTimers.push(setInterval(tick, 3000));
+  });
 }
 
 const PAGE_TITLES = {
