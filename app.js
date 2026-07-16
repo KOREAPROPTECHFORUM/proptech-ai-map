@@ -1,45 +1,4 @@
 let companies = [];
-let _vennCycleTimers = [];
-
-function clearVennCycle() {
-  _vennCycleTimers.forEach(clearInterval);
-  _vennCycleTimers = [];
-}
-
-function startVennCycle() {
-  clearVennCycle();
-  [['zone-b2b', 4], ['zone-both', 6], ['zone-b2c', 4]].forEach(([zoneId, maxVisible]) => {
-    const zone = document.getElementById(zoneId);
-    if (!zone) return;
-    const chips = [...zone.querySelectorAll('.company-chip')];
-    if (chips.length <= maxVisible) return;
-
-    chips.forEach((c, i) => {
-      c.style.transition = 'opacity 500ms ease';
-      c.style.opacity = i < maxVisible ? '1' : '0';
-      c.style.pointerEvents = i < maxVisible ? '' : 'none';
-    });
-
-    const queue = chips.slice(maxVisible).map((_, i) => maxVisible + i);
-    let slot = 0;
-
-    const id = setInterval(() => {
-      if (!queue.length) return;
-      const outChip = chips[slot];
-      const inIdx = queue.shift();
-      const inChip = chips[inIdx];
-      inChip.style.setProperty('--x', outChip.style.getPropertyValue('--x'));
-      inChip.style.setProperty('--y', outChip.style.getPropertyValue('--y'));
-      outChip.style.opacity = '0';
-      outChip.style.pointerEvents = 'none';
-      setTimeout(() => { inChip.style.opacity = '1'; inChip.style.pointerEvents = ''; }, 550);
-      queue.push(slot);
-      slot = (slot + 1) % maxVisible;
-    }, 2500);
-
-    _vennCycleTimers.push(id);
-  });
-}
 
 const stages = [
   {
@@ -175,16 +134,17 @@ function createCompanyChip(company) {
   return chip;
 }
 
-function setFloatingPosition(chip, index, total, categoryId, xRange, yRange) {
+function setFloatingPosition(chip, index, total, categoryId, xRange, yRange, maxCols, jitterScale = 1) {
   const [xMin, xMax] = xRange || [16, 84];
   const [yMin, yMax] = yRange || [22, 78];
-  const columns = total >= 10 ? 4 : total >= 6 ? 3 : total >= 3 ? 2 : 1;
+  const autoCols = total >= 10 ? 4 : total >= 6 ? 3 : total >= 3 ? 2 : 1;
+  const columns = maxCols ? Math.min(maxCols, autoCols) : autoCols;
   const rows = Math.ceil(total / columns);
   const col = index % columns;
   const row = Math.floor(index / columns);
   const seed = Array.from(`${categoryId}-${index}`).reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  const jitterX = ((seed % 13) - 6) * 0.8;
-  const jitterY = (((seed * 7) % 11) - 5) * 0.9;
+  const jitterX = ((seed % 13) - 6) * 0.8 * jitterScale;
+  const jitterY = (((seed * 7) % 11) - 5) * 0.9 * jitterScale;
   const x = Math.min(xMax, Math.max(xMin, ((col + 0.5) / columns) * 100 + jitterX));
   const y = Math.min(yMax, Math.max(yMin, ((row + 0.5) / rows) * 100 + jitterY));
   chip.style.setProperty("--x", `${x}%`);
@@ -387,9 +347,11 @@ function renderBusiness() {
       zone.appendChild(empty);
       return;
     }
+    const maxCols = zoneId === 'zone-both' ? 3 : 2;
+    const xRange = zoneId === 'zone-both' ? [15, 85] : [20, 80];
     list.forEach((company, index) => {
       const chip = createCompanyChip(company);
-      setFloatingPosition(chip, index, list.length, zoneId, [22, 78], [25, 75]);
+      setFloatingPosition(chip, index, list.length, zoneId, xRange, [8, 92], maxCols, 0.3);
       zone.appendChild(chip);
     });
   };
@@ -397,7 +359,6 @@ function renderBusiness() {
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
-  startVennCycle();
 }
 
 const PAGE_TITLES = {
