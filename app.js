@@ -272,9 +272,13 @@ function renderMap() {
     card.className = `stage-card stage-${stage.id}${isFiltered ? (isActive ? " is-active" : " is-dimmed") : ""}`;
     card.style.setProperty("--category-count", String(Math.max(categories.length, 1)));
 
-    const matchesWithoutStage = company =>
-      (state.category === "all" || company.category === state.category) &&
-      (!state.query || `${company.name} ${stageById[company.stage]?.name} ${categoryById[company.category]?.name}`.toLowerCase().includes(state.query.toLowerCase()));
+    const matchesWithoutStage = company => {
+      if (state.category !== "all" && company.category !== state.category) return false;
+      if (!state.query) return true;
+      const serviceParts = (company.services || []).map(s => `${s.name} ${s.desc} ${s.tech}`).join(' ');
+      const searchable = `${company.name} ${stageById[company.stage]?.name} ${categoryById[company.category]?.name} ${serviceParts}`.toLowerCase();
+      return searchable.includes(state.query.toLowerCase());
+    };
 
     const categoryCounts = categories.map(category => companies.filter(company =>
       company.stage === stage.id && company.category === category.id && matchesWithoutStage(company)
