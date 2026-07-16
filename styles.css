@@ -506,6 +506,32 @@ h1 {
   margin-top: 4px;
 }
 
+.company-list.floating-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+  padding: 8px 4px;
+  height: auto;
+}
+
+.company-list.floating-list .company-chip {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  animation: float-y var(--float-duration, 6s) ease-in-out var(--float-delay, 0s) infinite alternate;
+}
+
+.company-list.floating-list .company-chip:hover,
+.company-list.floating-list .company-chip:focus-visible {
+  transform: scale(1.08);
+}
+
+@keyframes float-y {
+  from { transform: translateY(-4px); }
+  to   { transform: translateY(4px); }
+}
 
 .company-chip {
   position: absolute;
