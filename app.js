@@ -320,7 +320,9 @@ function renderDirectory() {
 
 function renderStats() {
   const uniqueCount = new Set(companies.map(c => c.name)).size;
-  document.querySelector("#unique-company-count").textContent = String(uniqueCount);
+  const bizCount = new Set(companies.filter(c => c.b2b || c.b2c).map(c => c.name)).size;
+  document.querySelector("#unique-company-count").textContent =
+    state.view === "business" ? String(bizCount) : String(uniqueCount);
   document.querySelector("#company-count").textContent = String(companies.length);
   document.querySelector("#category-count").textContent = String(Object.keys(categoryById).length);
 }
@@ -384,6 +386,7 @@ function renderViews() {
 
 function render() {
   renderViews();
+  renderStats();
   renderStageFilters();
   renderCategoryFilters();
   renderMap();
