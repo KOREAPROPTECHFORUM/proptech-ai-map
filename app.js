@@ -349,7 +349,9 @@ function renderBusiness() {
     }
     list.forEach((company, index) => {
       const chip = createCompanyChip(company);
-      setFloatingPosition(chip, index, list.length, zoneId);
+      const seed = Array.from(`${zoneId}-${index}`).reduce((s, c) => s + c.charCodeAt(0), 0);
+      chip.style.setProperty('--float-duration', `${5.5 + (seed % 7) * 0.45}s`);
+      chip.style.setProperty('--float-delay', `${-(seed % 9) * 0.4}s`);
       zone.appendChild(chip);
     });
   };
