@@ -720,7 +720,7 @@ h1 {
 .venn-circle-b2c {
   position: absolute;
   top: 50%;
-  width: 74%;
+  width: 62%;
   height: 600px;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -730,21 +730,21 @@ h1 {
 
 .venn-circle-b2b {
   left: 0;
-  background: rgba(43, 99, 255, 0.10);
-  border: 2px solid rgba(43, 99, 255, 0.38);
+  background: rgba(43, 99, 255, 0.13);
+  border: 2px solid rgba(43, 99, 255, 0.5);
 }
 
 .venn-circle-b2c {
   right: 0;
-  background: rgba(97, 38, 217, 0.10);
-  border: 2px solid rgba(97, 38, 217, 0.38);
+  background: rgba(180, 38, 217, 0.10);
+  border: 2px solid rgba(180, 38, 217, 0.45);
 }
 
 .venn-zones {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1.8fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1.4fr;
   min-height: 720px;
 }
 
