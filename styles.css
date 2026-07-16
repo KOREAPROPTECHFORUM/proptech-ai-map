@@ -787,6 +787,14 @@ h1 {
   width: clamp(80px, 6.4vw, 108px);
   height: clamp(36px, 2.8vw, 48px);
   padding: 6px 12px;
+  animation: none;
+  transition: transform 200ms ease, box-shadow 200ms ease, z-index 0ms;
+}
+
+.venn-chip-area .company-chip:hover,
+.venn-chip-area .company-chip:focus-visible {
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(1.12);
 }
 
 .venn-empty {
