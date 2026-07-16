@@ -539,8 +539,8 @@ h1 {
   top: var(--y, 50%);
   display: inline-grid;
   place-items: center;
-  width: clamp(72px, 5.7vw, 98px);
-  height: clamp(32px, 2.5vw, 43px);
+  width: clamp(68px, 5.4vw, 92px);
+  height: clamp(30px, 2.4vw, 40px);
   padding: 5px 9px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.28);
