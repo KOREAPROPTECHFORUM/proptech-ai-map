@@ -63,26 +63,26 @@
     <section id="map-view" class="view is-active" aria-label="프롭테크 AI 맵"></section>
 
     <section id="business-view" class="view" aria-label="비즈니스 영역">
-      <div class="venn-wrap">
-        <div class="venn-diagram">
-          <div class="venn-circle-b2b" aria-hidden="true"></div>
-          <div class="venn-circle-b2c" aria-hidden="true"></div>
-          <div class="venn-zones">
-            <div class="venn-zone venn-zone-b2b">
-              <div class="venn-zone-label">B2B</div>
-              <div class="venn-zone-sub">기업 및 정부·공공기관 대상</div>
-              <div class="venn-chip-area floating-list" id="zone-b2b"></div>
-            </div>
-            <div class="venn-zone venn-zone-both">
-              <div class="venn-zone-label">B2B · B2C</div>
-              <div class="venn-chip-area floating-list" id="zone-both"></div>
-            </div>
-            <div class="venn-zone venn-zone-b2c">
-              <div class="venn-zone-label">B2C</div>
-              <div class="venn-zone-sub">일반 소비자 대상</div>
-              <div class="venn-chip-area floating-list" id="zone-b2c"></div>
-            </div>
+      <div class="biz-columns">
+        <div class="biz-col">
+          <div class="biz-col-header">
+            <div class="biz-col-label">B2B</div>
+            <div class="biz-col-sub">기업 및 정부·공공기관 대상</div>
           </div>
+          <div class="biz-chip-area" id="zone-b2b"></div>
+        </div>
+        <div class="biz-col biz-col-center">
+          <div class="biz-col-header">
+            <div class="biz-col-label">B2B · B2C</div>
+          </div>
+          <div class="biz-chip-area" id="zone-both"></div>
+        </div>
+        <div class="biz-col">
+          <div class="biz-col-header">
+            <div class="biz-col-label">B2C</div>
+            <div class="biz-col-sub">일반 소비자 대상</div>
+          </div>
+          <div class="biz-chip-area" id="zone-b2c"></div>
         </div>
       </div>
     </section>

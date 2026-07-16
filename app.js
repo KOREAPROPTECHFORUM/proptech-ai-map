@@ -1,5 +1,4 @@
 let companies = [];
-let vennCycleTimers = [];
 
 const stages = [
   {
@@ -343,40 +342,21 @@ function renderBusiness() {
     zone.replaceChildren();
     if (!list.length) {
       const empty = document.createElement('span');
-      empty.className = 'venn-empty';
+      empty.className = 'biz-empty';
       empty.textContent = '해당 기업 없음';
       zone.appendChild(empty);
       return;
     }
-    const xRange = [24, 76];
-    const yRange = zoneId === 'zone-both' ? [18, 78] : [22, 74];
     list.forEach((company, index) => {
       const chip = createCompanyChip(company);
-      setFloatingPosition(chip, index, list.length, zoneId, xRange, yRange);
+      setFloatingPosition(chip, index, list.length, zoneId);
       zone.appendChild(chip);
     });
   };
 
-  vennCycleTimers.forEach(clearInterval);
-  vennCycleTimers = [];
-
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
-
-  ['zone-b2b', 'zone-both', 'zone-b2c'].forEach(zoneId => {
-    const zone = document.getElementById(zoneId);
-    if (!zone) return;
-    const chips = Array.from(zone.querySelectorAll('.company-chip'));
-    if (chips.length <= 1) return;
-    let cur = 0;
-    const tick = () => {
-      chips.forEach((c, i) => c.classList.toggle('venn-raised', i === cur));
-      cur = (cur + 1) % chips.length;
-    };
-    tick();
-    vennCycleTimers.push(setInterval(tick, 3000));
-  });
 }
 
 const PAGE_TITLES = {
