@@ -325,7 +325,9 @@ function renderDirectory() {
 
   if (state.sort === "stage") {
     const order = stages.map(s => s.id);
-    visibleCompanies = [...visibleCompanies].sort((a, b) => order.indexOf(a.stage) - order.indexOf(b.stage));
+    visibleCompanies = [...visibleCompanies].sort((a, b) =>
+      order.indexOf(a.stage) - order.indexOf(b.stage) || a.name.localeCompare(b.name, 'ko')
+    );
   } else {
     visibleCompanies = [...visibleCompanies].sort((a, b) => a.name.localeCompare(b.name, 'ko'));
   }
