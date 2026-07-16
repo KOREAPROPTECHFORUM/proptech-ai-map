@@ -216,6 +216,42 @@
       background: rgba(43,99,255,0.08); border: 1px solid rgba(43,99,255,0.2);
     }
     .pat-note a { color: #7aadff; }
+
+    /* ── Placements ── */
+    .placement-list {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      min-height: 32px; margin-bottom: 10px;
+    }
+    .placement-tag {
+      display: flex; align-items: center; gap: 6px;
+      padding: 4px 10px; border-radius: 999px;
+      background: rgba(43,99,255,0.18); font-size: 12px; color: #aac0ff;
+      border: 1px solid rgba(43,99,255,0.3);
+    }
+    .placement-tag button {
+      background: none; border: none; color: #7aadff;
+      cursor: pointer; font-size: 14px; padding: 0; line-height: 1;
+    }
+    .placement-tag button:hover { color: #fff; }
+    .placement-add-row {
+      display: flex; gap: 8px; align-items: center;
+    }
+    .placement-add-row select {
+      flex: 1; height: 34px;
+      border: 1px solid rgba(255,255,255,0.16); border-radius: 7px;
+      padding: 0 10px; background: rgba(255,255,255,0.06);
+      color: var(--ink); font: inherit; font-size: 13px; outline: none;
+    }
+    .placement-add-row select:focus { border-color: var(--blue); }
+    .placement-add-row select option { background: #0b1326; }
+    .placement-empty {
+      font-size: 12px; color: var(--muted); padding: 6px 0;
+    }
+    .placement-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+    .placement-pill {
+      display: inline-block; padding: 2px 8px; border-radius: 999px;
+      background: rgba(43,99,255,0.14); color: #aac0ff; font-size: 11px;
+    }
   </style>
 </head>
 <body>
@@ -240,8 +276,7 @@
         <tr>
           <th class="logo-cell">로고</th>
           <th>기업명</th>
-          <th>단계</th>
-          <th>카테고리</th>
+          <th>배치</th>
           <th>홈페이지</th>
           <th style="width:90px">영역</th>
           <th style="width:110px">관리</th>
@@ -295,18 +330,14 @@
       <input type="text" id="f-name" placeholder="기업명 입력" />
     </div>
 
-    <div class="row2">
-      <div class="field">
-        <label>단계 <span class="req">*</span></label>
-        <select id="f-stage">
-          <option value="">선택...</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>카테고리 <span class="req">*</span></label>
-        <select id="f-category">
-          <option value="">단계 먼저 선택</option>
-        </select>
+    <div class="field">
+      <label>라이프사이클 배치 <span class="req">*</span></label>
+      <div class="help-text" style="margin-top:0;margin-bottom:10px">기업이 표시될 단계와 카테고리를 추가하세요. 여러 곳에 배치할 수 있습니다.</div>
+      <div id="placement-list" class="placement-list"></div>
+      <div class="placement-add-row">
+        <select id="p-stage"><option value="">단계 선택</option></select>
+        <select id="p-category"><option value="">카테고리</option></select>
+        <button type="button" class="btn-ghost" onclick="addPlacement()">+ 추가</button>
       </div>
     </div>
 
@@ -431,6 +462,7 @@ let editIdx = -1;
 let pendingFile = null;
 let currentLogo = '';
 let query = '';
+let pendingPlacements = [];
 
 // ── GitHub API ───────────────────────────────────────────────────────────────
 const GH = 'https://api.github.com';
@@ -495,15 +527,24 @@ function rawUrl(logo) {
   return `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/${cfg.branch}/assets/logos/${encodeURIComponent(logo)}`;
 }
 
+function getCompanyPlacements(c) {
+  if (c.placements && c.placements.length) return c.placements;
+  if (c.stage && c.category) return [{ stage: c.stage, category: c.category }];
+  return [];
+}
+
 function renderList() {
   const q = query.toLowerCase();
   const filtered = companies
     .map((c, i) => ({ ...c, _i: i }))
-    .filter(c => !q ||
-      c.name.toLowerCase().includes(q) ||
-      (stageMap[c.stage]?.name || '').toLowerCase().includes(q) ||
-      (catMap[c.category]?.name || '').toLowerCase().includes(q)
-    );
+    .filter(c => {
+      if (!q) return true;
+      if (c.name.toLowerCase().includes(q)) return true;
+      return getCompanyPlacements(c).some(p =>
+        (stageMap[p.stage]?.name || '').toLowerCase().includes(q) ||
+        (catMap[p.category]?.name || '').toLowerCase().includes(q)
+      );
+    });
 
   document.getElementById('count').textContent = `${filtered.length} / ${companies.length}개`;
 
@@ -518,11 +559,16 @@ function renderList() {
     const logoHtml = c.logo
       ? `<img class="logo-thumb" src="${rawUrl(c.logo)}" alt="${c.name}" onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'logo-none', textContent:'없음'}))" />`
       : `<div class="logo-none">없음</div>`;
+    const placements = getCompanyPlacements(c);
+    const placementHtml = placements.length
+      ? `<div class="placement-pills">${placements.map(p =>
+          `<span class="placement-pill">${stageMap[p.stage]?.name || p.stage} › ${catMap[p.category]?.name || p.category}</span>`
+        ).join('')}</div>`
+      : '<span style="color:var(--muted)">—</span>';
     tr.innerHTML = `
       <td class="logo-cell">${logoHtml}</td>
       <td class="name-cell">${c.name}${c.featured ? '<span class="featured-dot" title="Featured"></span>' : ''}</td>
-      <td><span class="stage-pill">${stageMap[c.stage]?.name || c.stage}</span></td>
-      <td class="cat-text">${catMap[c.category]?.name || c.category}</td>
+      <td>${placementHtml}</td>
       <td>${c.url ? `<a class="url-text" href="${c.url}" target="_blank">${c.url}</a>` : '<span style="color:var(--muted)">—</span>'}</td>
       <td style="font-size:12px">${[c.b2b && 'B2B', c.b2c && 'B2C'].filter(Boolean).join(' · ') || '<span style="color:var(--muted)">—</span>'}</td>
       <td><div class="actions">
@@ -545,7 +591,7 @@ function openModal(id) { document.getElementById(`modal-${id}`).classList.remove
 function closeModal(id) {
   document.getElementById(`modal-${id}`).classList.add('hidden');
   if (id === 'edit') {
-    pendingFile = null; currentLogo = '';
+    pendingFile = null; currentLogo = ''; pendingPlacements = [];
     document.getElementById('logo-preview-wrap').classList.remove('show');
     document.getElementById('f-logo').value = '';
   }
@@ -570,23 +616,51 @@ async function applySettings() {
   await loadData();
 }
 
-// ── Stage / Category dropdowns ────────────────────────────────────────────────
-function initStageSelect() {
-  const sel = document.getElementById('f-stage');
+// ── Placements management ─────────────────────────────────────────────────────
+function initPlacementStageSelect() {
+  const sel = document.getElementById('p-stage');
   sel.replaceChildren(
-    new Option('선택...', ''),
+    new Option('단계 선택', ''),
     ...STAGES.map(s => new Option(s.name, s.id))
   );
+  document.getElementById('p-category').replaceChildren(new Option('카테고리', ''));
 }
 
-document.getElementById('f-stage').onchange = function () {
+document.getElementById('p-stage').onchange = function () {
   const stage = stageMap[this.value];
-  const sel = document.getElementById('f-category');
+  const sel = document.getElementById('p-category');
   sel.replaceChildren(
-    new Option('선택...', ''),
+    new Option('카테고리 선택', ''),
     ...(stage?.cats || []).map(c => new Option(c.name, c.id))
   );
 };
+
+function renderPlacementList() {
+  const container = document.getElementById('placement-list');
+  if (!pendingPlacements.length) {
+    container.innerHTML = '<span class="placement-empty">배치된 위치가 없습니다. 아래에서 추가해주세요.</span>';
+    return;
+  }
+  container.replaceChildren(...pendingPlacements.map((p, i) => {
+    const tag = document.createElement('span');
+    tag.className = 'placement-tag';
+    tag.innerHTML = `${stageMap[p.stage]?.name || p.stage} › ${catMap[p.category]?.name || p.category}<button type="button" title="삭제">×</button>`;
+    tag.querySelector('button').onclick = () => { pendingPlacements.splice(i, 1); renderPlacementList(); };
+    return tag;
+  }));
+}
+
+function addPlacement() {
+  const stage = document.getElementById('p-stage').value;
+  const category = document.getElementById('p-category').value;
+  if (!stage || !category) { alert('단계와 카테고리를 모두 선택해주세요.'); return; }
+  const dup = pendingPlacements.some(p => p.stage === stage && p.category === category);
+  if (dup) { alert('이미 추가된 배치입니다.'); return; }
+  pendingPlacements.push({ stage, category });
+  renderPlacementList();
+  document.getElementById('p-stage').value = '';
+  document.getElementById('p-category').replaceChildren(new Option('카테고리', ''));
+}
 
 // ── Logo preview ──────────────────────────────────────────────────────────────
 document.getElementById('f-logo').onchange = function () {
@@ -642,12 +716,13 @@ document.getElementById('btn-add').onclick = () => {
   editIdx = -1;
   document.getElementById('modal-title').textContent = '기업 추가';
   document.getElementById('f-name').value = '';
-  document.getElementById('f-stage').value = '';
-  document.getElementById('f-category').replaceChildren(new Option('단계 먼저 선택', ''));
   document.getElementById('f-url').value = '';
   document.getElementById('f-b2b').checked = false;
   document.getElementById('f-b2c').checked = false;
   currentLogo = '';
+  pendingPlacements = [];
+  initPlacementStageSelect();
+  renderPlacementList();
   clearServiceFields();
   openModal('edit');
 };
@@ -657,12 +732,12 @@ function openEdit(i) {
   editIdx = i;
   document.getElementById('modal-title').textContent = '기업 수정';
   document.getElementById('f-name').value = c.name;
-  document.getElementById('f-stage').value = c.stage;
-  document.getElementById('f-stage').dispatchEvent(new Event('change'));
-  document.getElementById('f-category').value = c.category;
   document.getElementById('f-url').value = c.url || '';
   document.getElementById('f-b2b').checked = !!c.b2b;
   document.getElementById('f-b2c').checked = !!c.b2c;
+  pendingPlacements = [...getCompanyPlacements(c)];
+  initPlacementStageSelect();
+  renderPlacementList();
   loadServiceFields(c.services);
   currentLogo = c.logo || '';
   if (c.logo) {
@@ -678,13 +753,12 @@ function openEdit(i) {
 
 async function saveCompany() {
   const name = document.getElementById('f-name').value.trim();
-  const stage = document.getElementById('f-stage').value;
-  const category = document.getElementById('f-category').value;
   const url = document.getElementById('f-url').value.trim();
   const b2b = document.getElementById('f-b2b').checked;
   const b2c = document.getElementById('f-b2c').checked;
 
-  if (!name || !stage || !category) { alert('기업명, 단계, 카테고리는 필수입니다.'); return; }
+  if (!name) { alert('기업명은 필수입니다.'); return; }
+  if (!pendingPlacements.length) { alert('라이프사이클 배치를 최소 1개 추가해주세요.'); return; }
 
   const btn = document.getElementById('btn-save');
   btn.disabled = true; btn.textContent = '저장 중...';
@@ -698,7 +772,7 @@ async function saveCompany() {
     }
 
     const services = collectServices();
-    const entry = { name, stage, category, logo, url, b2b, b2c, services };
+    const entry = { name, logo, url, b2b, b2c, featured: editIdx >= 0 ? (companies[editIdx].featured || false) : false, services, placements: [...pendingPlacements] };
     if (editIdx === -1) companies.push(entry);
     else companies[editIdx] = entry;
 
@@ -748,7 +822,7 @@ async function loadData() {
   }
 }
 
-initStageSelect();
+initPlacementStageSelect();
 loadCfg();
 loadData();
 </script>
