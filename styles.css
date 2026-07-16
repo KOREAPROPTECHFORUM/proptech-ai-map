@@ -761,6 +761,8 @@ h1 {
   width: clamp(80px, 6.4vw, 108px);
   height: clamp(36px, 2.8vw, 48px);
   padding: 6px 12px;
+  animation: none;
+  transform: translate(-50%, -50%);
 }
 
 .venn-empty {
