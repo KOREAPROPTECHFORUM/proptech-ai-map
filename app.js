@@ -60,7 +60,7 @@ const state = {
   stage: "all",
   category: "all",
   query: "",
-  sort: "default"
+  sort: "name"
 };
 
 const stageById = Object.fromEntries(stages.map(stage => [stage.id, stage]));
@@ -71,7 +71,8 @@ const categoryById = Object.fromEntries(
 function matchesCompany(company) {
   const stage = stageById[company.stage];
   const category = categoryById[company.category];
-  const searchable = `${company.name} ${stage.name} ${category.name}`.toLowerCase();
+  const serviceParts = (company.services || []).map(s => `${s.name} ${s.desc} ${s.tech}`).join(' ');
+  const searchable = `${company.name} ${stage.name} ${category.name} ${serviceParts}`.toLowerCase();
   const matchesStage = state.stage === "all" || company.stage === state.stage;
   const matchesCategory = state.category === "all" || company.category === state.category;
   const matchesQuery = !state.query || searchable.includes(state.query.toLowerCase());
@@ -322,11 +323,11 @@ function renderDirectory() {
   const container = document.querySelector("#directory-grid");
   let visibleCompanies = uniqueCompanies(companies.filter(matchesCompany));
 
-  if (state.sort === "name") {
-    visibleCompanies = [...visibleCompanies].sort((a, b) => a.name.localeCompare(b.name, 'ko'));
-  } else if (state.sort === "stage") {
+  if (state.sort === "stage") {
     const order = stages.map(s => s.id);
     visibleCompanies = [...visibleCompanies].sort((a, b) => order.indexOf(a.stage) - order.indexOf(b.stage));
+  } else {
+    visibleCompanies = [...visibleCompanies].sort((a, b) => a.name.localeCompare(b.name, 'ko'));
   }
 
   document.querySelector("#result-count").textContent = `${visibleCompanies.length}개 기업`;
@@ -334,9 +335,8 @@ function renderDirectory() {
   const sortControls = document.querySelector("#sort-controls");
   if (sortControls) {
     sortControls.replaceChildren(...[
-      { id: "default", label: "기본순" },
-      { id: "name",    label: "이름순" },
-      { id: "stage",   label: "단계순" }
+      { id: "name",  label: "이름순" },
+      { id: "stage", label: "단계순" }
     ].map(opt => {
       const btn = document.createElement("button");
       btn.type = "button";
@@ -427,7 +427,7 @@ function renderBusiness() {
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
 
-  const setCount = (id, n) => { const el = document.getElementById(id); if (el) el.textContent = n ? `(${n})` : ''; };
+  const setCount = (id, n) => { const el = document.getElementById(id); if (el) el.textContent = n ? String(n) : ''; };
   setCount('biz-count-b2b', b2bOnly.length);
   setCount('biz-count-both', both.length);
   setCount('biz-count-b2c', b2cOnly.length);
@@ -487,7 +487,11 @@ async function init() {
   try {
     const res = await fetch("./companies.json");
     const data = await res.json();
-    companies = data.companies || [];
+    const raw = data.companies || [];
+    companies = raw.flatMap(c => {
+      const placements = c.placements || [{ stage: c.stage, category: c.category }];
+      return placements.map(p => ({ ...c, stage: p.stage, category: p.category }));
+    });
   } catch (e) {
     console.error("companies.json 로드 실패:", e);
   }
