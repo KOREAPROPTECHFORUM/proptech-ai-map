@@ -280,7 +280,7 @@ function renderMap() {
       company.stage === stage.id && company.category === category.id && matchesWithoutStage(company)
     ).length);
     const categoryWeights = categoryCounts.map(count => Math.max(1, Math.ceil(Math.sqrt(Math.max(count, 1)))));
-    card.style.setProperty("--category-template", categoryWeights.map(weight => `${weight}fr`).join(" "));
+    card.style.setProperty("--category-template", categoryWeights.map(weight => `minmax(min-content, ${weight}fr)`).join(" "));
 
     const columns = categories.map((category, categoryIndex) => {
       const column = document.createElement("div");
