@@ -709,9 +709,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1.6fr 1fr;
   gap: 0;
-  padding: 0 16px 40px;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 0 0 40px;
   min-height: 700px;
   align-items: stretch;
 }
