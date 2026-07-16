@@ -788,8 +788,12 @@ h1 {
   width: clamp(80px, 6.4vw, 108px);
   height: clamp(36px, 2.8vw, 48px);
   padding: 6px 12px;
-  animation: none;
-  transform: translate(-50%, -50%);
+  animation: drift-xy var(--float-duration, 6s) ease-in-out var(--float-delay, 0s) infinite alternate;
+}
+
+@keyframes drift-xy {
+  0%   { transform: translate(calc(-50% - var(--float-x, 0px)), calc(-50% - var(--float-y, 0px))); }
+  100% { transform: translate(calc(-50% + var(--float-x, 0px)), calc(-50% + var(--float-y, 0px))); }
 }
 
 .venn-empty {
