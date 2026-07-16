@@ -798,6 +798,95 @@ h1 {
   white-space: nowrap;
 }
 
+/* ── Search highlight ────────────────────────────────────────── */
+mark.search-mark {
+  background: rgba(255, 220, 60, 0.45);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* ── Category count badge ────────────────────────────────────── */
+.category-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 16px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: rgba(43, 99, 255, 0.28);
+  color: #c8d6ff;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 4px;
+}
+
+/* ── Initials fallback ───────────────────────────────────────── */
+.logo-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  font-weight: 900;
+  color: #242a35;
+  background: linear-gradient(135deg, #e8eeff, #d0d8f8);
+  letter-spacing: 0.04em;
+}
+
+.dir-initials {
+  font-size: 16px;
+  border-radius: 999px;
+}
+
+.modal-initials {
+  font-size: 18px;
+  border-radius: 999px;
+}
+
+/* ── Filter clear button ─────────────────────────────────────── */
+.filter-clear {
+  border-color: rgba(255, 100, 100, 0.35) !important;
+  color: rgba(255, 160, 160, 0.9) !important;
+}
+
+.filter-clear:hover {
+  background: rgba(255, 80, 80, 0.18) !important;
+}
+
+/* ── Biz col count ───────────────────────────────────────────── */
+.biz-col-count {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+/* ── Sort controls ───────────────────────────────────────────── */
+.sort-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.sort-button {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 5px 10px;
+  background: rgba(255,255,255,0.08);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.sort-button.is-active {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
 /* ── Directory ───────────────────────────────────────────────── */
 .directory-layout {
   display: grid;
@@ -1322,5 +1411,28 @@ h1 {
   .company-chip {
     width: 120px;
     height: 48px;
+  }
+
+  .biz-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .biz-col:first-child {
+    border-radius: 20px 20px 0 0;
+    border-right: none;
+    border-bottom: 2px solid rgba(43, 99, 255, 0.25);
+  }
+
+  .biz-col-center {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid rgba(90, 60, 255, 0.22);
+  }
+
+  .biz-col:last-child {
+    border-radius: 0 0 20px 20px;
+    border-left: none;
+    border-top: none;
   }
 }

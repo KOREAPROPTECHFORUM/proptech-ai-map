@@ -59,7 +59,8 @@ const state = {
   view: "map",
   stage: "all",
   category: "all",
-  query: ""
+  query: "",
+  sort: "default"
 };
 
 const stageById = Object.fromEntries(stages.map(stage => [stage.id, stage]));
@@ -87,12 +88,31 @@ function uniqueCompanies(items) {
   });
 }
 
+function getInitials(name) {
+  const words = name.trim().split(/\s+/);
+  return words.length >= 2 ? (words[0][0] + words[1][0]).toUpperCase() : name.slice(0, 2).toUpperCase();
+}
+
+function highlight(text, query) {
+  if (!query) return text;
+  const esc = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp(`(${esc})`, 'gi'), '<mark class="search-mark">$1</mark>');
+}
+
+function makeLogoImg(src, alt, onError) {
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = alt;
+  img.onerror = onError;
+  return img;
+}
+
 function showCompanyModal(company) {
   const stage = stageById[company.stage];
   const category = categoryById[company.category];
   const logoHtml = company.logo
-    ? `<img src="assets/logos/${company.logo}" alt="${company.name}" />`
-    : `<span style="font-size:13px;font-weight:900;color:#242a35;text-align:center;padding:4px 10px;display:flex;align-items:center;justify-content:center;height:100%">${company.name}</span>`;
+    ? `<img src="assets/logos/${company.logo}" alt="${company.name}" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-initials modal-initials',textContent:'${getInitials(company.name)}'}))">`
+    : `<span class="logo-initials modal-initials">${getInitials(company.name)}</span>`;
   const servicesHtml = (company.services || []).map(s => `
     <div class="service-item">
       <strong class="service-name">${s.name}</strong>
@@ -125,10 +145,15 @@ function createCompanyChip(company) {
   if (company.featured) chip.classList.add("is-featured");
   const logoEl = chip.querySelector(".logo-text");
   if (company.logo) {
-    logoEl.innerHTML = `<img src="assets/logos/${company.logo}" alt="${company.name}" />`;
+    const img = makeLogoImg(`assets/logos/${company.logo}`, company.name, () => {
+      img.remove();
+      logoEl.textContent = getInitials(company.name);
+      logoEl.classList.add('logo-initials');
+    });
+    logoEl.appendChild(img);
   } else {
-    logoEl.style.cssText = "line-height:1;font-size:9px;font-weight:900;text-align:center;word-break:break-all";
-    logoEl.textContent = company.name;
+    logoEl.textContent = getInitials(company.name);
+    logoEl.classList.add('logo-initials');
   }
   chip.querySelector("small").textContent = categoryById[company.category].name;
   return chip;
@@ -159,7 +184,7 @@ function setFloatingPosition(chip, index, total, categoryId, xRange, yRange, max
 function renderStageFilters() {
   const container = document.querySelector("#stage-filters");
   const filters = [{ id: "all", name: "전체" }, ...stages.map(({ id, name }) => ({ id, name }))];
-  container.replaceChildren(...filters.map(filter => {
+  const buttons = filters.map(filter => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `filter-button${state.stage === filter.id ? " is-active" : ""}`;
@@ -170,7 +195,23 @@ function renderStageFilters() {
       render();
     });
     return button;
-  }));
+  });
+  const hasFilter = state.stage !== "all" || state.category !== "all" || state.query !== "";
+  if (hasFilter) {
+    const clear = document.createElement("button");
+    clear.type = "button";
+    clear.className = "filter-button filter-clear";
+    clear.textContent = "× 필터 초기화";
+    clear.addEventListener("click", () => {
+      state.stage = "all";
+      state.category = "all";
+      state.query = "";
+      document.querySelector("#search-input").value = "";
+      render();
+    });
+    buttons.push(clear);
+  }
+  container.replaceChildren(...buttons);
 }
 
 function renderCategoryFilters() {
@@ -255,7 +296,7 @@ function renderMap() {
       });
       list.replaceChildren(...chips);
       column.style.setProperty("--density", String(categoryCounts[categoryIndex]));
-      column.innerHTML = `<h2>${category.name}</h2>`;
+      column.innerHTML = `<h2>${category.name}${categoryCompanies.length ? `<span class="category-count-badge">${categoryCompanies.length}</span>` : ''}</h2>`;
       column.append(list);
       return column;
     });
@@ -279,8 +320,32 @@ function renderMap() {
 
 function renderDirectory() {
   const container = document.querySelector("#directory-grid");
-  const visibleCompanies = uniqueCompanies(companies.filter(matchesCompany));
+  let visibleCompanies = uniqueCompanies(companies.filter(matchesCompany));
+
+  if (state.sort === "name") {
+    visibleCompanies = [...visibleCompanies].sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+  } else if (state.sort === "stage") {
+    const order = stages.map(s => s.id);
+    visibleCompanies = [...visibleCompanies].sort((a, b) => order.indexOf(a.stage) - order.indexOf(b.stage));
+  }
+
   document.querySelector("#result-count").textContent = `${visibleCompanies.length}개 기업`;
+
+  const sortControls = document.querySelector("#sort-controls");
+  if (sortControls) {
+    sortControls.replaceChildren(...[
+      { id: "default", label: "기본순" },
+      { id: "name",    label: "이름순" },
+      { id: "stage",   label: "단계순" }
+    ].map(opt => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `sort-button${state.sort === opt.id ? " is-active" : ""}`;
+      btn.textContent = opt.label;
+      btn.addEventListener("click", () => { state.sort = opt.id; render(); });
+      return btn;
+    }));
+  }
 
   if (!visibleCompanies.length) {
     const empty = document.createElement("div");
@@ -296,8 +361,8 @@ function renderDirectory() {
     const card = document.createElement("article");
     card.className = `directory-card${company.featured ? " is-featured" : ""}`;
     const logoHtml = company.logo
-      ? `<img src="assets/logos/${company.logo}" alt="${company.name}" />`
-      : `<span style="font-size:11px;font-weight:900;word-break:break-all;text-align:center;color:#242a35">${company.name}</span>`;
+      ? `<img src="assets/logos/${company.logo}" alt="${company.name}" onerror="this.outerHTML='<span class=\\'logo-initials dir-initials\\'>${getInitials(company.name)}</span>'">`
+      : `<span class="logo-initials dir-initials">${getInitials(company.name)}</span>`;
     const servicesHtml = (company.services || []).map(s => `
       <div class="service-item">
         <strong class="service-name">${s.name}</strong>
@@ -309,8 +374,8 @@ function renderDirectory() {
         <div class="directory-logo">${logoHtml}</div>
         <span class="stage-badge">${stage.name}</span>
       </div>
-      <h3>${company.name}</h3>
-      <p>${category.name} 영역의 프롭테크 AI 기업입니다.</p>
+      <h3>${highlight(company.name, state.query)}</h3>
+      <p>${highlight(category.name, state.query)} 영역의 프롭테크 AI 기업입니다.</p>
       ${servicesHtml ? `<div class="service-list">${servicesHtml}</div>` : ''}
       <a class="link-button" href="${company.url || `https://www.google.com/search?q=${encodeURIComponent(company.name + ' 홈페이지')}`}" target="_blank" rel="noreferrer">홈페이지 열기</a>
     `;
@@ -361,6 +426,11 @@ function renderBusiness() {
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
+
+  const setCount = (id, n) => { const el = document.getElementById(id); if (el) el.textContent = n ? `(${n})` : ''; };
+  setCount('biz-count-b2b', b2bOnly.length);
+  setCount('biz-count-both', both.length);
+  setCount('biz-count-b2c', b2cOnly.length);
 }
 
 const PAGE_TITLES = {
