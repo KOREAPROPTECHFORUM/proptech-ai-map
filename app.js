@@ -347,9 +347,11 @@ function renderBusiness() {
       zone.appendChild(empty);
       return;
     }
+    const xRange = [24, 76];
+    const yRange = zoneId === 'zone-both' ? [18, 78] : [22, 74];
     list.forEach((company, index) => {
       const chip = createCompanyChip(company);
-      setFloatingPosition(chip, index, list.length, zoneId);
+      setFloatingPosition(chip, index, list.length, zoneId, xRange, yRange);
       zone.appendChild(chip);
     });
   };
