@@ -72,7 +72,7 @@ input {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Gowun Batang', serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 19px;
   color: rgba(200, 215, 255, 0.75);
