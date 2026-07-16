@@ -710,8 +710,7 @@ h1 {
   grid-template-columns: 1fr 1.6fr 1fr;
   gap: 0;
   padding: 0 0 40px;
-  min-height: 700px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .biz-col {
@@ -770,7 +769,6 @@ h1 {
   align-content: flex-start;
   gap: 10px;
   padding: 8px 4px;
-  flex: 1;
   position: relative;
 }
 
