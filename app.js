@@ -346,10 +346,8 @@ function renderBusiness() {
       zone.appendChild(empty);
       return;
     }
-    list.forEach((company, index) => {
-      const chip = createCompanyChip(company);
-      setFloatingPosition(chip, index, list.length, zoneId, [22, 78], [25, 75]);
-      zone.appendChild(chip);
+    list.forEach(company => {
+      zone.appendChild(createCompanyChip(company));
     });
   };
 
