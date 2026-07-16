@@ -1,122 +1,5 @@
 let companies = [];
 
-/* ── Venn layout engine ─────────────────────────────────────── */
-let _vennRO = null, _vennROTimer = null;
-
-function cleanupVennLayout() {
-  if (_vennRO) { _vennRO.disconnect(); _vennRO = null; }
-  clearTimeout(_vennROTimer);
-}
-
-function layoutVennChips() {
-  const CHIP_W = 96, CHIP_H = 44, GAP = 9, ITERS = 300;
-
-  ['zone-b2b', 'zone-both', 'zone-b2c'].forEach(zoneId => {
-    const area = document.querySelector(`#${zoneId} .venn-chip-area`);
-    if (!area) return;
-    const chips = [...area.querySelectorAll('.company-chip')];
-    if (!chips.length) return;
-
-    let W = area.offsetWidth, H = area.offsetHeight;
-    if (!W || !H) return;
-    const hw = CHIP_W / 2, hh = CHIP_H / 2;
-
-    // Auto-expand height if chips won't fit
-    const minCols = zoneId === 'zone-both' ? 3 : 2;
-    const neededH = Math.ceil(chips.length / minCols) * (CHIP_H + GAP + 6) + 48;
-    if (neededH > H) { area.style.minHeight = neededH + 'px'; H = neededH; }
-
-    // Random organic init
-    const seed = (i) => Math.sin(i * 127.1 + 311.7) * 43758.5453 % 1;
-    const nodes = chips.map((chip, i) => {
-      const angle = (i / chips.length) * Math.PI * 2 + seed(i) * 0.9;
-      const r = Math.min(W, H) * (0.2 + seed(i + 99) * 0.25);
-      return { chip, x: W/2 + Math.cos(angle)*r, y: H/2 + Math.sin(angle)*r, vx: 0, vy: 0 };
-    });
-
-    for (let iter = 0; iter < ITERS; iter++) {
-      const alpha = Math.max(0.02, 1 - iter / ITERS);
-
-      // Weak center attraction + tiny organic jitter
-      nodes.forEach((n, i) => {
-        n.vx += (W/2 - n.x) * 0.007 * alpha;
-        n.vy += (H/2 - n.y) * 0.007 * alpha;
-        n.vx += (seed(i + iter) - 0.5) * 0.35 * alpha;
-        n.vy += (seed(i + iter + 500) - 0.5) * 0.35 * alpha;
-      });
-
-      // Rectangular collision repulsion
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const a = nodes[i], b = nodes[j];
-          const dx = b.x - a.x, dy = b.y - a.y;
-          const ox = CHIP_W + GAP - Math.abs(dx);
-          const oy = CHIP_H + GAP - Math.abs(dy);
-          if (ox > 0 && oy > 0) {
-            const f = 0.5 * (1 + alpha * 0.5);
-            if (ox < oy) {
-              const fx = Math.sign(dx || 0.01) * ox * f;
-              a.vx -= fx; b.vx += fx;
-            } else {
-              const fy = Math.sign(dy || 0.01) * oy * f;
-              a.vy -= fy; b.vy += fy;
-            }
-          }
-        }
-      }
-
-      nodes.forEach(n => {
-        n.x += n.vx; n.y += n.vy;
-        n.vx *= 0.55; n.vy *= 0.55;
-        n.x = Math.max(hw, Math.min(W - hw, n.x));
-        n.y = Math.max(hh, Math.min(H - hh, n.y));
-      });
-    }
-
-    // Extra passes for remaining overlaps
-    for (let pass = 0; pass < 4; pass++) {
-      let overlap = false;
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const a = nodes[i], b = nodes[j];
-          const dx = b.x - a.x, dy = b.y - a.y;
-          const ox = CHIP_W + GAP - Math.abs(dx);
-          const oy = CHIP_H + GAP - Math.abs(dy);
-          if (ox > 0 && oy > 0) {
-            overlap = true;
-            if (ox < oy) { const fx = Math.sign(dx||0.01)*ox*0.5; a.x-=fx; b.x+=fx; }
-            else          { const fy = Math.sign(dy||0.01)*oy*0.5; a.y-=fy; b.y+=fy; }
-            [a,b].forEach(n => {
-              n.x = Math.max(hw, Math.min(W-hw, n.x));
-              n.y = Math.max(hh, Math.min(H-hh, n.y));
-            });
-          }
-        }
-      }
-      if (!overlap) break;
-      if (pass === 3) { H += 80; area.style.minHeight = H+'px'; }
-    }
-
-    // Apply as percentages (compatible with existing --x/--y system)
-    nodes.forEach(({ chip, x, y }) => {
-      chip.style.setProperty('--x', `${(x/W*100).toFixed(2)}%`);
-      chip.style.setProperty('--y', `${(y/H*100).toFixed(2)}%`);
-    });
-  });
-}
-
-function setupVennResize() {
-  if (_vennRO) _vennRO.disconnect();
-  const el = document.querySelector('.venn-diagram');
-  if (!el || !window.ResizeObserver) return;
-  _vennRO = new ResizeObserver(() => {
-    clearTimeout(_vennROTimer);
-    _vennROTimer = setTimeout(layoutVennChips, 250);
-  });
-  _vennRO.observe(el);
-}
-/* ─────────────────────────────────────────────────────────── */
-
 const stages = [
   {
     id: "development",
@@ -471,14 +354,9 @@ function renderBusiness() {
     });
   };
 
-  cleanupVennLayout();
   fillZone('zone-b2b', b2bOnly);
   fillZone('zone-both', both);
   fillZone('zone-b2c', b2cOnly);
-  requestAnimationFrame(() => setTimeout(() => {
-    layoutVennChips();
-    setupVennResize();
-  }, 30));
 }
 
 const PAGE_TITLES = {
