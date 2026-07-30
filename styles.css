@@ -139,7 +139,11 @@ input {
 }
 
 .tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 82px;
+  min-height: 44px;
   border: 0;
   border-radius: 6px;
   padding: 9px 13px;
@@ -179,7 +183,7 @@ main {
 }
 
 .space-field span:nth-child(1) { left: 9%; top: 34%; width: 5px; height: 5px; }
-.space-field span:nth-child(2) { left: 31%; top: 11%; width: 8px; height: 8px; }
+.space-field span:nth-child(2) { display: none; }
 .space-field span:nth-child(3) { right: 22%; top: 28%; width: 4px; height: 4px; }
 .space-field span:nth-child(4) { right: 8%; top: 67%; width: 7px; height: 7px; }
 .space-field span:nth-child(5) { left: 56%; top: 76%; width: 5px; height: 5px; }
@@ -275,7 +279,7 @@ h1 {
 
 .search-box input {
   width: 100%;
-  height: 36px;
+  height: 44px;
   border: 1px solid rgba(255,255,255,0.28);
   border-radius: 8px;
   padding: 0 15px;
@@ -296,6 +300,9 @@ h1 {
 }
 
 .filter-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 8px 12px;
@@ -361,6 +368,9 @@ h1 {
 
 .stage-rail {
   position: relative;
+  display: grid;
+  align-content: start;
+  gap: 8px;
   padding: 10px 0;
 }
 
@@ -369,7 +379,7 @@ h1 {
   position: absolute;
   top: calc(var(--rail-row-height, 91px) / 2 + 10px);
   bottom: calc(var(--rail-row-height, 91px) / 2 + 10px);
-  left: 99px;
+  left: 97px;
   width: 4px;
   border-radius: 99px;
   background: linear-gradient(180deg, var(--blue), var(--violet));
@@ -399,12 +409,16 @@ h1 {
 }
 
 .rail-stage strong {
+  display: block;
+  width: 100%;
   color: var(--blue);
   font-size: 16px;
   font-weight: 800;
   line-height: 1.4;
   letter-spacing: 0.04em;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: break-word;
   text-align: center;
 }
 
@@ -435,6 +449,7 @@ h1 {
 
 .stage-list {
   display: grid;
+  align-content: start;
   gap: 8px;
 }
 
@@ -882,6 +897,9 @@ mark.search-mark {
 }
 
 .sort-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 5px 10px;
@@ -934,6 +952,9 @@ mark.search-mark {
 
 .category-filter {
   width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
   border: 1px solid var(--line);
   border-radius: 7px;
   padding: 9px 10px;
@@ -1062,8 +1083,10 @@ mark.search-mark {
 
 .link-button {
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   width: fit-content;
+  min-height: 44px;
   border-radius: 6px;
   padding: 9px 12px;
   background: rgba(255,255,255,0.18);
@@ -1107,10 +1130,10 @@ mark.search-mark {
 
 .company-modal-close {
   position: absolute;
-  top: 14px;
-  right: 16px;
-  width: 30px;
-  height: 30px;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
@@ -1205,7 +1228,7 @@ mark.search-mark {
   }
 
   .stage-rail::before {
-    left: 99px;
+    left: 97px;
   }
 
   .rail-stage {
@@ -1259,16 +1282,17 @@ mark.search-mark {
     font-size: 38px;
   }
 
-  .lead {
-    display: none;
-  }
-
   .stats {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
   }
 
   .stats div {
     padding: 7px 10px;
+    border: 0;
+    background: var(--panel-strong);
   }
 
   .stats strong {
@@ -1311,10 +1335,22 @@ mark.search-mark {
     gap: 6px;
   }
 
+  .stage-rail {
+    gap: 6px;
+  }
+
+  .stage-rail::before {
+    left: 61px;
+  }
+
   .rail-stage {
-    grid-template-columns: 90px;
+    grid-template-columns: 54px;
     gap: 0;
     min-height: 82px;
+  }
+
+  .rail-stage::after {
+    left: 54px;
   }
 
   .rail-stage strong {
@@ -1378,17 +1414,15 @@ mark.search-mark {
   }
 
   .stats {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
   }
 
   .stats div {
-    flex: 1 1 120px;
-    border-left: 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .stats div:first-child {
-    border-top: 0;
+    border: 0;
+    background: var(--panel-strong);
   }
 
   .map-title {
@@ -1422,6 +1456,11 @@ mark.search-mark {
   .company-chip {
     width: 120px;
     height: 48px;
+  }
+
+  .biz-chip-area .company-chip {
+    width: 104px;
+    height: 44px;
   }
 
   .biz-columns {

@@ -314,13 +314,29 @@ function renderMap() {
   board.append(title, content);
   container.replaceChildren(board);
 
-  requestAnimationFrame(() => {
-    const cards = container.querySelectorAll('.stage-card');
-    const railItems = container.querySelectorAll('.rail-stage');
+  syncRailHeights(container);
+}
+
+let railResizeObserver = null;
+
+function syncRailHeights(container) {
+  if (railResizeObserver) railResizeObserver.disconnect();
+
+  const cards = container.querySelectorAll('.stage-card');
+  const railItems = container.querySelectorAll('.rail-stage');
+
+  const applyHeights = () => {
     cards.forEach((card, i) => {
       if (railItems[i]) railItems[i].style.height = `${card.offsetHeight}px`;
     });
-  });
+  };
+
+  requestAnimationFrame(applyHeights);
+
+  if (typeof ResizeObserver !== "undefined") {
+    railResizeObserver = new ResizeObserver(applyHeights);
+    cards.forEach(card => railResizeObserver.observe(card));
+  }
 }
 
 function renderDirectory() {
