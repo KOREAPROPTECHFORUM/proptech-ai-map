@@ -245,7 +245,7 @@ h1 {
 }
 
 .stats strong {
-  color: var(--blue);
+  color: #c8d6ff;
   font-size: 22px;
   line-height: 1;
 }
@@ -1399,6 +1399,12 @@ mark.search-mark {
 
   .tab {
     flex: 1;
+    padding: 9px 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   main {
