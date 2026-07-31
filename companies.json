@@ -15,7 +15,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" }
+        {
+          "stage": "development",
+          "category": "planning"
+        }
       ]
     },
     {
@@ -38,31 +41,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" },
-        { "stage": "transaction", "category": "marketing" }
-      ]
-    },
-    {
-      "name": "리브솔루션",
-      "logo": "리브솔루션.jpg",
-      "url": "https://www.livsolution.co.kr/",
-      "b2b": true,
-      "b2c": true,
-      "featured": false,
-      "services": [
         {
-          "name": "AI 기반 역세권 미래가치분석",
-          "desc": "",
-          "tech": ""
+          "stage": "development",
+          "category": "planning"
         },
         {
-          "name": "AI 기반 땅찾기",
-          "desc": "",
-          "tech": ""
+          "stage": "transaction",
+          "category": "marketing"
         }
-      ],
-      "placements": [
-        { "stage": "development", "category": "planning" }
       ]
     },
     {
@@ -85,7 +71,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" }
+        {
+          "stage": "development",
+          "category": "planning"
+        }
       ]
     },
     {
@@ -108,8 +97,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" },
-        { "stage": "operation", "category": "rental" }
+        {
+          "stage": "development",
+          "category": "planning"
+        },
+        {
+          "stage": "operation",
+          "category": "rental"
+        }
       ]
     },
     {
@@ -132,7 +127,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" }
+        {
+          "stage": "development",
+          "category": "planning"
+        }
       ]
     },
     {
@@ -155,7 +153,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "construction" }
+        {
+          "stage": "development",
+          "category": "construction"
+        }
       ]
     },
     {
@@ -173,7 +174,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" }
+        {
+          "stage": "development",
+          "category": "planning"
+        }
       ]
     },
     {
@@ -196,7 +200,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "design-permit" }
+        {
+          "stage": "development",
+          "category": "design-permit"
+        }
       ]
     },
     {
@@ -219,8 +226,14 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" },
-        { "stage": "asset", "category": "asset-liquidity" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        },
+        {
+          "stage": "asset",
+          "category": "asset-liquidity"
+        }
       ]
     },
     {
@@ -238,7 +251,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "finance" }
+        {
+          "stage": "development",
+          "category": "finance"
+        }
       ]
     },
     {
@@ -261,7 +277,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -284,7 +303,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "contract" }
+        {
+          "stage": "infra",
+          "category": "contract"
+        }
       ]
     },
     {
@@ -302,7 +324,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "planning" }
+        {
+          "stage": "development",
+          "category": "planning"
+        }
       ]
     },
     {
@@ -325,8 +350,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "finance" },
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "development",
+          "category": "finance"
+        },
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -344,8 +375,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "finance" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "development",
+          "category": "finance"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -363,7 +400,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "design-permit" }
+        {
+          "stage": "development",
+          "category": "design-permit"
+        }
       ]
     },
     {
@@ -381,7 +421,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "design-permit" }
+        {
+          "stage": "development",
+          "category": "design-permit"
+        }
       ]
     },
     {
@@ -404,8 +447,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "design-permit" },
-        { "stage": "asset", "category": "asset-sale" }
+        {
+          "stage": "development",
+          "category": "design-permit"
+        },
+        {
+          "stage": "asset",
+          "category": "asset-sale"
+        }
       ]
     },
     {
@@ -428,8 +477,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "design-permit" },
-        { "stage": "infra", "category": "contract" }
+        {
+          "stage": "development",
+          "category": "design-permit"
+        },
+        {
+          "stage": "infra",
+          "category": "contract"
+        }
       ]
     },
     {
@@ -447,7 +502,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "design-permit" }
+        {
+          "stage": "development",
+          "category": "design-permit"
+        }
       ]
     },
     {
@@ -465,7 +523,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "procurement" }
+        {
+          "stage": "development",
+          "category": "procurement"
+        }
       ]
     },
     {
@@ -483,8 +544,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "construction" },
-        { "stage": "operation", "category": "facility" }
+        {
+          "stage": "development",
+          "category": "construction"
+        },
+        {
+          "stage": "operation",
+          "category": "facility"
+        }
       ]
     },
     {
@@ -507,7 +574,10 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "construction" }
+        {
+          "stage": "development",
+          "category": "construction"
+        }
       ]
     },
     {
@@ -530,8 +600,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "construction" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "development",
+          "category": "construction"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -549,8 +625,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "construction" },
-        { "stage": "infra", "category": "design-tool" }
+        {
+          "stage": "development",
+          "category": "construction"
+        },
+        {
+          "stage": "infra",
+          "category": "design-tool"
+        }
       ]
     },
     {
@@ -573,8 +655,14 @@
         }
       ],
       "placements": [
-        { "stage": "development", "category": "construction" },
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "development",
+          "category": "construction"
+        },
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -592,8 +680,14 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "marketing" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "transaction",
+          "category": "marketing"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -616,8 +710,14 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "marketing" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "transaction",
+          "category": "marketing"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -635,8 +735,14 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "marketing" },
-        { "stage": "asset", "category": "asset-sale" }
+        {
+          "stage": "transaction",
+          "category": "marketing"
+        },
+        {
+          "stage": "asset",
+          "category": "asset-sale"
+        }
       ]
     },
     {
@@ -654,7 +760,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "marketing" }
+        {
+          "stage": "transaction",
+          "category": "marketing"
+        }
       ]
     },
     {
@@ -672,7 +781,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "marketing" }
+        {
+          "stage": "transaction",
+          "category": "marketing"
+        }
       ]
     },
     {
@@ -690,7 +802,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -713,8 +828,14 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" },
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        },
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -737,7 +858,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -760,7 +884,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -783,7 +910,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -801,7 +931,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -824,7 +957,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -842,7 +978,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -860,7 +999,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -878,7 +1020,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -901,8 +1046,14 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" },
-        { "stage": "infra", "category": "contract" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        },
+        {
+          "stage": "infra",
+          "category": "contract"
+        }
       ]
     },
     {
@@ -925,7 +1076,10 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
       ]
     },
     {
@@ -948,8 +1102,14 @@
         }
       ],
       "placements": [
-        { "stage": "transaction", "category": "brokerage" },
-        { "stage": "operation", "category": "rental" }
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        },
+        {
+          "stage": "operation",
+          "category": "rental"
+        }
       ]
     },
     {
@@ -967,7 +1127,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "rental" }
+        {
+          "stage": "operation",
+          "category": "rental"
+        }
       ]
     },
     {
@@ -990,8 +1153,14 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "rental" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "operation",
+          "category": "rental"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1009,8 +1178,14 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1028,7 +1203,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1046,7 +1224,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1069,7 +1250,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1087,7 +1271,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1110,7 +1297,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1128,7 +1318,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1146,7 +1339,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1164,7 +1360,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1187,7 +1386,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1205,7 +1407,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "space-operation" }
+        {
+          "stage": "operation",
+          "category": "space-operation"
+        }
       ]
     },
     {
@@ -1228,7 +1433,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "facility" }
+        {
+          "stage": "operation",
+          "category": "facility"
+        }
       ]
     },
     {
@@ -1246,7 +1454,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "facility" }
+        {
+          "stage": "operation",
+          "category": "facility"
+        }
       ]
     },
     {
@@ -1269,8 +1480,14 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "facility" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "operation",
+          "category": "facility"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1288,7 +1505,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "facility" }
+        {
+          "stage": "operation",
+          "category": "facility"
+        }
       ]
     },
     {
@@ -1306,7 +1526,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "facility" }
+        {
+          "stage": "operation",
+          "category": "facility"
+        }
       ]
     },
     {
@@ -1324,7 +1547,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "facility" }
+        {
+          "stage": "operation",
+          "category": "facility"
+        }
       ]
     },
     {
@@ -1342,7 +1568,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "interior" }
+        {
+          "stage": "operation",
+          "category": "interior"
+        }
       ]
     },
     {
@@ -1360,7 +1589,10 @@
         }
       ],
       "placements": [
-        { "stage": "operation", "category": "interior" }
+        {
+          "stage": "operation",
+          "category": "interior"
+        }
       ]
     },
     {
@@ -1383,8 +1615,14 @@
         }
       ],
       "placements": [
-        { "stage": "asset", "category": "asset-sale" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "asset",
+          "category": "asset-sale"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1402,8 +1640,14 @@
         }
       ],
       "placements": [
-        { "stage": "asset", "category": "asset-sale" },
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "asset",
+          "category": "asset-sale"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1426,7 +1670,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1449,7 +1696,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1467,7 +1717,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1490,7 +1743,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1508,7 +1764,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1526,7 +1785,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "data-platform" }
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
       ]
     },
     {
@@ -1549,7 +1811,10 @@
         }
       ],
       "placements": [
-        { "stage": "infra", "category": "design-tool" }
+        {
+          "stage": "infra",
+          "category": "design-tool"
+        }
       ]
     }
   ]
