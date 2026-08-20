@@ -1816,6 +1816,36 @@
           "category": "design-tool"
         }
       ]
+    },
+    {
+      "name": "에이치티비욘드",
+      "logo": "프롭테크 AI 맵 로고 사이즈 통일 .png",
+      "url": "https://htbeyond.com/",
+      "b2b": false,
+      "b2c": false,
+      "featured": false,
+      "services": [
+        {
+          "name": "AI 주거통합 서비스",
+          "desc": "IoT기술 기반 세대내와 공용부, 인근 지역까지 아우르는 Data-driven ‘All-in-One’ 주거 통합 서비스",
+          "tech": "IoT · 음성/영삭/동작 인식 · 빅데이터 분석 · AI기반 수요/동선 예측 · NLP"
+        },
+        {
+          "name": "바이비 AI 인사이트",
+          "desc": "라이프로그 데이터를 AI로 분석해 입주민·운영자·건설사 대상 맞춤 솔루션/인사이트 제공",
+          "tech": "빅데이터 분석 · 머신러닝(패턴 탐지) · 생성형 AI"
+        }
+      ],
+      "placements": [
+        {
+          "stage": "operation",
+          "category": "facility"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
+      ]
     }
   ]
 }
