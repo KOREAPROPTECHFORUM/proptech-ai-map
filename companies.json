@@ -1821,8 +1821,8 @@
       "name": "에이치티비욘드",
       "logo": "프롭테크 AI 맵 로고 사이즈 통일 .png",
       "url": "https://htbeyond.com/",
-      "b2b": false,
-      "b2c": false,
+      "b2b": true,
+      "b2c": true,
       "featured": false,
       "services": [
         {
