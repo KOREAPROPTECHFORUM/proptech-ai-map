@@ -1846,6 +1846,31 @@
           "category": "data-platform"
         }
       ]
+    },
+    {
+      "name": "리커버리브릿지",
+      "logo": "프롭테크 AI 맵 로고 사이즈 통일  (2).png",
+      "url": "https://www.rcvbridge.com",
+      "b2b": true,
+      "b2c": false,
+      "featured": false,
+      "services": [
+        {
+          "name": "NPL 원천데이터 정형화·평가 인프라",
+          "desc": "담보부 NPL 원천서류를 AI로 분류·정형화해 평가·거래를 원스톱 지원",
+          "tech": "OCR/AI 문서분류 · LLM/RAG · 데이터 정형화/정합성 검증"
+        }
+      ],
+      "placements": [
+        {
+          "stage": "asset",
+          "category": "asset-sale"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
+      ]
     }
   ]
 }
