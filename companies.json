@@ -1699,6 +1699,10 @@
         {
           "stage": "infra",
           "category": "data-platform"
+        },
+        {
+          "stage": "asset",
+          "category": "asset-sale"
         }
       ]
     },
