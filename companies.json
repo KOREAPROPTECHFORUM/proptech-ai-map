@@ -1875,6 +1875,31 @@
           "category": "data-platform"
         }
       ]
+    },
+    {
+      "name": "업사이트",
+      "logo": "프롭테크 AI 맵 로고 사이즈 통일  2.png",
+      "url": "https://www.upsight.co.kr/",
+      "b2b": true,
+      "b2c": false,
+      "featured": false,
+      "services": [
+        {
+          "name": "AI 건설 Intelligence 플랫폼",
+          "desc": "건설 데이터를 AI로 통합 분석해 공정관리와 현장 의사결정을 지원",
+          "tech": "공정 예측/분석 · 3D Reconstruction · 데이터 표준화"
+        }
+      ],
+      "placements": [
+        {
+          "stage": "development",
+          "category": "construction"
+        },
+        {
+          "stage": "infra",
+          "category": "data-platform"
+        }
+      ]
     }
   ]
 }
