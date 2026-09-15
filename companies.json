@@ -1900,6 +1900,27 @@
           "category": "data-platform"
         }
       ]
+    },
+    {
+      "name": "빅테크플러스",
+      "logo": "프롭테크 AI 맵 로고 사이즈 통일  1.png",
+      "url": "https://www.bigtech.co.kr",
+      "b2b": true,
+      "b2c": true,
+      "featured": false,
+      "services": [
+        {
+          "name": "홈큐AI",
+          "desc": "자연어로 입력한 조건을 LLM이 분석해 주제별 Agnet를 통해 부동산 의사결정 과정을 진단하고, 분석하여 액션 아이템까지 연결하는 솔루션",
+          "tech": "생성형 AI(LLM) · 자연어 처리(NLP) · Multi-Agent Orchestration"
+        }
+      ],
+      "placements": [
+        {
+          "stage": "transaction",
+          "category": "brokerage"
+        }
+      ]
     }
   ]
 }
