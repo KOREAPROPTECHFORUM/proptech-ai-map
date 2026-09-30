@@ -1885,9 +1885,9 @@
       "featured": false,
       "services": [
         {
-          "name": "AI 건설 Intelligence 플랫폼",
-          "desc": "건설 데이터를 AI로 통합 분석해 공정관리와 현장 의사결정을 지원",
-          "tech": "공정 예측/분석 · 3D Reconstruction · 데이터 표준화"
+          "name": "업사이트 건설 AI 플랫폼",
+          "desc": "공정표·공사일보·현장 촬영물을 연결해 공정 현황 분석과 예측, 현장·본사의 의사결정을 지원",
+          "tech": "비전 AI · LLM · 3D 재구성 · 데이터 구조화"
         }
       ],
       "placements": [
